@@ -1,12 +1,14 @@
 
 import './App.css'
 import { NavLink, Outlet } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 function App() {
 
   return (
     <div>
-      <h1>Kožní ordinace Tvrdoňová</h1>
       <nav>
         <div>
           <NavLink to="/kozni-tvrdonova/" end>Domů</NavLink>
