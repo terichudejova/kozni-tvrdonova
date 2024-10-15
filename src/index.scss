@@ -2,15 +2,19 @@
 //VARIABLES
 
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-$main-font: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$header-font: "Baskervville", serif;
+$main-font: "Montserrat", sans-serif;
+
 
 //colors
-$main-color: #58a0dc;
-$dark-color: #11658f;
-$light-color: #d6f4ff;
-$contrast-color: #e39e21;
-$hover-color: #3b4856;
+$base1-color: #c7dacb;
+$base2-color: #e4decf;
+$hover-color: #586b5c;
+$contrast-color: #8a6d33;
+$font-color: #4d4639;
+
 
 //font sizes
 $f-xxxs: 1rem;
@@ -48,6 +52,27 @@ $s-xxxl: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: start;
+}
+
+@mixin column-start-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
+
+@mixin column-start-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: space-between;
+}
+
+@mixin column-center-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: start;
 }
 
@@ -148,8 +173,8 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: $main-color;
-    color: black;
+    background-color: $base2-color;
+    color: $font-color;
     font-family: $main-font;
     overflow-x: hidden;
     text-size-adjust: none;

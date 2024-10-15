@@ -1,3 +1,283 @@
 @import "index";
 
+//OBECNÁ NASTAVENÍ
+.outerBox {
+    width: 100%;
+    @include column-start-center;
 
+    .container {
+        // border: 1px solid black;
+        height: 1000px;
+    }
+}
+
+h1 {
+    font-family: $header-font;
+}
+
+p {
+    font-family: $main-font;
+    font-size: $f-l;
+    letter-spacing: 0.8px;
+}
+
+#logo {
+    border-radius: 3px;
+    width: 60px;
+    height: auto;
+    background-color: $base2-color;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    padding: $s-xxxs;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.button {
+    background-color: #e4decf7f;
+    color: white;
+    border-radius: 3px;
+    font-size: $f-m;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: $s-xxs $s-xs;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $base2-color;
+        color: $font-color;
+    }
+}
+
+//WEB SECTIONS
+/* NAVBAR */
+.navbarBox {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    @include row-between-center;
+    padding: $s-s $s-m;
+    box-sizing: border-box;
+    z-index: 2;
+
+    //navbar - desktop
+    .nav-links {
+        width: 100%;
+        @include row-between-center;
+
+        .right {
+            width: 50%;
+            @include row-between-center;
+
+            .navLink {
+                text-decoration: none;
+                font-family: $main-font;
+                letter-spacing: 2px;
+                font-size: $f-m;
+                padding: $s-xxs $s-xs;
+                color: white;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+    
+                &:hover { 
+                    background-color: #e4decf7f;
+                    border-radius: 3px;
+                }
+    
+                &.active {
+                    color: $font-color;
+                    background-color: $base2-color;
+                    border-radius: 3px;
+                }
+    
+                // .navLink responsivity
+                @include w-1000 {
+                    margin-bottom: $s-xxs;
+                    color: $base1-color;
+                }
+            }
+    
+            // .nav-links responsivity
+            @include w-1000 {
+                display: none;
+            }
+        }
+    }
+
+    //navbar - scrolled
+    &.scrolled {
+        background-color: $base2-color;
+
+        .nav-links {
+
+            .right {
+
+                .navLink {
+                    color: $font-color;
+
+                    &.active {
+                        color: $base2-color;
+                        background-color: $contrast-color;
+                    }
+
+                    &:hover { 
+                        background-color: #8a6d3372;
+                    }
+                }
+            }
+        }
+    }
+
+    //navbar - hamburger
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+        .bar {
+            height: 3px;
+            width: 35px;
+            background-color: $hover-color;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        // .hamburger responsivity
+        @include w-1000 {
+            display: flex;
+            z-index: 2;
+            margin-top: $s-s;
+        }
+    }
+
+    /* Přechod hamburgeru na křížek */
+    &.open {
+        
+        .bar {
+
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 13.5px) scaleX(1.2);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -13.5px) scaleX(1.2);
+            }
+
+            // .bar - responsivity
+            @include w-1000 {
+                background-color: $hover-color;
+            }
+        }
+
+        // .nav.open - responsivity
+        @include w-1000 {
+            padding-top: 0;
+
+            .nav-links .right {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s ease-in-out;
+                margin-top: 0;
+                z-index: 1;
+                padding-top: $s-xs;
+                padding-bottom: $s-xs;
+                background-color: red;
+
+                &.show {
+
+                    // .nav-links.show - responsivity
+                    @include w-1000 {
+                        display: flex;
+                        background-color: $base2-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//HOME
+.home {
+
+    .landingPage {
+        background-image: url("public/images/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+
+        @include w-1000 {
+            height: 400px; //opravit pak podle obsahu na auto
+        }
+
+        .headingBox {
+            @include column-start-start;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+
+            h1 {
+                color: white;
+                font-size: 3 * $f-xl;
+                letter-spacing: 2.2px;
+                line-height: 1.5;
+                margin-bottom: $s-xxs;
+            }
+
+            p {
+                color: white;
+            }
+
+            .buttons {
+                @include row-between-center;
+                margin-top: $s-xxxl;
+
+                .button {
+                    text-decoration: none;
+
+                    &:nth-child(1) {
+                        margin-right: $s-l;
+                    }
+                }
+            }
+        }
+
+        #phoneNumber {
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                #phoneIcon {
+                    font-size: $f-xxl;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
