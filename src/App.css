@@ -15,6 +15,10 @@ body, html {
   -webkit-text-size-adjust: none;
 }
 
+.container-fluid {
+  padding: 0 !important;
+}
+
 .outerBox {
   width: 100%;
   display: flex;
@@ -22,11 +26,17 @@ body, html {
   justify-content: start;
   align-items: center;
 }
-.outerBox .container {
-  height: 1000px;
+@media only screen and (min-width: 1400px) {
+  .outerBox .container {
+    max-width: 85%;
+  }
 }
 
 h1 {
+  font-family: "Baskervville", serif;
+}
+
+h2 {
   font-family: "Baskervville", serif;
 }
 
@@ -34,6 +44,9 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   letter-spacing: 0.8px;
+}
+p span {
+  font-weight: 500;
 }
 
 #logo {
@@ -115,7 +128,7 @@ p {
 @media only screen and (max-width: 1000px) {
   .navbarBox .nav-links .right .navLink {
     margin-bottom: 1rem;
-    color: #c7dacb;
+    color: #a8b5a5;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -131,7 +144,7 @@ p {
 }
 .navbarBox.scrolled .nav-links .right .navLink.active {
   color: #e4decf;
-  background-color: #8a6d33;
+  background-color: #867654;
 }
 .navbarBox.scrolled .nav-links .right .navLink:hover {
   background-color: rgba(138, 109, 51, 0.4470588235);
@@ -216,9 +229,7 @@ p {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  position: absolute;
-  top: 20%;
-  left: 5%;
+  margin-top: 15%;
 }
 .home .landingPage .headingBox h1 {
   color: white;
@@ -239,6 +250,8 @@ p {
 }
 .home .landingPage .headingBox .buttons .button {
   text-decoration: none;
+  letter-spacing: 1.2px;
+  cursor: pointer;
 }
 .home .landingPage .headingBox .buttons .button:nth-child(1) {
   margin-right: 5rem;
@@ -259,4 +272,101 @@ p {
 }
 .home .landingPage #phoneNumber:hover {
   transform: scale(1.05);
+}
+.home .sluzby {
+  margin-top: 9rem;
+  width: 100%;
+}
+.home .sluzby .container h2 {
+  font-size: 5rem;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.home .sluzby .container p {
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+}
+.home .sluzby .sluzbyCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 9rem;
+}
+.home .sluzby .sluzbyCards .karticka {
+  height: auto;
+  min-width: 350px;
+  max-width: 500px;
+  background-color: #867654;
+  color: #e4decf;
+  padding: 3rem;
+  padding-top: 7rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.home .sluzby .sluzbyCards .karticka .iconCircle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #867654;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 40px);
+  border: 3px solid #e4decf;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}
+.home .sluzby .sluzbyCards .karticka .iconCircle .iconCircle_ikonka {
+  font-size: 4rem;
+  color: #e4decf;
+}
+.home .sluzby .sluzbyCards .karticka h3 {
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+}
+.home .sluzby .sluzbyCards .karticka h4 {
+  font-size: 1.8rem;
+  margin: 3rem 0 1rem 0;
+  letter-spacing: 1.2px;
+  color: white;
+}
+.home .sluzby .sluzbyCards .karticka .line {
+  height: 2px;
+  border-radius: 10px;
+  background-color: white;
+  width: 40%;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.home .sluzby .sluzbyCards .karticka p {
+  font-size: 1.8rem;
+}
+.home .sluzby .sluzbyCards .karticka p span {
+  font-weight: 400;
+  color: white;
+}
+.home .sluzby .sluzbyCards .karticka ul {
+  list-style-type: none;
+  padding: 0;
+}
+.home .sluzby .sluzbyCards .karticka ul li {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1.2px;
+}
+.home .sluzby .sluzbyCards .karticka ul li span {
+  font-weight: 600;
+  color: white;
+}
+.home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
+  margin-right: 6rem;
 }/*# sourceMappingURL=App.css.map */

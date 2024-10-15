@@ -1,13 +1,20 @@
 @import "index";
 
 //OBECNÁ NASTAVENÍ
+.container-fluid {
+    padding: 0 !important;
+}
+
 .outerBox {
     width: 100%;
     @include column-start-center;
 
     .container {
         // border: 1px solid black;
-        height: 1000px;
+        
+        @include w-1400-min {
+            max-width: 85%;
+        }
     }
 }
 
@@ -15,10 +22,18 @@ h1 {
     font-family: $header-font;
 }
 
+h2 {
+    font-family: $header-font;
+}
+
 p {
     font-family: $main-font;
     font-size: $f-l;
     letter-spacing: 0.8px;
+
+    span {
+        font-weight: 500;
+    }
 }
 
 #logo {
@@ -214,6 +229,7 @@ p {
 //HOME
 .home {
 
+    //SEKCE LANDING PAGE
     .landingPage {
         background-image: url("images/background.jpg");
         background-size: cover;
@@ -229,9 +245,7 @@ p {
 
         .headingBox {
             @include column-start-start;
-            position: absolute;
-            top: 20%;
-            left: 5%;
+            margin-top: 15%;
 
             h1 {
                 color: white;
@@ -251,6 +265,8 @@ p {
 
                 .button {
                     text-decoration: none;
+                    letter-spacing: 1.2px;
+                    cursor: pointer;
 
                     &:nth-child(1) {
                         margin-right: $s-l;
@@ -277,6 +293,121 @@ p {
 
             &:hover {
                 transform: scale(1.05);
+            }
+        }
+    }
+
+    //SEKCE SLUZBY
+    .sluzby {
+        margin-top: $s-xxxl;
+        width: 100%;
+
+        .container {
+            h2 {
+                font-size: 2 * $f-l;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                margin-bottom: $s-m;
+            }
+    
+            p {
+                font-size: $f-m;
+                letter-spacing: 1.2px;
+            }
+        }
+
+        .sluzbyCards {
+            @include row-between-start;
+            margin-top: $s-xxxl;
+
+            .karticka {
+                height: auto;
+                min-width: 350px;
+                max-width: 500px;
+                background-color: $contrast-color;
+                color: $base2-color;
+                padding: $s-s;
+                padding-top: $s-xxl;
+                box-shadow: $main-shadow;
+                border-radius: 3px;
+                position: relative;
+                @include column-start-center;
+
+                .iconCircle {
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    background-color: $contrast-color;
+                    @include row-center-center;
+                    position: absolute;
+                    top: -40px;
+                    left: calc(50% - 40px);
+                    border: 3px solid $base2-color;
+                    box-shadow: $main-shadow;
+
+                    .iconCircle_ikonka {
+                        font-size: 2 * $f-m;
+                        color: $base2-color;
+                    }
+                }
+
+                h3 {
+                    font-size: $f-m;
+                    letter-spacing: 1.2px;
+                }
+
+                h4 {
+                    font-size: $f-s;
+                    margin: $s-s 0 $s-xxs 0;
+                    letter-spacing: 1.2px;
+                    color: white;
+                }
+
+                .line {
+                    height: 2px;
+                    border-radius: 10px;
+                    background-color: white;
+                    width: 40%;
+                    margin-bottom: $s-s;
+                    margin-top: $s-xxs;
+                }
+
+                // .line2 {
+                //     align-self: flex-start;
+                //     margin-bottom: $s-xs;
+                //     margin-top: $s-xxxs;
+                //     height: 1px;
+                // }
+
+                p {
+                    font-size: $f-s;
+
+                    span {
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        font-size: $f-s;
+                        margin-bottom: $s-xs;
+                        letter-spacing: 1.2px;
+    
+                        span {
+                            font-weight: 600;
+                            color: white;
+                        }
+                    }
+                }
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-right: $s-xl;
+                }
             }
         }
     }

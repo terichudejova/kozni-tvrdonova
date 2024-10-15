@@ -9,12 +9,14 @@ $main-font: "Montserrat", sans-serif;
 
 
 //colors
-$base1-color: #c7dacb;
+$base1-color: #a8b5a5;
 $base2-color: #e4decf;
 $hover-color: #586b5c;
-$contrast-color: #8a6d33;
+$contrast-color: #867654;
 $font-color: #4d4639;
 
+//shadows
+$main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 
 //font sizes
 $f-xxxs: 1rem;
@@ -90,6 +92,13 @@ $s-xxxl: 9rem;
     align-items: center;
 }
 
+@mixin row-between-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
 @mixin row-start-center {
     display: flex;
     flex-direction: row;
@@ -152,6 +161,12 @@ $breakpoints: (
         @content;
     }
 };
+
+@mixin w-1400-min {
+    @media only screen and (min-width: map-get($breakpoints, "w-1400")) {
+        @content;
+    }
+}
 
 @mixin w-2000 {
     @media only screen and (min-width: map-get($breakpoints, "w-2000")) {
