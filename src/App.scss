@@ -301,6 +301,7 @@ p {
     //SEKCE SLUZBY
     .sluzby {
         margin-top: $s-xxxl;
+        margin-bottom: 2 * $s-l;
         width: 100%;
 
         .container {
@@ -416,6 +417,84 @@ p {
                     margin-right: $s-xl;
                 }
             }
+        }
+    }
+
+    //SEKCE NÁŠ TÝM
+    .tym {
+        width: 100%;
+        background-color: $base1-color;
+        color: $hover-color;
+        padding-top: $s-xxxl;
+
+        .container {
+
+            h2 {
+                font-size: 2 * $f-l;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                margin-bottom: $s-m;
+            }
+
+            p {
+                font-size: $f-s;
+
+                    span {
+                        font-weight: 600;
+                    }
+            }
+
+            .medailonky {
+                width: 100%;
+                @include column-start-center;
+                margin-top: $s-xxxl;
+
+                .medailonek {
+                    margin-bottom: $s-xxl;
+                    width: auto;
+                    max-width: 90%;
+                    min-height: 400px;
+                    background-color: white;
+                    padding: $s-m;
+                    padding-left: 3 * $s-xl;
+                    border-radius: 3px;
+                    box-shadow: $main-shadow;
+                    position: relative;
+
+                    .imgCase {
+                        border-radius: 3px;
+                        box-shadow: $main-shadow;
+                        border: 3px solid $base1-color;
+                        position: absolute;
+                        top: calc(50% - 150px);
+                        left: -60px;
+
+                        img {
+                            border-radius: 3px;
+                            height: 300px;
+                            width: auto;
+                        }
+                    }
+                    
+                    .title {
+                        max-width: 400px;
+
+                        h4 {
+                            font-size: $f-m;
+                        }
+    
+                        .line {
+                            width: 40%;
+                            background-color: $hover-color;
+                            height: 2px;
+                            border-radius: 10px;
+                            margin-top: $s-xxxs;
+                            margin-bottom: $s-s;
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }

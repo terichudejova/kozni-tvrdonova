@@ -129,7 +129,7 @@ p span {
 @media only screen and (max-width: 1000px) {
   .navbarBox .nav-links .right .navLink {
     margin-bottom: 1rem;
-    color: #a8b5a5;
+    color: #effdec;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -276,6 +276,7 @@ p span {
 }
 .home .sluzby {
   margin-top: 9rem;
+  margin-bottom: 10rem;
   width: 100%;
 }
 .home .sluzby .container h2 {
@@ -375,4 +376,69 @@ p span {
 }
 .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
   margin-right: 6rem;
+}
+.home .tym {
+  width: 100%;
+  background-color: #effdec;
+  color: #586b5c;
+  padding-top: 9rem;
+}
+.home .tym .container h2 {
+  font-size: 5rem;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.home .tym .container p {
+  font-size: 1.8rem;
+}
+.home .tym .container p span {
+  font-weight: 600;
+}
+.home .tym .container .medailonky {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 9rem;
+}
+.home .tym .container .medailonky .medailonek {
+  margin-bottom: 7rem;
+  width: auto;
+  max-width: 90%;
+  min-height: 400px;
+  background-color: white;
+  padding: 4rem;
+  padding-left: 18rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  position: relative;
+}
+.home .tym .container .medailonky .medailonek .imgCase {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  border: 3px solid #effdec;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: -60px;
+}
+.home .tym .container .medailonky .medailonek .imgCase img {
+  border-radius: 3px;
+  height: 300px;
+  width: auto;
+}
+.home .tym .container .medailonky .medailonek .title {
+  max-width: 400px;
+}
+.home .tym .container .medailonky .medailonek .title h4 {
+  font-size: 2rem;
+}
+.home .tym .container .medailonky .medailonek .title .line {
+  width: 40%;
+  background-color: #586b5c;
+  height: 2px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=App.css.map */
