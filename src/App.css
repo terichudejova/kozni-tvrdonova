@@ -300,8 +300,9 @@ p span {
   height: auto;
   min-width: 350px;
   max-width: 500px;
-  background-color: #817969;
-  color: #e4decf;
+  background-color: white;
+  color: #817969;
+  border: #e4decf 3px solid;
   padding: 3rem;
   padding-top: 7rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
@@ -316,7 +317,7 @@ p span {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-color: #817969;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -329,7 +330,7 @@ p span {
 }
 .home .sluzby .sluzbyCards .karticka .iconCircle .iconCircle_ikonka {
   font-size: 4rem;
-  color: #e4decf;
+  color: #817969;
 }
 .home .sluzby .sluzbyCards .karticka h3 {
   font-size: 2rem;
@@ -339,7 +340,7 @@ p span {
   font-size: 1.8rem;
   margin: 3rem 0 1rem 0;
   letter-spacing: 1.2px;
-  color: white;
+  color: #4d4639;
 }
 .home .sluzby .sluzbyCards .karticka .line {
   height: 2px;
@@ -354,7 +355,7 @@ p span {
 }
 .home .sluzby .sluzbyCards .karticka p span {
   font-weight: 400;
-  color: white;
+  color: #4d4639;
 }
 .home .sluzby .sluzbyCards .karticka ul {
   list-style-type: none;
@@ -367,12 +368,17 @@ p span {
 }
 .home .sluzby .sluzbyCards .karticka ul li span {
   font-weight: 600;
-  color: white;
+  color: #4d4639;
 }
 .home .sluzby .sluzbyCards .karticka .button {
   text-decoration: none;
   font-size: 1.8rem;
   margin: 3rem 0 0 0;
+  color: #4d4639;
+}
+.home .sluzby .sluzbyCards .karticka .button:hover {
+  background-color: #817969;
+  color: white;
 }
 .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
   margin-right: 6rem;

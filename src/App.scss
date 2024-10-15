@@ -326,8 +326,11 @@ p {
                 height: auto;
                 min-width: 350px;
                 max-width: 500px;
-                background-color: $contrast-color;
-                color: $base2-color;
+                // background-color: $contrast-color; VERZE 1
+                // color: $base2-color; VERZE 1
+                background-color: white; //VERZE 2
+                color: $contrast-color; //VERZE 2
+                border: $base2-color 3px solid; //VERZE 2
                 padding: $s-s;
                 padding-top: $s-xxl;
                 box-shadow: $main-shadow;
@@ -339,7 +342,8 @@ p {
                     border-radius: 50%;
                     width: 80px;
                     height: 80px;
-                    background-color: $contrast-color;
+                    // background-color: $contrast-color; VERZE1
+                    background-color: white; //VERZE 2
                     @include row-center-center;
                     position: absolute;
                     top: -40px;
@@ -349,7 +353,8 @@ p {
 
                     .iconCircle_ikonka {
                         font-size: 2 * $f-m;
-                        color: $base2-color;
+                        // color: $base2-color; VERZE 1
+                        color: $contrast-color; //VERZE2
                     }
                 }
 
@@ -362,7 +367,8 @@ p {
                     font-size: $f-s;
                     margin: $s-s 0 $s-xxs 0;
                     letter-spacing: 1.2px;
-                    color: white;
+                    // color: white; VERZE1 
+                    color: $font-color; //VERZE2
                 }
 
                 .line {
@@ -386,7 +392,8 @@ p {
 
                     span {
                         font-weight: 400;
-                        color: white;
+                        // color: white; VERZE1 
+                        color: $font-color; //VERZE2
                     }
                 }
 
@@ -401,7 +408,8 @@ p {
     
                         span {
                             font-weight: 600;
-                            color: white;
+                            // color: white; VERZE1 
+                            color: $font-color; //VERZE2
                         }
                     }
                 }
@@ -410,6 +418,13 @@ p {
                     text-decoration: none;
                     font-size: $f-s;
                     margin: $s-s 0 0 0;
+                    // color: white; VERZE1 
+                    color: $font-color; //VERZE2
+
+                    &:hover { //VERZE2
+                        background-color: $contrast-color;
+                        color: white;
+                    }
                 }
 
                 &:nth-child(1),
