@@ -71,6 +71,7 @@ p span {
   height: auto;
   padding: 1rem 2rem;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #e4decf;
@@ -366,6 +367,11 @@ p span {
 .home .sluzby .sluzbyCards .karticka ul li span {
   font-weight: 600;
   color: white;
+}
+.home .sluzby .sluzbyCards .karticka .button {
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin: 3rem 0 0 0;
 }
 .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
   margin-right: 6rem;

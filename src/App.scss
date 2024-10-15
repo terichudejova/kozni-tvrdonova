@@ -60,6 +60,7 @@ p {
     height: auto;
     padding: $s-xxs $s-xs;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 
     &:hover {
         background-color: $base2-color;
@@ -402,6 +403,12 @@ p {
                             color: white;
                         }
                     }
+                }
+
+                .button {
+                    text-decoration: none;
+                    font-size: $f-s;
+                    margin: $s-s 0 0 0;
                 }
 
                 &:nth-child(1),

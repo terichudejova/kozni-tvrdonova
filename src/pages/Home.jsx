@@ -64,6 +64,7 @@ export default function Home() {
                         <h4>Prevence-vyšetření kožních znamének dermatoskopem</h4>
                         {/* <div className="line line2"></div> */}
                         <p>Klientům pojišťoven 111, 211, 201, 205 bude <span>poplatek 500Kč</span>, který uhradí v ordinaci, vrácen po předložení žádosti o příspěvek a dokladu o zaplacení z fondu prevence ZP. Klienti <span>pojišťovny 207</span> mají vyšetření <span>bez poplatku</span>.</p>
+                        <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
                     </div>
                     <div className="estetika karticka">
                         <div className="iconCircle">
@@ -72,6 +73,7 @@ export default function Home() {
                         <h3>Estetická dermatologie</h3>
                         <div className="line"></div>
                         <p>Jedná se o nadstandardní zákroky, které nejsou hrazené zdravotními pojišťovnami a klient si je hradí sám. Nabízíme například korekci vrásek botulickým toxinem, chemický peeling, zvětšení rtů, nastřelování náušnic a další.</p>
+                        <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
                     </div>
                 </div>
             </div>
