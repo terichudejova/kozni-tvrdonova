@@ -424,7 +424,6 @@ p span {
 .home .tym .container .medailonky .medailonek .imgCase {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
-  border: 3px solid #effdec;
   position: absolute;
   top: calc(50% - 150px);
   left: -60px;
