@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import HealingIcon from '@mui/icons-material/Healing';
+// import Carousel from '../Carousel';
 
 const scrollToSection = () => {
     const element = document.getElementById('sluzbyPage');
@@ -106,7 +107,9 @@ export default function Home() {
                 </div>
 
                 {/* galerie */}
-                
+                <div className="carouselBox">
+                    {/* <div className="carouselGallery"><Carousel /></div> */}
+                </div>
             </div>
 
         </div>

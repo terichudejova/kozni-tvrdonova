@@ -118,7 +118,7 @@ p span {
   cursor: pointer;
 }
 .navbarBox .nav-links .right .navLink:hover {
-  background-color: rgba(228, 222, 207, 0.4980392157);
+  background-color: rgba(118, 111, 99, 0.6117647059);
   border-radius: 3px;
 }
 .navbarBox .nav-links .right .navLink.active {
@@ -145,10 +145,10 @@ p span {
 }
 .navbarBox.scrolled .nav-links .right .navLink.active {
   color: #e4decf;
-  background-color: #867654;
+  background-color: #817969;
 }
 .navbarBox.scrolled .nav-links .right .navLink:hover {
-  background-color: rgba(138, 109, 51, 0.4470588235);
+  background-color: rgba(132, 116, 87, 0.6117647059);
 }
 .navbarBox .hamburger {
   display: none;
@@ -300,7 +300,7 @@ p span {
   height: auto;
   min-width: 350px;
   max-width: 500px;
-  background-color: #867654;
+  background-color: #817969;
   color: #e4decf;
   padding: 3rem;
   padding-top: 7rem;
@@ -316,7 +316,7 @@ p span {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-color: #867654;
+  background-color: #817969;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -441,4 +441,18 @@ p span {
   border-radius: 10px;
   margin-top: 0.5rem;
   margin-bottom: 3rem;
+}
+.home .tym .carouselBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.home .tym .carouselBox .carouselGallery {
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}
+.home .tym .carouselBox .carouselGallery img {
+  max-width: 90%; /* Obrázek nebude nikdy větší než 90% šířky okna */
+  max-height: 90%; /* Obrázek nebude nikdy větší než 90% výšky okna */
 }/*# sourceMappingURL=App.css.map */
