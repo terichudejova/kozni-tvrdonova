@@ -4,6 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useState, useEffect, useRef } from 'react'
+import ScrollToTop from './ScrollToTop';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    toTop();
   };
 
   //Zavření hamburger menu při kliknutí na obrazovku
@@ -52,8 +54,16 @@ function App() {
         };
       }, []);
 
+  function toTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <div className='outerBox'>
+          <ScrollToTop/>
           <nav className={`navbarBox ${isOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
             <div className="hamburger" onClick={toggleMenu}>
               <span className="bar"></span>
@@ -62,7 +72,7 @@ function App() {
             </div>
             <div ref={navRef} className={`nav-links ${isOpen ? 'show' : ''}`}>
               <div className="left">
-                <a><img id="logo" src="images/logo_noBG.png"/></a>
+                <NavLink to="/kozni-tvrdonova/" end onClick={toTop}><img id="logo" src={`${isScrolled ? "images/logo_noBG.png" : "images/logo_light_noBG.png"}`}/></NavLink>
               </div>
               <div className="right">
                 <NavLink to="/kozni-tvrdonova/" end className={`navLink ${isScrolled ? "scrolled" : ""}`} onClick={toggleMenu}>Domů</NavLink>
