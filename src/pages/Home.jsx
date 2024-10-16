@@ -10,7 +10,6 @@ import Gallery from '../Gallery';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import FooterSection from '../FooterSection';
 
 
 
@@ -196,8 +195,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-            <FooterSection />
 
         </div>
     )

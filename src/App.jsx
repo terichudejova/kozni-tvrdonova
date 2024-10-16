@@ -3,6 +3,7 @@ import './App.css'
 import { NavLink, Outlet } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import FooterSection from "./FooterSection"
 
 
 
@@ -85,6 +86,7 @@ function App() {
             </div>
           </nav>
         <Outlet/>
+        <FooterSection />
     </div>
   )
 }

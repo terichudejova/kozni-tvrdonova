@@ -804,3 +804,120 @@ b {
     letter-spacing: 1px !important;
   }
   
+
+
+//SEKCE SLUŽBY A CENÍK
+.servicesPrices {
+
+    .landingPage {
+        background-image: url("/images/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+
+        .container {
+
+            .boxes {
+                margin-top: 2 * $s-xxxl;
+                color: $font-color;
+                max-height: 60%;
+                max-width: 60%;
+
+                .dermaBox, .estetikaBox {
+                    background-color: $base2-color;
+                    border-radius: 3px;
+                    margin-bottom: $s-s;
+                    box-shadow: $main-shadow;
+                    padding: $s-xs;
+                    
+                    h5 {
+                        font-size: $f-l;
+                    }
+
+                    .line {
+                        background-color: $font-color;
+                        height: 2px;
+                        width: 20%;
+                        border-radius: 10px;
+                        margin-top: $s-xxs;
+                        margin-bottom: $s-xs;
+                    }
+
+                    p {
+                        font-size: $f-s;
+                    }
+
+                    .button {
+                        background-color: #c1b6a0;
+                        margin-top: $s-xxs;
+                        font-size: $f-s;
+                        color: $font-color;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $contrast-color;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //dermatologické služby
+    .dermatologickeSluzby {
+        width: 100%;
+        background-color: $base2-color;
+        padding-top: $s-xxxl;
+        padding-bottom: 2 * $s-l;
+        
+        .container {
+
+            h2 {
+                font-size: 2 * $f-l;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                margin-bottom: $s-m;
+            }
+        }
+    }
+
+    //estetické služby
+    .estetickeSluzby {
+        width: 100%;
+        background-color: $base1-color;
+        padding-top: $s-xxxl;
+        padding-bottom: 2 * $s-l;
+        
+        .container {
+            
+            h2 {
+                font-size: 2 * $f-l;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                margin-bottom: $s-m;
+            }
+        }
+    }
+
+    //estetické služby
+    .cenik {
+        width: 100%;
+        background-color: $base2-color;
+        padding-top: $s-xxxl;
+        padding-bottom: 2 * $s-l;
+        
+        .container {
+            
+            h2 {
+                font-size: 2 * $f-l;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                margin-bottom: $s-m;
+            }
+        }
+    }
+}
