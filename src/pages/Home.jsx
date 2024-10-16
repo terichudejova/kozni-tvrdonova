@@ -46,6 +46,10 @@ export default function Home() {
             <div className="sluzby" id='sluzbyPage'>
                 <div className="container">
                     <h2>Naše služby</h2>
+                    <div class="alert alert-dismissible">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" style={{fontSize: "15px"}}></button>
+                        <p><strong>Upozornění!</strong> Omlouváme se, momentálně z kapacitních důvodů <span>nepřijímáme</span> do péče hrazené z prostředků <span>veřejného zdravotního pojištění nové pacienty</span>. Toto opatření se <span>netýká placených zákroků</span> v rámci korektivní a estetické dermatologie.</p>
+                    </div>
                     <p>Jsme <span>soukromá dermatologická ordinace</span> zaměřená na&nbsp;diagnostiku a&nbsp;léčbu kožních chorob. Běžná lékařská péče je hrazená ze&nbsp;<span>všeobecného zdravotního pojištění</span>. Nadstandardní zákroky, většinou z&nbsp;oboru estetické dermatologie, jsou na&nbsp;přímou platbu. Naší snahou je poskytnout vám jak léčbu vaší nemocné kůže a&nbsp;péči o&nbsp;ni, tak i&nbsp;rady a zákroky, jak si ji můžete uchovat <span>zdravou a&nbsp;krásnou</span>.</p>
                     <p>Vaše <span>neomluvená absence bude zpoplatněna</span>. Omluvit se můžete prostřednictvím telefonu, nebo e-mailu.</p>
                     <ul>

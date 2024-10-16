@@ -42,14 +42,14 @@ h2 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 0.8px;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
 }
 p span {
   font-weight: 500;
 }
 
-b {
+b, strong {
   font-weight: 600 !important;
 }
 
@@ -80,6 +80,20 @@ b {
 .button:hover {
   background-color: #e4decf;
   color: #4d4639;
+}
+
+.container .alert {
+  background-color: #817969;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+}
+.container .alert p {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
 /* NAVBAR */
@@ -279,7 +293,7 @@ b {
 }
 @media only screen and (max-width: 1000px) {
   .home .landingPage {
-    height: 400px;
+    height: auto;
   }
 }
 .home .landingPage .headingBox {
@@ -305,6 +319,7 @@ b {
   justify-content: space-between;
   align-items: center;
   margin-top: 9rem;
+  margin-bottom: 3rem;
 }
 .home .landingPage .headingBox .buttons .button {
   text-decoration: none;
@@ -316,10 +331,11 @@ b {
 }
 .home .landingPage #phoneNumber {
   position: absolute;
-  bottom: 30px;
+  bottom: 3rem;
   right: 40px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  margin-bottom: 0;
 }
 .home .landingPage #phoneNumber a {
   color: white;
@@ -341,10 +357,6 @@ b {
   letter-spacing: 2.2px;
   text-transform: uppercase;
   margin-bottom: 4rem;
-}
-.home .sluzby .container p {
-  font-size: 2rem;
-  letter-spacing: 1.2px;
 }
 .home .sluzby .container p:nth-of-type(2) {
   margin-top: 2rem;
@@ -418,9 +430,6 @@ b {
   margin-bottom: 3rem;
   margin-top: 1rem;
 }
-.home .sluzby .sluzbyCards .karticka p {
-  font-size: 1.8rem;
-}
 .home .sluzby .sluzbyCards .karticka p span {
   font-weight: 400;
   color: #4d4639;
@@ -462,9 +471,6 @@ b {
   letter-spacing: 2.2px;
   text-transform: uppercase;
   margin-bottom: 4rem;
-}
-.home .tym .container p {
-  font-size: 1.8rem;
 }
 .home .tym .container p span {
   font-weight: 600;
@@ -576,9 +582,6 @@ b {
   font-size: 3rem;
   margin-right: 2rem;
 }
-.home .oteviracka .container .mistoCas .misto .info a p {
-  font-size: 1.8rem;
-}
 .home .oteviracka .container .mistoCas .misto .info a:hover {
   color: #996f31;
 }
@@ -605,9 +608,6 @@ b {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   align-self: center;
-}
-.home .oteviracka .container .mistoCas .cas p {
-  font-size: 1.8rem;
 }
 .home .oteviracka .container .mistoCas .cas .casDny {
   margin-top: 3rem;
@@ -700,6 +700,14 @@ b {
   width: 100%;
   position: relative;
 }
+@media only screen and (max-width: 1000px) {
+  .servicesPrices .landingPage {
+    height: auto;
+  }
+}
+.servicesPrices .landingPage .container {
+  margin-bottom: 3rem;
+}
 .servicesPrices .landingPage .container .boxes {
   margin-top: 18rem;
   color: #4d4639;
@@ -724,9 +732,6 @@ b {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.servicesPrices .landingPage .container .boxes .dermaBox p, .servicesPrices .landingPage .container .boxes .estetikaBox p {
-  font-size: 1.8rem;
-}
 .servicesPrices .landingPage .container .boxes .dermaBox .button, .servicesPrices .landingPage .container .boxes .estetikaBox .button {
   background-color: #c1b6a0;
   margin-top: 1rem;
@@ -749,6 +754,19 @@ b {
   letter-spacing: 2.2px;
   text-transform: uppercase;
   margin-bottom: 4rem;
+}
+.servicesPrices .dermatologickeSluzby .container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.servicesPrices .dermatologickeSluzby .container ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2px;
+}
+.servicesPrices .dermatologickeSluzby .container ul li span {
+  font-weight: 600;
+  color: #4d4639;
 }
 .servicesPrices .estetickeSluzby {
   width: 100%;

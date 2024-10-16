@@ -30,15 +30,15 @@ h2 {
 
 p {
     font-family: $main-font;
-    font-size: $f-l;
-    letter-spacing: 0.8px;
+    font-size: $f-s;
+    letter-spacing: 1.2px;
 
     span {
         font-weight: 500;
     }
 }
 
-b {
+b, strong {
     font-weight: 600 !important;
 }
 
@@ -73,6 +73,24 @@ b {
     &:hover {
         background-color: $base2-color;
         color: $font-color;
+    }
+}
+
+.container {
+
+    .alert {
+        background-color: $contrast-color;
+        width: 100%;
+        box-shadow: $main-shadow;
+        padding: $s-xs $s-s;
+        margin-bottom: $s-s;
+
+        p {
+            color: white;
+            font-size: $f-s;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
     }
 }
 
@@ -306,7 +324,7 @@ b {
         position: relative;
 
         @include w-1000 {
-            height: 400px; //opravit pak podle obsahu na auto
+            height: auto;
         }
 
         .headingBox {
@@ -328,6 +346,7 @@ b {
             .buttons {
                 @include row-between-center;
                 margin-top: $s-xxxl;
+                margin-bottom: $s-s;
 
                 .button {
                     text-decoration: none;
@@ -343,10 +362,11 @@ b {
 
         #phoneNumber {
             position: absolute;
-            bottom: 30px;
+            bottom: $s-s;
             right: 40px;
             transition: all 0.2s ease-in-out;
             cursor: pointer;
+            margin-bottom: 0;
 
             a {
                 color: white;
@@ -378,8 +398,6 @@ b {
             }
     
             p {
-                font-size: $f-m;
-                letter-spacing: 1.2px;
 
                 &:nth-of-type(2) {
                     margin-top: $s-xs;
@@ -470,7 +488,6 @@ b {
                 // }
 
                 p {
-                    font-size: $f-s;
 
                     span {
                         font-weight: 400;
@@ -534,7 +551,6 @@ b {
             }
 
             p {
-                font-size: $f-s;
 
                     span {
                         font-weight: 600;
@@ -652,10 +668,6 @@ b {
                                 font-size: $f-xl;
                                 margin-right: $s-xs;
                             }
-    
-                            p {
-                                font-size: $f-s;
-                            }
 
                             &:hover {
                                 color: $link-color;
@@ -693,10 +705,6 @@ b {
                         font-size: $f-l;
                         margin-bottom: $s-s;
                         align-self: center;
-                    }
-
-                    p {
-                        font-size: $f-s;
                     }
 
                     .casDny {
@@ -818,7 +826,12 @@ b {
         width: 100%;
         position: relative;
 
+        @include w-1000 {
+            height: auto;
+        }
+
         .container {
+            margin-bottom: $s-s;
 
             .boxes {
                 margin-top: 2 * $s-xxxl;
@@ -844,10 +857,6 @@ b {
                         border-radius: 10px;
                         margin-top: $s-xxs;
                         margin-bottom: $s-xs;
-                    }
-
-                    p {
-                        font-size: $f-s;
                     }
 
                     .button {
@@ -882,6 +891,23 @@ b {
                 text-transform: uppercase;
                 margin-bottom: $s-m;
             }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    font-size: $f-s;
+                    margin-bottom: $s-xxs;
+                    letter-spacing: 1.2px;
+
+                    span {
+                        font-weight: 600;
+                        // color: white; VERZE1 
+                        color: $font-color; //VERZE2
+                    }
+                }
+            }
         }
     }
 
@@ -900,10 +926,11 @@ b {
                 text-transform: uppercase;
                 margin-bottom: $s-m;
             }
+
         }
     }
 
-    //estetické služby
+    //ceník
     .cenik {
         width: 100%;
         background-color: $base2-color;
