@@ -215,6 +215,59 @@ b {
   }
 }
 
+.footerSection {
+  background-color: #817969;
+  color: white;
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footerSection .footerInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.footerSection .footerInfo .footerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.footerSection .footerInfo .footerColumn h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.footerSection .footerInfo .footerColumn p {
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
+}
+.footerSection .footerInfo .footerColumn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.footerSection .footerInfo .footerColumn a:hover {
+  color: #e4decf;
+}
+.footerSection .footerInfo .footerColumn .footerLink {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+.footerSection .footerInfo .footerColumn .footerLink:hover {
+  color: #e4decf;
+}
+
 .home .landingPage {
   background-image: url("/images/background.jpg");
   background-size: cover;
@@ -481,6 +534,7 @@ b {
   background-color: #e4decf;
   color: #4d4639;
   padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 .home .oteviracka .container h2 {
   font-size: 5rem;

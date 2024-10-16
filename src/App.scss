@@ -1,6 +1,6 @@
 @import "index";
 
-//OBECNÁ NASTAVENÍ
+//OBECNÁ NASTAVENÍ BOXŮ
 .container-fluid {
     padding: 0 !important;
 }
@@ -17,6 +17,8 @@
         }
     }
 }
+
+//TYPOGRAFIE
 
 h1 {
     font-family: $header-font;
@@ -39,6 +41,8 @@ p {
 b {
     font-weight: 600 !important;
 }
+
+//LOGA, BUTTONY
 
 #logo {
     border-radius: 3px;
@@ -228,6 +232,63 @@ b {
             }
         }
     }
+}
+
+//FOOTER
+.footerSection {
+    background-color: $contrast-color;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding-top: $s-m;
+    padding-bottom: $s-m;
+
+    .footerInfo {
+        @include row-between-start;
+
+        .footerColumn {
+            @include column-start-start;
+
+            h5 {
+                font-size: $f-xs;
+                margin-bottom: $s-xxs;
+                letter-spacing: 2px;
+            }
+
+            p {
+                font-size: $f-xxs;
+                letter-spacing: 1.2px;
+                margin-bottom: $s-xxs;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: $f-xxs;
+                letter-spacing: 1.2px;
+                margin-bottom: $s-xxs;
+                cursor: pointer;
+
+                &:hover {
+                    color: $base2-color;
+                }
+            }
+
+            .footerLink {
+                text-decoration: none;
+                color: white;
+                font-size: $f-xxs;
+                margin-bottom: $s-xxs;
+                letter-spacing: 1.2px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $base2-color;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -554,6 +615,7 @@ b {
         background-color: $base2-color;
         color: $font-color;
         padding-top: $s-xxxl;
+        padding-bottom: $s-xxxl;
 
         .container {
 
