@@ -14,6 +14,7 @@ $base2-color: #e4decf;
 $hover-color: #586b5c;
 $contrast-color: #817969;
 $font-color: #4d4639;
+$link-color: #996f31;
 
 //shadows
 $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
@@ -111,6 +112,20 @@ $s-xxxl: 9rem;
     flex-direction: row;
     justify-content: start;
     align-items: start;
+}
+
+@mixin row-center-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+@mixin row-end-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
 }
 
 

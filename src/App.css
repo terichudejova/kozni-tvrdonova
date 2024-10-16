@@ -49,6 +49,10 @@ p span {
   font-weight: 500;
 }
 
+b {
+  font-weight: 600 !important;
+}
+
 #logo {
   border-radius: 3px;
   width: 70px;
@@ -289,6 +293,17 @@ p span {
   font-size: 2rem;
   letter-spacing: 1.2px;
 }
+.home .sluzby .container p:nth-of-type(2) {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.home .sluzby .container ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.home .sluzby .container ul li span {
+  font-weight: 600;
+}
 .home .sluzby .sluzbyCards {
   display: flex;
   flex-direction: row;
@@ -338,7 +353,7 @@ p span {
 }
 .home .sluzby .sluzbyCards .karticka h4 {
   font-size: 1.8rem;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 0.5rem 0;
   letter-spacing: 1.2px;
   color: #4d4639;
 }
@@ -460,4 +475,164 @@ p span {
 .home .tym .carouselBox .carouselGallery img {
   max-width: 90%; /* Obrázek nebude nikdy větší než 90% šířky okna */
   max-height: 90%; /* Obrázek nebude nikdy větší než 90% výšky okna */
+}
+.home .oteviracka {
+  width: 100%;
+  background-color: #e4decf;
+  color: #4d4639;
+  padding-top: 9rem;
+}
+.home .oteviracka .container h2 {
+  font-size: 5rem;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+.home .oteviracka .container .mistoCas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.home .oteviracka .container .mistoCas .misto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-right: 4rem;
+  text-align: left;
+}
+.home .oteviracka .container .mistoCas .misto h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.home .oteviracka .container .mistoCas .misto .info {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.home .oteviracka .container .mistoCas .misto .info a {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  text-decoration: none;
+  color: #4d4639;
+}
+.home .oteviracka .container .mistoCas .misto .info a .mistoIkonka {
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+.home .oteviracka .container .mistoCas .misto .info a p {
+  font-size: 1.8rem;
+}
+.home .oteviracka .container .mistoCas .misto .info a:hover {
+  color: #996f31;
+}
+.home .oteviracka .container .mistoCas .misto span {
+  font-size: 1.8rem;
+}
+.home .oteviracka .container .mistoCas .misto .mistoAdresa {
+  margin-bottom: 3rem;
+}
+.home .oteviracka .container .mistoCas .misto .mistoKontakt .info:nth-of-type(1) {
+  margin-bottom: 2rem;
+}
+.home .oteviracka .container .mistoCas .cas {
+  background-color: white;
+  padding: 4rem 5rem;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  max-width: 60%;
+}
+.home .oteviracka .container .mistoCas .cas h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  align-self: center;
+}
+.home .oteviracka .container .mistoCas .cas p {
+  font-size: 1.8rem;
+}
+.home .oteviracka .container .mistoCas .cas .casDny {
+  margin-top: 3rem;
+  width: 100%;
+  font-size: 1.8rem;
+}
+.home .oteviracka .container .mistoCas .cas .casDny .row {
+  margin-bottom: 2rem;
+}
+.home .oteviracka .container .mistoCas .cas .casDny .row .col-6 span {
+  font-weight: 500;
+  margin: 0 1rem;
+}
+.home .oteviracka .container .mistoCas .cas .casDny .row:last-of-type {
+  margin-bottom: 0;
+}
+.home .bordercontainer .experiment .content {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-height: 350px;
+  overflow: auto;
+  border-radius: 3px;
+  margin: 6rem 0 12rem 0;
+}
+.home .bordercontainer .experiment .content .img-box {
+  min-width: 134px;
+  max-height: 300px;
+  width: calc(25% - 16px);
+  flex-grow: 1;
+  margin: 0.5rem;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.home .bordercontainer .experiment .content .img-box img {
+  max-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+.home .bordercontainer .experiment .content .img-box::after {
+  content: "zobrazit";
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0; /* Skrytí před hoverem */
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  letter-spacing: 1.2px;
+}
+.home .bordercontainer .experiment .content .img-box:hover::after {
+  opacity: 1; /* Zobrazení při hoveru */
+}
+
+.modal-body img {
+  max-width: 100%;
+}
+
+.galleryButton {
+  font-size: 1.8rem !important;
+  background-color: #586b5c !important;
+  color: white !important;
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 1px !important;
 }/*# sourceMappingURL=App.css.map */

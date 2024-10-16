@@ -3,7 +3,15 @@ import { NavLink } from 'react-router-dom';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import HealingIcon from '@mui/icons-material/Healing';
-// import Carousel from '../Carousel';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import images from "../data/gallery";
+import Gallery from '../Gallery';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+
 
 const scrollToSection = () => {
     const element = document.getElementById('sluzbyPage');
@@ -15,6 +23,7 @@ const scrollToSection = () => {
       behavior: 'smooth'
     });
   };
+
 
 export default function Home() {
     return (
@@ -38,6 +47,12 @@ export default function Home() {
                 <div className="container">
                     <h2>Naše služby</h2>
                     <p>Jsme <span>soukromá dermatologická ordinace</span> zaměřená na&nbsp;diagnostiku a&nbsp;léčbu kožních chorob. Běžná lékařská péče je hrazená ze&nbsp;<span>všeobecného zdravotního pojištění</span>. Nadstandardní zákroky, většinou z&nbsp;oboru estetické dermatologie, jsou na&nbsp;přímou platbu. Naší snahou je poskytnout vám jak léčbu vaší nemocné kůže a&nbsp;péči o&nbsp;ni, tak i&nbsp;rady a zákroky, jak si ji můžete uchovat <span>zdravou a&nbsp;krásnou</span>.</p>
+                    <p>Vaše <span>neomluvená absence bude zpoplatněna</span>. Omluvit se můžete prostřednictvím telefonu, nebo e-mailu.</p>
+                    <ul>
+                        <li>Poplatek za neomluvenou kontrolu: <span>200 Kč</span></li>
+                        <li>Poplatek za neomluvený zákrok: <span>500 Kč</span></li>
+                        <li>Poplatek za neomluvené vstupní vyšetření: <span>500 Kč</span></li>
+                    </ul>
                 </div>
                 <div className="sluzbyCards container">
                     <div className="pojistovny karticka">
@@ -73,7 +88,7 @@ export default function Home() {
                         </div>
                         <h3>Estetická dermatologie</h3>
                         <div className="line"></div>
-                        <p>Jedná se o&nbsp;nadstandardní zákroky, které nejsou hrazené zdravotními pojišťovnami a&nbsp;klient si je hradí sám. Nabízíme například korekci vrásek botulickým toxinem, chemický peeling, zvětšení rtů, nastřelování náušnic a&nbsp;další.</p>
+                        <p>Jedná se o&nbsp;nadstandardní zákroky, které nejsou hrazené zdravotními pojišťovnami a&nbsp;klient si je hradí sám. Nabízíme například <span>korekci vrásek</span> botulickým toxinem, chemický peeling, <span>zvětšení rtů</span>, <span>nastřelování náušnic</span> a&nbsp;další.</p>
                         <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
                     </div>
                 </div>
@@ -107,8 +122,76 @@ export default function Home() {
                 </div>
 
                 {/* galerie */}
-                <div className="carouselBox">
-                    {/* <div className="carouselGallery"><Carousel /></div> */}
+                <Container className="bordercontainer">
+                    <Row className="experiment">
+                        <Col xs={12} lg={12}>
+                            <Gallery images={images} />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="oteviracka">
+                <div className="container">
+                    <h2>Navštivte nás</h2>
+                    <div className="mistoCas">
+                        <div className="misto">
+                            <div className="mistoAdresa">
+                                <h3>Adresa:</h3>
+                                <div className="info">
+                                    <a target='_blank' href='https://www.google.cz/maps/dir//%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy/@50.0682106,14.3055251,596m/data=!3m1!1e3!4m18!1m8!3m7!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2s%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy!3b1!8m2!3d50.0682106!4d14.3081!16s%2Fg%2F11c2h56zs6!4m8!1m0!1m5!1m1!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2m2!1d14.3081!2d50.0682106!3e3?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D'>
+                                        <LocationOnIcon className='mistoIkonka'/>
+                                        <p>Poliklinika Žufanova 1114/1<br/>
+                                        Praha 6, Řepy 163 00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="mistoKontakt">
+                                <h3>Kontakt:</h3>
+                                <div className="info">
+                                    <a href="tel:+420235310315" target='_blank'>
+                                        <LocalPhoneIcon className='mistoIkonka'/>
+                                        <p>+420 235 310 315</p>
+                                    </a>
+                                </div>
+                                <div className="info">
+                                    <a href="mailto:kozni.tvrdonova@email.cz?subject=Dotaz&body=Dobrý%20den,%20mám%20dotaz..." target='_blank'>
+                                        <EmailIcon className='mistoIkonka'/>
+                                        <p>kozni.tvrdonova@email.cz</p>
+                                    </a>
+                                </div>
+                                <p><span>E-mail neslouží k objednávání pacientů.</span></p>
+                            </div>
+                        </div>
+                        <div className="cas">
+                            <h3>Ordinační hodiny</h3>
+                            <p>Na každou návštěvu ordinace je nutné se <span>předem objednat</span>.</p>
+                            <p>Poslední pacient bude ošetřen <span>30 minut před koncem</span> pracovní doby.</p>
+                            <p><span>Po - Čt</span> v době od <span>7:30 - 8:00</span> provádíme <span>pouze</span> převazy, odběry a vystavení zpráv.</p>
+                            <div className="casDny">
+                                <div className='row'>
+                                    <div className="col-6"><b>Pondělí</b></div>
+                                    <div className="col-6">7:30 - 12:00 <span>|</span> 13:00 - 15:00</div>
+                                </div>
+                                <div className='row'>
+                                    <div className="col-6"><b>Úterý</b></div>
+                                    <div className="col-6">7:30 - 12:00 <span>|</span> 13:00 - 15:00</div>
+                                </div>
+                                <div className='row'>
+                                    <div className="col-6"><b>Středa</b></div>
+                                    <div className="col-6">7:30 - 13:00</div>
+                                </div>
+                                <div className='row'>
+                                    <div className="col-6"><b>Čtvrtek</b></div>
+                                    <div className="col-6">7:30 - 12:00 <span>|</span> 13:00 - 17:00</div>
+                                </div>
+                                <div className='row'>
+                                    <div className="col-6"><b>Pátek</b></div>
+                                    <div className="col-6">8:00 - 11:00 <span>-</span> operační den</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

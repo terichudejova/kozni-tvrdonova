@@ -36,6 +36,10 @@ p {
     }
 }
 
+b {
+    font-weight: 600 !important;
+}
+
 #logo {
     border-radius: 3px;
     width: 70px;
@@ -315,6 +319,23 @@ p {
             p {
                 font-size: $f-m;
                 letter-spacing: 1.2px;
+
+                &:nth-of-type(2) {
+                    margin-top: $s-xs;
+                    margin-bottom: $s-xxs;
+                }
+            }
+
+            ul {
+
+                li {
+                    font-size: $f-s;
+                    margin-bottom: $s-xxs;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
             }
         }
 
@@ -365,7 +386,7 @@ p {
 
                 h4 {
                     font-size: $f-s;
-                    margin: $s-s 0 $s-xxs 0;
+                    margin: $s-s 0 $s-xxxs 0;
                     letter-spacing: 1.2px;
                     // color: white; VERZE1 
                     color: $font-color; //VERZE2
@@ -526,4 +547,198 @@ p {
             }
         }
     }
+
+    //SEKCE OTEVÍRACÍ DOBA
+    .oteviracka {
+        width: 100%;
+        background-color: $base2-color;
+        color: $font-color;
+        padding-top: $s-xxxl;
+
+        .container {
+
+            h2 {
+                font-size: 2 * $f-l;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                margin-bottom: $s-xl;
+            }
+
+            .mistoCas {
+                @include row-between-start;
+
+                .misto {
+                    @include column-start-start;
+                    margin-right: $s-m;
+                    text-align: left;
+
+                    h3 {
+                        font-size: $f-l;
+                        margin-bottom: $s-xs;
+                    }
+
+                    .info {
+                        cursor: pointer;
+                        margin-bottom: $s-xxs;
+
+                        a {
+                            @include row-start-start;
+                            text-decoration: none;
+                            color: $font-color;
+
+                            .mistoIkonka {
+                                font-size: $f-xl;
+                                margin-right: $s-xs;
+                            }
+    
+                            p {
+                                font-size: $f-s;
+                            }
+
+                            &:hover {
+                                color: $link-color;
+                            }
+                        }
+                    }
+
+                    span {
+                        font-size: $f-s;
+                    }
+
+                    .mistoAdresa {
+                        margin-bottom: $s-s;
+                    }
+
+                    .mistoKontakt {
+                        
+                        .info {
+
+                            &:nth-of-type(1) {
+                                margin-bottom: $s-xs;
+                            }
+                        }
+                    }
+                }
+
+                .cas {
+                    background-color: white;
+                    padding: $s-m $s-l;
+                    border-radius: 3px;
+                    @include column-start-start;
+                    max-width: 60%;
+
+                    h3 {
+                        font-size: $f-l;
+                        margin-bottom: $s-s;
+                        align-self: center;
+                    }
+
+                    p {
+                        font-size: $f-s;
+                    }
+
+                    .casDny {
+                        margin-top: $s-s;
+                        width: 100%;
+                        font-size: $f-s;
+                        
+                        .row {
+                            margin-bottom: $s-xs;
+
+                            .col-6 {
+
+                                span {
+                                    font-weight: 500;
+                                    margin: 0 $s-xxs;
+                                }
+                            }
+
+                            &:last-of-type {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    //SEKCE GALLERY
+    .bordercontainer {
+
+        .experiment {
+
+            .content {
+                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                max-height: 350px;
+                overflow: auto;
+                border-radius: 3px;
+                margin: $s-xl 0 (2 * $s-xl) 0;
+
+                .img-box {
+                    min-width: 134px;
+                    max-height: 300px;
+                    width: calc(25% - 16px);
+                    flex-grow: 1;
+                    margin: $s-xxxs;
+                    overflow: hidden;
+                    border-radius: 3px;
+                    position: relative;
+                    cursor: pointer;
+                    display: inline-block;
+
+                    img {
+                        max-width: 100%;
+                        min-height: 100%;
+                        object-fit: cover;
+                        border-radius: 3px;
+                    }
+
+                    &::after {
+                        content: "zobrazit";
+                        font-size: $f-s;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        border-radius: 3px;
+                        white-space: nowrap;
+                        opacity: 0; /* Skrytí před hoverem */
+                        transition: opacity 0.3s ease;
+                        width: 100%;
+                        height: 100%;
+                        @include row-center-center;
+                        pointer-events: none;
+                        letter-spacing: 1.2px;
+                    }
+
+                    &:hover {
+                        
+                        &::after {
+                            opacity: 1; /* Zobrazení při hoveru */
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+  .modal-body img {
+    max-width: 100%;
+  }
+
+  .galleryButton {
+    font-size: $f-s !important;
+    background-color: $hover-color !important;
+    color: white !important;
+    font-family: $main-font !important;
+    letter-spacing: 1px !important;
+  }
+  
