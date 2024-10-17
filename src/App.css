@@ -809,6 +809,7 @@ b, strong {
   text-transform: uppercase;
 }
 .servicesPrices .dermatologickeSluzby .container .konkretniSluzby {
+  margin-bottom: 4rem;
   display: grid;
   grid-template-areas: "prvni prvni druha druha treti treti" "ctvrta ctvrta ctvrta pata pata pata";
   gap: 2rem;
@@ -850,6 +851,18 @@ b, strong {
 .servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.pata {
   grid-area: pata;
 }
+.servicesPrices .dermatologickeSluzby .container .button {
+  text-decoration: none;
+  background-color: #c1b6a0;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #4d4639;
+  cursor: pointer;
+}
+.servicesPrices .dermatologickeSluzby .container .button:hover {
+  background-color: #817969;
+  color: white;
+}
 .servicesPrices .estetickeSluzby {
   width: 100%;
   background-color: #effdec;
@@ -872,6 +885,7 @@ b, strong {
   text-transform: uppercase;
 }
 .servicesPrices .estetickeSluzby .container .konkretniSluzby {
+  margin-bottom: 4rem;
   display: grid;
   grid-template-areas: "prvni prvni prvni prvni prvni" "druha treti ctvrta pata sesta" "sedma osma devata desata jedenacta";
   gap: 2rem;
@@ -931,6 +945,18 @@ b, strong {
 .servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.jedenacta {
   grid-area: jedenacta;
 }
+.servicesPrices .estetickeSluzby .container .button {
+  text-decoration: none;
+  background-color: #8f9a92;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+.servicesPrices .estetickeSluzby .container .button:hover {
+  background-color: #586b5c;
+  color: white;
+}
 .servicesPrices .cenik {
   width: 100%;
   background-color: #e4decf;
@@ -952,6 +978,7 @@ b, strong {
 }
 .servicesPrices .cenik .container #accordion {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .servicesPrices .cenik .container #accordion .card {
   margin-bottom: 0.5rem;
@@ -976,4 +1003,15 @@ b, strong {
 }
 .servicesPrices .cenik .container #accordion .card .card-body p.cena {
   font-weight: 500;
+}
+.servicesPrices .cenik .container .button {
+  background-color: #c1b6a0;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #4d4639;
+  cursor: pointer;
+}
+.servicesPrices .cenik .container .button:hover {
+  background-color: #817969;
+  color: white;
 }/*# sourceMappingURL=App.css.map */

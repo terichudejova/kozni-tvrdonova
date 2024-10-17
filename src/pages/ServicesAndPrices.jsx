@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+
+
 export default function ServicesAndPrices() {
 
     const scrollToDerma = () => {
@@ -93,6 +96,7 @@ export default function ServicesAndPrices() {
                             <p>HIV Test - jedná se o rychlý imunotest, sloužící k prokázání protilátek proti viru HIV (typ 1 i 2) jenž je původcem onemocnění AIDS - vzorek se získává stěrem ze sliznice dutiny ústní (nejedná se tedy o injekční odběr krve) a výsledek testu je znám po 20 minutách</p>
                         </div>
                     </div>
+                    <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se</NavLink>
                 </div>
             </div>
 
@@ -138,6 +142,7 @@ export default function ServicesAndPrices() {
                             <p>Poradna péče o pleť a kosmetologická poradna</p>
                         </div>
                     </div>
+                    <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se</NavLink>
                 </div>
             </div>
 
@@ -364,8 +369,8 @@ export default function ServicesAndPrices() {
                             </div>
                             </div>
                         </div>
-
                     </div>
+                    <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se</NavLink>
                 </div>
             </div>
 

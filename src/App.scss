@@ -953,6 +953,7 @@ b, strong {
             }
 
             .konkretniSluzby {
+                margin-bottom: $s-m;
                 display: grid;
                 grid-template-areas:
                 "prvni prvni druha druha treti treti"
@@ -1004,6 +1005,20 @@ b, strong {
                     }
                 }
             }
+
+            .button {
+                text-decoration: none;
+                background-color: #c1b6a0;
+                margin-top: $s-xxs;
+                font-size: $f-s;
+                color: $font-color;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $contrast-color;
+                    color: white;
+                }
+            }
         }
     }
 
@@ -1034,6 +1049,7 @@ b, strong {
             }
 
             .konkretniSluzby {
+                margin-bottom: $s-m;
                 display: grid;
                 grid-template-areas:
                 "prvni prvni prvni prvni prvni"
@@ -1117,6 +1133,20 @@ b, strong {
                 }
             }
 
+            .button {
+                text-decoration: none;
+                background-color: #8f9a92;
+                margin-top: $s-xxs;
+                font-size: $f-s;
+                color: white;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $hover-color;
+                    color: white;
+                }
+            }
+
         }
     }
 
@@ -1147,6 +1177,7 @@ b, strong {
 
             #accordion {
                 margin-top: $s-m;
+                margin-bottom: $s-m;
 
                 .card {
                     margin-bottom: $s-xxxs;
@@ -1178,6 +1209,19 @@ b, strong {
                         }
                         
                     }
+                }
+            }
+
+            .button {
+                background-color: #c1b6a0;
+                margin-top: $s-xxs;
+                font-size: $f-s;
+                color: $font-color;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $contrast-color;
+                    color: white;
                 }
             }
         }
