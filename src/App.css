@@ -293,7 +293,14 @@ b, strong {
 }
 @media only screen and (max-width: 1000px) {
   .home .landingPage {
+    min-height: 400px;
     height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .landingPage {
+    height: 100vh;
+    background-position: right;
   }
 }
 .home .landingPage .headingBox {
@@ -702,7 +709,14 @@ b, strong {
 }
 @media only screen and (max-width: 1000px) {
   .servicesPrices .landingPage {
+    min-height: 400px;
     height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .servicesPrices .landingPage {
+    height: 100vh;
+    background-position: right;
   }
 }
 .servicesPrices .landingPage .container {
@@ -711,7 +725,6 @@ b, strong {
 .servicesPrices .landingPage .container .boxes {
   margin-top: 18rem;
   color: #4d4639;
-  max-height: 60%;
   max-width: 60%;
 }
 .servicesPrices .landingPage .container .boxes .dermaBox, .servicesPrices .landingPage .container .boxes .estetikaBox {
@@ -720,6 +733,7 @@ b, strong {
   margin-bottom: 3rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
   padding: 2rem;
+  max-height: 20%;
 }
 .servicesPrices .landingPage .container .boxes .dermaBox h5, .servicesPrices .landingPage .container .boxes .estetikaBox h5 {
   font-size: 2.5rem;
@@ -768,17 +782,124 @@ b, strong {
   font-weight: 600;
   color: #4d4639;
 }
+.servicesPrices .dermatologickeSluzby .container h3 {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  letter-spacing: 2.2px;
+  font-family: "Baskervville", serif;
+  text-transform: uppercase;
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby {
+  display: grid;
+  grid-template-areas: "prvni prvni druha druha treti treti" "ctvrta ctvrta ctvrta pata pata pata";
+  gap: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .servicesPrices .dermatologickeSluzby .container .konkretniSluzby {
+    grid-template-areas: "prvni" "druha" "treti" "ctvrta" "pata";
+  }
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #4d4639;
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.prvni {
+  grid-area: prvni;
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.druha {
+  grid-area: druha;
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.treti {
+  grid-area: treti;
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.ctvrta {
+  grid-area: ctvrta;
+}
+.servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.pata {
+  grid-area: pata;
+}
 .servicesPrices .estetickeSluzby {
   width: 100%;
   background-color: #effdec;
   padding-top: 9rem;
   padding-bottom: 10rem;
+  color: #586b5c;
 }
 .servicesPrices .estetickeSluzby .container h2 {
   font-size: 5rem;
   letter-spacing: 2.2px;
   text-transform: uppercase;
   margin-bottom: 4rem;
+}
+.servicesPrices .estetickeSluzby .container h3 {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  letter-spacing: 2.2px;
+  font-family: "Baskervville", serif;
+  text-transform: uppercase;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby {
+  display: grid;
+  grid-template-areas: "prvni prvni prvni prvni prvni" "druha treti ctvrta pata sesta" "sedma osma devata desata jedenacta";
+  gap: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .servicesPrices .estetickeSluzby .container .konkretniSluzby {
+    grid-template-areas: "prvni" "druha" "treti" "ctvrta" "pata";
+  }
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #586b5c;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.prvni {
+  grid-area: prvni;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.druha {
+  grid-area: druha;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.treti {
+  grid-area: treti;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.ctvrta {
+  grid-area: ctvrta;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.pata {
+  grid-area: pata;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.sesta {
+  grid-area: sesta;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.sedma {
+  grid-area: sedma;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.osma {
+  grid-area: osma;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.devata {
+  grid-area: devata;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.desata {
+  grid-area: desata;
+}
+.servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.jedenacta {
+  grid-area: jedenacta;
 }
 .servicesPrices .cenik {
   width: 100%;

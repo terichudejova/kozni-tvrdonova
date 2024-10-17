@@ -79,6 +79,13 @@ $s-xxxl: 9rem;
     align-items: start;
 }
 
+@mixin column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin row-center-center {
     display: flex;
     flex-direction: row;

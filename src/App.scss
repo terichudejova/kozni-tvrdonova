@@ -324,8 +324,15 @@ b, strong {
         position: relative;
 
         @include w-1000 {
+            min-height: 400px;
             height: auto;
         }
+
+        @include w-600 {
+            height: 100vh;
+            background-position: right;
+        }
+        
 
         .headingBox {
             @include column-start-start;
@@ -827,7 +834,13 @@ b, strong {
         position: relative;
 
         @include w-1000 {
+            min-height: 400px;
             height: auto;
+        }
+
+        @include w-600 {
+            height: 100vh;
+            background-position: right;
         }
 
         .container {
@@ -836,7 +849,6 @@ b, strong {
             .boxes {
                 margin-top: 2 * $s-xxxl;
                 color: $font-color;
-                max-height: 60%;
                 max-width: 60%;
 
                 .dermaBox, .estetikaBox {
@@ -845,6 +857,7 @@ b, strong {
                     margin-bottom: $s-s;
                     box-shadow: $main-shadow;
                     padding: $s-xs;
+                    max-height: 20%;
                     
                     h5 {
                         font-size: $f-l;
@@ -908,6 +921,61 @@ b, strong {
                     }
                 }
             }
+
+            h3 {
+                margin-top: $s-xxl;
+                margin-bottom: $s-s;
+                font-size: $f-xl;
+                letter-spacing: 2.2px;
+                font-family: $header-font;
+                text-transform: uppercase;
+            }
+
+            .konkretniSluzby {
+                display: grid;
+                grid-template-areas:
+                "prvni prvni druha druha treti treti"
+                "ctvrta ctvrta ctvrta pata pata pata";
+                gap: $s-xs;
+
+                @include w-1000 {
+                    grid-template-areas:
+                    "prvni"
+                    "druha"
+                    "treti"
+                    "ctvrta"
+                    "pata";
+                }
+
+                .sluzba {
+                    padding: $s-xs;
+                    background-color: white;
+                    border-radius: 3px;
+                    @include column-center-center;
+                    text-align: center;
+                    color: $font-color;
+
+                    &.prvni {
+                        grid-area: prvni;
+                    }
+
+                    &.druha {
+                        grid-area: druha;
+                    }
+
+                    &.treti {
+                        grid-area: treti;
+                    }
+
+                    &.ctvrta {
+                        grid-area: ctvrta;
+                    }
+
+                    &.pata {
+                        grid-area: pata;
+                    }
+                }
+            }
         }
     }
 
@@ -917,6 +985,7 @@ b, strong {
         background-color: $base1-color;
         padding-top: $s-xxxl;
         padding-bottom: 2 * $s-l;
+        color: $hover-color;
         
         .container {
             
@@ -925,6 +994,86 @@ b, strong {
                 letter-spacing: 2.2px;
                 text-transform: uppercase;
                 margin-bottom: $s-m;
+            }
+
+            h3 {
+                margin-top: $s-xxl;
+                margin-bottom: $s-s;
+                font-size: $f-xl;
+                letter-spacing: 2.2px;
+                font-family: $header-font;
+                text-transform: uppercase;
+            }
+            
+            .konkretniSluzby {
+                display: grid;
+                grid-template-areas:
+                "prvni prvni prvni prvni prvni"
+                "druha treti ctvrta pata sesta"
+                "sedma osma devata desata jedenacta";
+                gap: $s-xs;
+
+                @include w-1000 {
+                    grid-template-areas:
+                    "prvni"
+                    "druha"
+                    "treti"
+                    "ctvrta"
+                    "pata";
+                }
+
+                .sluzba {
+                    padding: $s-xs;
+                    background-color: white;
+                    border-radius: 3px;
+                    @include column-center-center;
+                    text-align: center;
+                    color: $hover-color;
+
+                    &.prvni {
+                        grid-area: prvni;
+                    }
+
+                    &.druha {
+                        grid-area: druha;
+                    }
+
+                    &.treti {
+                        grid-area: treti;
+                    }
+
+                    &.ctvrta {
+                        grid-area: ctvrta;
+                    }
+
+                    &.pata {
+                        grid-area: pata;
+                    }
+
+                    &.sesta {
+                        grid-area: sesta;
+                    }
+
+                    &.sedma {
+                        grid-area: sedma;
+                    }
+
+                    &.osma {
+                        grid-area: osma;
+                    }
+
+                    &.devata {
+                        grid-area: devata;
+                    }
+
+                    &.desata {
+                        grid-area: desata;
+                    }
+
+                    &.jedenacta {
+                        grid-area: jedenacta;
+                    }
+                }
             }
 
         }
