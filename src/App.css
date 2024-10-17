@@ -1083,8 +1083,13 @@ form .button:hover {
   color: white;
 }
 
+.kontakt .line {
+  width: 100%;
+  background-color: #c1b6a0;
+  height: 120px;
+}
 .kontakt .container {
-  padding-top: 18rem;
+  padding-top: 9rem;
   padding-bottom: 10rem;
 }
 .kontakt .container .informace {

@@ -1309,9 +1309,14 @@ form {
 
 //SEKCE KONTAKT
 .kontakt {
+    .line {
+        width: 100%;
+        background-color: #c1b6a0;
+        height: 120px;
+    }
 
     .container {
-        padding-top: 2 * $s-xxxl;
+        padding-top: $s-xxxl;
         padding-bottom: 2 * $s-l;
 
         .informace {

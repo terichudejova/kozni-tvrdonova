@@ -9,6 +9,7 @@ import ContactFormular from '../ContactFormular';
 export default function Contact() {
     return (
         <div className="outerBox kontakt">
+            <div className="line"></div>
             <div className="container">
                 <div className="informace">
                     <div className="left">
