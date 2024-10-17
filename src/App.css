@@ -295,25 +295,6 @@ form {
   -webkit-backdrop-filter: blur(4.2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-form .jmenoEmail {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-@media only screen and (max-width: 1600px) {
-  form .jmenoEmail {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
-  form .jmenoEmail input {
-    min-width: 400px;
-    margin-right: 0;
-  }
-}
 form label {
   font-size: 1.8rem;
   margin-right: 2rem;
@@ -327,9 +308,8 @@ form input:focus, form textarea:focus {
 form input {
   height: 30px;
   font-size: 1.8rem;
-  margin-right: 3rem;
-  margin-bottom: 1rem;
-  min-width: 220px;
+  margin-bottom: 3rem;
+  min-width: 600px;
   background: rgba(255, 255, 255, 0.37);
   border-radius: 3px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -337,11 +317,9 @@ form input {
   -webkit-backdrop-filter: blur(4.2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-form input:nth-of-type(2) {
-  margin-right: 0;
-}
 form textarea {
   width: 100%;
+  margin-bottom: 1rem;
   font-size: 1.8rem;
   margin-right: 3rem;
   min-height: 150px;
@@ -1143,6 +1121,7 @@ form .button:hover {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  margin-right: 9rem;
 }
 .kontakt .container .informace .left .udaje {
   margin-bottom: 4rem;

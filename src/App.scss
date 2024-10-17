@@ -321,21 +321,6 @@ form {
     -webkit-backdrop-filter: blur(4.2px);
     border: 1px solid rgba(255, 255, 255, 0.3); 
 
-
-    .jmenoEmail {
-        @include row-start-center;
-        margin-bottom: $s-xxs;
-
-        @include w-1600 {
-            @include column-start-start;
-
-            input {
-                min-width: 400px;
-                margin-right: 0;
-            }
-        }
-    }
-
     label {
         font-size: $f-s;
         margin-right: $s-xs;
@@ -355,23 +340,19 @@ form {
     input {
         height: 30px;
         font-size: $f-s;
-        margin-right: $s-s;
-        margin-bottom: $s-xxs;
-        min-width: 220px;
+        margin-bottom: $s-s;
+        min-width: 600px;
         background: rgba(255, 255, 255, 0.37);
         border-radius: 3px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.2px);
         -webkit-backdrop-filter: blur(4.2px);
         border: 1px solid rgba(255, 255, 255, 0.3); 
-
-        &:nth-of-type(2) {
-            margin-right: 0;
-        }
     }
 
     textarea {
         width: 100%;
+        margin-bottom: $s-xxs;
         font-size: $f-s;
         margin-right: $s-s;
         min-height: 150px;
@@ -1370,6 +1351,7 @@ form {
 
             .left {
                 @include column-start-start;
+                margin-right: $s-xxxl;
 
                 .udaje {
                     margin-bottom: $s-m;

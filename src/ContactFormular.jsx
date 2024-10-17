@@ -27,7 +27,6 @@ export default function ContactFormular() {
         <div>
             <form onSubmit={handleSubmit}>
 
-                <div className="jmenoEmail">
                     <label htmlFor="name">Jméno a příjmení:</label>
                     <input
                         type="text"
@@ -47,7 +46,6 @@ export default function ContactFormular() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
-                </div>
 
                 <label htmlFor="message">Zpráva:</label>
                 <textarea
