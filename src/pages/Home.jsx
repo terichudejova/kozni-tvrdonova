@@ -105,7 +105,7 @@ export default function Home() {
                     <p>V naší dermatologické ordinaci klademe důraz na&nbsp;<span>individuální přístup</span> a&nbsp;<span>profesionální péči</span> o&nbsp;každého pacienta. Snažíme se vytvořit prostředí, kde se budete cítit v&nbsp;pohodlí a&nbsp;s&nbsp;jistotou, že vaše zdraví a&nbsp;vzhled jsou v&nbsp;těch nejlepších rukou. Naše ordinace je vedena <span>zkušenou dermatoložkou</span>, která se specializuje na&nbsp;<span>diagnostiku a&nbsp;léčbu kožních onemocnění</span> i&nbsp;na&nbsp;<span>estetickou dermatologii</span>. Po jejím boku působí odborná sestra, která se s&nbsp;maximální péčí postará o&nbsp;vaši pohodu při každé návštěvě. Společně se věnujeme nejen léčbě, ale také <span>prevenci a&nbsp;péči</span> o&nbsp;zdravou a&nbsp;krásnou pokožku.</p>
                     <div className="medailonky">
                         <div className="medailonek">
-                            <div className="imgCase"><img src='images/doktorka.jpeg'/></div>
+                            <div className="imgCase"><img src='images/doktorka_noBG.png'/></div>
                             <div className="title">
                                 <h4>MUDr. Kateřina Tvrdoňová</h4>
                                 <p>Lékařka</p>
@@ -114,7 +114,7 @@ export default function Home() {
                             <p>V roce 1993 promovala na&nbsp;<span>1.&nbsp;lékařské fakultě UK v&nbsp;Praze</span>. V&nbsp;témže roce nastoupila na&nbsp;<span>2.&nbsp;kožní kliniku VFN v&nbsp;Praze</span>, zde pracovala jako sekundární lékařka a&nbsp;specializovala se na&nbsp;obor dermatochirurgie. Po <span>I.&nbsp;atestaci</span> v&nbsp;roce 1996 vedla ambulanci pro kožní choroby z&nbsp;povolání a&nbsp;alergologii, připojila se ke&nbsp;kolektivu lékařek věnujících se problematice pigmentových projevů a&nbsp;léčbě maligního melanomu. V roce 2002 složila <span>atestaci 2. stupně v&nbsp;oboru dermatovenerologie</span>. V letech 2002 až 2012 pracovala v&nbsp;laserovém centru – <span>Medical Laser Centre</span> na&nbsp;Praze 10. Věnuje se <span>korektivní dermatologii</span>, <span>estetické medicíně</span> a&nbsp;<span>kožní laserové terapii</span>. Od ledna 2009 má privátní praxi na&nbsp;Praze&nbsp;6.</p>
                         </div>
                         <div className="medailonek">
-                            <div className="imgCase"><img src='images/sestricka.png'/></div>
+                            <div className="imgCase"><img src='images/sestricka_noBG.png'/></div>
                             <div className="title">
                                 <h4>Barbora Šeráková</h4>
                                 <p>Zdravotní sestra</p>

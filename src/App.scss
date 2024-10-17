@@ -445,6 +445,13 @@ b, strong {
                 position: relative;
                 @include column-start-center;
 
+                background: rgba(255, 255, 255, 0.37);
+                    border-radius: 3px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(4.2px);
+                    -webkit-backdrop-filter: blur(4.2px);
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
+
                 .iconCircle {
                     border-radius: 50%;
                     width: 80px;
@@ -581,6 +588,13 @@ b, strong {
                     box-shadow: $main-shadow;
                     position: relative;
 
+                    background: rgba(255, 255, 255, 0.37);
+                    border-radius: 3px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(4.2px);
+                    -webkit-backdrop-filter: blur(4.2px);
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
+
                     .imgCase {
                         border-radius: 3px;
                         box-shadow: $main-shadow;
@@ -707,6 +721,13 @@ b, strong {
                     border-radius: 3px;
                     @include column-start-start;
                     max-width: 60%;
+
+                    background: rgba(255, 255, 255, 0.37);
+                    border-radius: 3px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(4.2px);
+                    -webkit-backdrop-filter: blur(4.2px);
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
 
                     h3 {
                         font-size: $f-l;
@@ -955,6 +976,13 @@ b, strong {
                     text-align: center;
                     color: $font-color;
 
+                    background: rgba(255, 255, 255, 0.37);
+                    border-radius: 3px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(4.2px);
+                    -webkit-backdrop-filter: blur(4.2px);
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
+
                     &.prvni {
                         grid-area: prvni;
                     }
@@ -1004,7 +1032,7 @@ b, strong {
                 font-family: $header-font;
                 text-transform: uppercase;
             }
-            
+
             .konkretniSluzby {
                 display: grid;
                 grid-template-areas:
@@ -1019,7 +1047,13 @@ b, strong {
                     "druha"
                     "treti"
                     "ctvrta"
-                    "pata";
+                    "pata"
+                    "sesta"
+                    "sedma"
+                    "osma"
+                    "devata"
+                    "desata"
+                    "jedenacta";
                 }
 
                 .sluzba {
@@ -1029,6 +1063,13 @@ b, strong {
                     @include column-center-center;
                     text-align: center;
                     color: $hover-color;
+
+                    background: rgba(255, 255, 255, 0.37);
+                    border-radius: 3px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(4.2px);
+                    -webkit-backdrop-filter: blur(4.2px);
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
 
                     &.prvni {
                         grid-area: prvni;
@@ -1093,6 +1134,51 @@ b, strong {
                 letter-spacing: 2.2px;
                 text-transform: uppercase;
                 margin-bottom: $s-m;
+            }
+
+            a {
+                text-decoration: none;
+                color: $font-color;
+
+                &:hover {
+                    color: $link-color;
+                }
+            }
+
+            #accordion {
+                margin-top: $s-m;
+
+                .card {
+                    margin-bottom: $s-xxxs;
+
+                    background: rgba(255, 255, 255, 0.37);
+                    border-radius: 3px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(4.2px);
+                    -webkit-backdrop-filter: blur(4.2px);
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
+                    
+                    .card-header {
+                        border: none;
+
+                        .btn {
+                            font-size: $f-s;
+                        }
+                    }
+                    
+                    .card-body {
+                        padding: $s-xs;
+
+                        p {
+                            font-size: $f-xs;
+
+                            &.cena {
+                                font-weight: 500;
+                            }
+                        }
+                        
+                    }
+                }
             }
         }
     }
