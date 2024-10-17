@@ -282,6 +282,77 @@ b, strong {
   color: #e4decf;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+form .jmenoEmail {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+form label {
+  font-size: 1.8rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+form input:focus, form textarea:focus {
+  outline: none;
+  border: 2px solid #c1b6a0;
+  box-shadow: 0 0 5px #c1b6a0;
+}
+form input {
+  height: 30px;
+  font-size: 1.8rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  min-width: 220px;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+form input:nth-of-type(2) {
+  margin-right: 0;
+}
+form textarea {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-right: 3rem;
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+form .button {
+  margin-top: 3rem;
+  text-decoration: none;
+  background-color: #c1b6a0;
+  font-size: 1.8rem;
+  color: #4d4639;
+  cursor: pointer;
+}
+form .button:hover {
+  background-color: #817969;
+  color: white;
+}
+
 .home .landingPage {
   background-image: url("/images/background.jpg");
   background-size: cover;
@@ -410,7 +481,7 @@ b, strong {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-color: white;
+  background-color: #f0ece4;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -418,7 +489,7 @@ b, strong {
   position: absolute;
   top: -40px;
   left: calc(50% - 40px);
-  border: 3px solid #e4decf;
+  border: 3px solid white;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
 .home .sluzby .sluzbyCards .karticka .iconCircle .iconCircle_ikonka {
@@ -461,10 +532,13 @@ b, strong {
   color: #4d4639;
 }
 .home .sluzby .sluzbyCards .karticka .button {
-  text-decoration: none;
-  font-size: 1.8rem;
   margin: 3rem 0 0 0;
+  text-decoration: none;
+  background-color: #c1b6a0;
+  margin-top: 1rem;
+  font-size: 1.8rem;
   color: #4d4639;
+  cursor: pointer;
 }
 .home .sluzby .sluzbyCards .karticka .button:hover {
   background-color: #817969;
@@ -1061,6 +1135,29 @@ b, strong {
 .kontakt .container .informace .left .udaje {
   margin-bottom: 4rem;
 }
+.kontakt .container .informace .left .udaje p, .kontakt .container .informace .left .udaje a {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.kontakt .container .informace .left .udaje p .kontaktIkonka, .kontakt .container .informace .left .udaje a .kontaktIkonka {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
 .kontakt .container .informace .left .spojeni .bus {
   font-weight: 600;
+}
+.kontakt .container .informace .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.kontakt .container .mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 9rem;
 }/*# sourceMappingURL=App.css.map */

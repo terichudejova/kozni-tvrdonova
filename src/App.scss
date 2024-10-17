@@ -310,6 +310,88 @@ b, strong {
 }
 
 
+//FORMULÁŘ
+form {
+    @include column-start-start;
+    padding: $s-s;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+
+
+    .jmenoEmail {
+        @include row-start-center;
+        margin-bottom: $s-xxs;
+    }
+
+    label {
+        font-size: $f-s;
+        margin-right: $s-xs;
+        margin-bottom: $s-xxs;
+        
+    }
+
+    input, textarea {
+
+        &:focus {
+            outline: none;
+            border: 2px solid #c1b6a0;
+            box-shadow: 0 0 5px #c1b6a0;
+        }
+    }
+
+    input {
+        height: 30px;
+        font-size: $f-s;
+        margin-right: $s-s;
+        margin-bottom: $s-xxs;
+        min-width: 220px;
+        background: rgba(255, 255, 255, 0.37);
+        border-radius: 3px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.2px);
+        -webkit-backdrop-filter: blur(4.2px);
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+
+        &:nth-of-type(2) {
+            margin-right: 0;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        font-size: $f-s;
+        margin-right: $s-s;
+        min-height: 150px;
+        background: rgba(255, 255, 255, 0.37);
+        border-radius: 3px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.2px);
+        -webkit-backdrop-filter: blur(4.2px);
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+    }
+
+    
+
+    .button {
+        margin-top: $s-s;
+        text-decoration: none;
+        background-color: #c1b6a0;
+        font-size: $f-s;
+        color: $font-color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $contrast-color;
+            color: white;
+        }
+    }
+}
+
+
 //HOME
 .home {
 
@@ -457,12 +539,12 @@ b, strong {
                     width: 80px;
                     height: 80px;
                     // background-color: $contrast-color; VERZE1
-                    background-color: white; //VERZE 2
+                    background-color: #f0ece4; //VERZE 2
                     @include row-center-center;
                     position: absolute;
                     top: -40px;
                     left: calc(50% - 40px);
-                    border: 3px solid $base2-color;
+                    border: 3px solid white;
                     box-shadow: $main-shadow;
 
                     .iconCircle_ikonka {
@@ -528,13 +610,15 @@ b, strong {
                 }
 
                 .button {
-                    text-decoration: none;
-                    font-size: $f-s;
                     margin: $s-s 0 0 0;
-                    // color: white; VERZE1 
-                    color: $font-color; //VERZE2
-
-                    &:hover { //VERZE2
+                    text-decoration: none;
+                    background-color: #c1b6a0;
+                    margin-top: $s-xxs;
+                    font-size: $f-s;
+                    color: $font-color;
+                    cursor: pointer;
+    
+                    &:hover {
                         background-color: $contrast-color;
                         color: white;
                     }
@@ -1280,7 +1364,15 @@ b, strong {
 
                 .udaje {
                     margin-bottom: $s-m;
-                    
+
+                    p, a {
+                        @include row-start-start;
+
+                        .kontaktIkonka {
+                            font-size: $f-l;
+                            margin-right: $s-xxs;
+                        }
+                    }
                 }
 
                 .spojeni {
@@ -1292,8 +1384,13 @@ b, strong {
             }
 
             .right {
-
+                @include column-start-start;
             }
+        }
+
+        .mapa {
+            @include column-start-center;
+            margin-top: $s-xxxl;
         }
     }
 }
