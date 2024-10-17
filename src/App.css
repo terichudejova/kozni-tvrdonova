@@ -302,6 +302,18 @@ form .jmenoEmail {
   align-items: center;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 1600px) {
+  form .jmenoEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  form .jmenoEmail input {
+    min-width: 400px;
+    margin-right: 0;
+  }
+}
 form label {
   font-size: 1.8rem;
   margin-right: 2rem;

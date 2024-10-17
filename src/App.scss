@@ -325,6 +325,15 @@ form {
     .jmenoEmail {
         @include row-start-center;
         margin-bottom: $s-xxs;
+
+        @include w-1600 {
+            @include column-start-start;
+
+            input {
+                min-width: 400px;
+                margin-right: 0;
+            }
+        }
     }
 
     label {

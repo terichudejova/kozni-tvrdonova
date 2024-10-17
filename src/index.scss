@@ -144,6 +144,7 @@ $breakpoints: (
     "w-800": 800px,
     "w-1000": 1000px,
     "w-1400": 1400px,
+    "w-1600": 1600px,
     "w-2000": 2000px,
     "w-3000": 3000px 
 );
@@ -180,6 +181,12 @@ $breakpoints: (
 
 @mixin w-1400 {
     @media only screen and (max-width: map-get($breakpoints, "w-1400")) {
+        @content;
+    }
+};
+
+@mixin w-1600 {
+    @media only screen and (max-width: map-get($breakpoints, "w-1600")) {
         @content;
     }
 };
