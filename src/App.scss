@@ -834,10 +834,14 @@ b, strong {
 
   .galleryButton {
     font-size: $f-s !important;
-    background-color: $hover-color !important;
+    background-color: #8f9a92 !important;
     color: white !important;
     font-family: $main-font !important;
     letter-spacing: 1px !important;
+
+    &:hover {
+        background-color: $hover-color !important;
+    }
   }
   
 
@@ -1223,6 +1227,72 @@ b, strong {
                     background-color: $contrast-color;
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+
+//SEKCE KONTAKT
+.kontakt {
+
+    .container {
+        padding-top: 2 * $s-xxxl;
+        padding-bottom: 2 * $s-l;
+
+        .informace {
+            @include row-between-start;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: $f-xxl;
+                margin-bottom: $s-s;
+            }
+
+            a {
+                font-size: $f-s;
+                text-decoration: none;
+                color: $font-color;
+                cursor: pointer;
+
+                &:hover {
+                    color: $link-color;
+                }
+            }
+
+            ul {
+
+                li {
+                    font-size: $f-s;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+
+                &:nth-of-type(1) {
+                    margin-bottom: $s-s;
+                }
+            }
+
+            .left {
+                @include column-start-start;
+
+                .udaje {
+                    margin-bottom: $s-m;
+                    
+                }
+
+                .spojeni {
+
+                    .bus {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .right {
+
             }
         }
     }

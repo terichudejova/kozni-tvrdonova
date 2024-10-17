@@ -710,10 +710,13 @@ b, strong {
 
 .galleryButton {
   font-size: 1.8rem !important;
-  background-color: #586b5c !important;
+  background-color: #8f9a92 !important;
   color: white !important;
   font-family: "Montserrat", sans-serif !important;
   letter-spacing: 1px !important;
+}
+.galleryButton:hover {
+  background-color: #586b5c !important;
 }
 
 .servicesPrices .landingPage {
@@ -1014,4 +1017,50 @@ b, strong {
 .servicesPrices .cenik .container .button:hover {
   background-color: #817969;
   color: white;
+}
+
+.kontakt .container {
+  padding-top: 18rem;
+  padding-bottom: 10rem;
+}
+.kontakt .container .informace {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.kontakt .container .informace h2 {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.kontakt .container .informace a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #4d4639;
+  cursor: pointer;
+}
+.kontakt .container .informace a:hover {
+  color: #996f31;
+}
+.kontakt .container .informace ul li {
+  font-size: 1.8rem;
+}
+.kontakt .container .informace ul li span {
+  font-weight: 600;
+}
+.kontakt .container .informace ul:nth-of-type(1) {
+  margin-bottom: 3rem;
+}
+.kontakt .container .informace .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.kontakt .container .informace .left .udaje {
+  margin-bottom: 4rem;
+}
+.kontakt .container .informace .left .spojeni .bus {
+  font-weight: 600;
 }/*# sourceMappingURL=App.css.map */

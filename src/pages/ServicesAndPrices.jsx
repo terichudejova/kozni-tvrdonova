@@ -370,6 +370,7 @@ export default function ServicesAndPrices() {
                             </div>
                         </div>
                     </div>
+
                     <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se</NavLink>
                 </div>
             </div>
