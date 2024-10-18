@@ -33,7 +33,7 @@ export default function Home() {
             <div className="landingPage">
                 <div className="container headingBox">
                     <h1 className="text-uppercase">Kožní ordinace<br/>Tvrdoňová</h1>
-                    <p>Soukromá dermatologická klinika v Praze</p>
+                    <p>Soukromá dermatologická klinika v&nbsp;Praze</p>
                     <div className="buttons">
                         <a className="button" onClick={scrollToSection}>Naše služby</a>
                         <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se <LocalPhoneIcon className="phoneIcon"/></NavLink>
@@ -53,9 +53,9 @@ export default function Home() {
                     <p>Jsme <span>soukromá dermatologická ordinace</span> zaměřená na&nbsp;diagnostiku a&nbsp;léčbu kožních chorob. Běžná lékařská péče je hrazená ze&nbsp;<span>všeobecného zdravotního pojištění</span>. Nadstandardní zákroky, většinou z&nbsp;oboru estetické dermatologie, jsou na&nbsp;přímou platbu. Naší snahou je poskytnout vám jak léčbu vaší nemocné kůže a&nbsp;péči o&nbsp;ni, tak i&nbsp;rady a zákroky, jak si ji můžete uchovat <span>zdravou a&nbsp;krásnou</span>.</p>
                     <p>Vaše <span>neomluvená absence bude zpoplatněna</span>. Omluvit se můžete prostřednictvím telefonu, nebo e-mailu.</p>
                     <ul>
-                        <li>Poplatek za neomluvenou kontrolu: <span>200 Kč</span></li>
-                        <li>Poplatek za neomluvený zákrok: <span>500 Kč</span></li>
-                        <li>Poplatek za neomluvené vstupní vyšetření: <span>500 Kč</span></li>
+                        <li>Poplatek za neomluvenou kontrolu: <span>200&nbsp;Kč</span></li>
+                        <li>Poplatek za neomluvený zákrok: <span>500&nbsp;Kč</span></li>
+                        <li>Poplatek za neomluvené vstupní vyšetření: <span>500&nbsp;Kč</span></li>
                     </ul>
                 </div>
                 <div className="sluzbyCards container">
@@ -118,6 +118,7 @@ export default function Home() {
                                 <h4>MUDr. Kateřina Tvrdoňová</h4>
                                 <p>Lékařka</p>
                                 <div className="line"></div>
+                                <div className="imgCase phoneDisplay"><img src='images/doktorka_noBG.png'/></div>
                             </div>
                             <p>V roce 1993 promovala na&nbsp;<span>1.&nbsp;lékařské fakultě UK v&nbsp;Praze</span>. V&nbsp;témže roce nastoupila na&nbsp;<span>2.&nbsp;kožní kliniku VFN v&nbsp;Praze</span>, zde pracovala jako sekundární lékařka a&nbsp;specializovala se na&nbsp;obor dermatochirurgie. Po <span>I.&nbsp;atestaci</span> v&nbsp;roce 1996 vedla ambulanci pro kožní choroby z&nbsp;povolání a&nbsp;alergologii, připojila se ke&nbsp;kolektivu lékařek věnujících se problematice pigmentových projevů a&nbsp;léčbě maligního melanomu. V roce 2002 složila <span>atestaci 2. stupně v&nbsp;oboru dermatovenerologie</span>. V letech 2002 až 2012 pracovala v&nbsp;laserovém centru – <span>Medical Laser Centre</span> na&nbsp;Praze 10. Věnuje se <span>korektivní dermatologii</span>, <span>estetické medicíně</span> a&nbsp;<span>kožní laserové terapii</span>. Od ledna 2009 má privátní praxi na&nbsp;Praze&nbsp;6.</p>
                         </div>
@@ -148,32 +149,34 @@ export default function Home() {
                 <div className="container">
                     <div className="mistoCas">
                         <div className="misto">
-                            <div className="mistoAdresa">
-                                <h2>Navštivte nás</h2>
-                                <h3>Adresa:</h3>
-                                <div className="info">
-                                    <a target='_blank' href='https://www.google.cz/maps/dir//%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy/@50.0682106,14.3055251,596m/data=!3m1!1e3!4m18!1m8!3m7!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2s%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy!3b1!8m2!3d50.0682106!4d14.3081!16s%2Fg%2F11c2h56zs6!4m8!1m0!1m5!1m1!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2m2!1d14.3081!2d50.0682106!3e3?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D'>
-                                        <LocationOnIcon className='mistoIkonka'/>
-                                        <p>Poliklinika Žufanova 1114/1<br/>
-                                        Praha 6, Řepy 163 00</p>
-                                    </a>
+                            <h2>Navštivte nás</h2>
+                            <div className='mistoPhoneDisplay'>
+                                <div className="mistoAdresa">
+                                    <h3>Adresa:</h3>
+                                    <div className="info">
+                                        <a target='_blank' href='https://www.google.cz/maps/dir//%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy/@50.0682106,14.3055251,596m/data=!3m1!1e3!4m18!1m8!3m7!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2s%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy!3b1!8m2!3d50.0682106!4d14.3081!16s%2Fg%2F11c2h56zs6!4m8!1m0!1m5!1m1!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2m2!1d14.3081!2d50.0682106!3e3?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D'>
+                                            <LocationOnIcon className='mistoIkonka'/>
+                                            <p>Poliklinika Žufanova 1114/1<br/>
+                                            Praha 6, Řepy 163 00</p>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="mistoKontakt">
-                                <h3>Kontakt:</h3>
-                                <div className="info">
-                                    <a href="tel:+420235310315" target='_blank'>
-                                        <LocalPhoneIcon className='mistoIkonka'/>
-                                        <p>+420 235 310 315</p>
-                                    </a>
+                                <div className="mistoKontakt">
+                                    <h3>Kontakt:</h3>
+                                    <div className="info">
+                                        <a href="tel:+420235310315" target='_blank'>
+                                            <LocalPhoneIcon className='mistoIkonka'/>
+                                            <p>+420 235 310 315</p>
+                                        </a>
+                                    </div>
+                                    <div className="info">
+                                        <a href="mailto:kozni.tvrdonova@email.cz?subject=Dotaz&body=Dobrý%20den,%20mám%20dotaz..." target='_blank'>
+                                            <EmailIcon className='mistoIkonka'/>
+                                            <p>kozni.tvrdonova@email.cz</p>
+                                        </a>
+                                    </div>
+                                    <p><span>E-mail neslouží k objednávání pacientů.</span></p>
                                 </div>
-                                <div className="info">
-                                    <a href="mailto:kozni.tvrdonova@email.cz?subject=Dotaz&body=Dobrý%20den,%20mám%20dotaz..." target='_blank'>
-                                        <EmailIcon className='mistoIkonka'/>
-                                        <p>kozni.tvrdonova@email.cz</p>
-                                    </a>
-                                </div>
-                                <p><span>E-mail neslouží k objednávání pacientů.</span></p>
                             </div>
                         </div>
                         <div className="cas glassEffect">
@@ -183,24 +186,24 @@ export default function Home() {
                             <p><span>Po - Čt</span> v době od <span>7:30 - 8:00</span> provádíme <span>pouze</span> převazy, odběry a vystavení zpráv.</p>
                             <div className="casDny">
                                 <div className='row'>
-                                    <div className="col-6"><b>Pondělí</b></div>
-                                    <div className="col-6">7:30 - 12:00 <span>|</span> 13:00 - 15:00</div>
+                                    <div className="col-6"><p><b>Pondělí</b></p></div>
+                                    <div className="col-6"><p>7:30 - 12:00 <span>|</span> 13:00 - 15:00</p></div>
                                 </div>
                                 <div className='row'>
-                                    <div className="col-6"><b>Úterý</b></div>
-                                    <div className="col-6">7:30 - 12:00 <span>|</span> 13:00 - 15:00</div>
+                                    <div className="col-6"><p><b>Úterý</b></p></div>
+                                    <div className="col-6"><p>7:30 - 12:00 <span>|</span> 13:00 - 15:00</p></div>
                                 </div>
                                 <div className='row'>
-                                    <div className="col-6"><b>Středa</b></div>
-                                    <div className="col-6">7:30 - 13:00</div>
+                                    <div className="col-6"><p><b>Středa</b></p></div>
+                                    <div className="col-6"><p>7:30 - 13:00</p></div>
                                 </div>
                                 <div className='row'>
-                                    <div className="col-6"><b>Čtvrtek</b></div>
-                                    <div className="col-6">7:30 - 12:00 <span>|</span> 13:00 - 17:00</div>
+                                    <div className="col-6"><p><b>Čtvrtek</b></p></div>
+                                    <div className="col-6"><p>7:30 - 12:00 <span>|</span> 13:00 - 17:00</p></div>
                                 </div>
                                 <div className='row'>
-                                    <div className="col-6"><b>Pátek</b></div>
-                                    <div className="col-6">8:00 - 11:00 <span>-</span> operační den</div>
+                                    <div className="col-6"><p><b>Pátek</b></p></div>
+                                    <div className="col-6"><p>8:00 - 11:00 <span>-</span> operační den</p></div>
                                 </div>
                             </div>
                         </div>

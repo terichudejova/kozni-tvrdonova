@@ -43,6 +43,16 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 4rem;
 }
+@media only screen and (max-width: 1000px) {
+  .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+    font-size: 3rem;
+  }
+}
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -51,6 +61,22 @@ p {
 }
 p span {
   font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+}
+@media only screen and (max-width: 600px) {
+  li {
+    font-size: 1.5rem;
+  }
 }
 
 b, strong {
@@ -85,6 +111,17 @@ b, strong {
   background-color: #e4decf;
   color: #4d4639;
 }
+@media only screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+}
 
 .brown-button, .servicesPrices .cenik .container .button, .servicesPrices .dermatologickeSluzby .container .button, .servicesPrices .landingPage .container .boxes .dermaBox .button, .servicesPrices .landingPage .container .boxes .estetikaBox .button, .home .sluzby .sluzbyCards .karticka .button, form .button {
   text-decoration: none;
@@ -97,6 +134,12 @@ b, strong {
   background-color: #817969;
   color: white;
 }
+@media only screen and (max-width: 600px) {
+  .brown-button, .servicesPrices .cenik .container .button, .servicesPrices .dermatologickeSluzby .container .button, .servicesPrices .landingPage .container .boxes .dermaBox .button, .servicesPrices .landingPage .container .boxes .estetikaBox .button, .home .sluzby .sluzbyCards .karticka .button, form .button {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+}
 
 .container .alert {
   background-color: #817969;
@@ -105,10 +148,13 @@ b, strong {
   padding: 2rem 3rem;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 600px) {
+  .container .alert {
+    padding-left: 2rem;
+  }
+}
 .container .alert p {
   color: white;
-  font-size: 1.8rem;
-  letter-spacing: 0.5px;
   margin: 0;
 }
 
@@ -377,6 +423,26 @@ form .button {
   line-height: 1.5;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 1400px) {
+  .home .landingPage .headingBox h1 {
+    font-size: 7.2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage .headingBox h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .landingPage .headingBox h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage .headingBox {
+    margin-top: 18rem;
+  }
+}
 .home .landingPage .headingBox p {
   color: white;
 }
@@ -387,6 +453,20 @@ form .button {
   align-items: center;
   margin-top: 9rem;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage .headingBox .buttons {
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .landingPage .headingBox .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 }
 .home .landingPage .headingBox .buttons .button {
   text-decoration: none;
@@ -400,6 +480,18 @@ form .button {
 .home .landingPage .headingBox .buttons .button:nth-child(1) {
   margin-right: 5rem;
 }
+@media only screen and (max-width: 1000px) {
+  .home .landingPage .headingBox .buttons .button:nth-child(1) {
+    margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .landingPage .headingBox .buttons .button:nth-child(1) {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    width: 100%;
+  }
+}
 .home .landingPage #phoneNumber {
   position: absolute;
   bottom: 3rem;
@@ -408,6 +500,12 @@ form .button {
   cursor: pointer;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 600px) {
+  .home .landingPage #phoneNumber {
+    bottom: 2rem;
+    right: 20px;
+  }
+}
 .home .landingPage #phoneNumber a {
   color: white;
   text-decoration: none;
@@ -415,6 +513,26 @@ form .button {
 }
 .home .landingPage #phoneNumber a .phoneIcon {
   font-size: 3.6rem;
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage #phoneNumber a .phoneIcon {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .landingPage #phoneNumber a .phoneIcon {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage #phoneNumber a {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .landingPage #phoneNumber a {
+    font-size: 1.8rem;
+  }
 }
 .home .landingPage #phoneNumber:hover {
   transform: scale(1.05);
@@ -430,7 +548,6 @@ form .button {
   margin-bottom: 1rem;
 }
 .home .sluzby .container ul li {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 .home .sluzby .container ul li span {
@@ -441,6 +558,17 @@ form .button {
   grid-template-areas: "pojistovny derma estetika";
   margin-top: 9rem;
   height: auto;
+}
+@media only screen and (max-width: 1400px) {
+  .home .sluzby .sluzbyCards {
+    grid-template-areas: "pojistovny" "derma" "estetika";
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .sluzby .sluzbyCards {
+    width: 100%;
+  }
 }
 .home .sluzby .sluzbyCards .karticka {
   color: #817969;
@@ -454,6 +582,9 @@ form .button {
 }
 .home .sluzby .sluzbyCards .karticka.pojistovny {
   grid-area: pojistovny;
+}
+.home .sluzby .sluzbyCards .karticka.pojistovny ul {
+  align-self: flex-start;
 }
 .home .sluzby .sluzbyCards .karticka.derma {
   grid-area: derma;
@@ -489,13 +620,31 @@ form .button {
   border: 3px solid white;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
+@media only screen and (max-width: 600px) {
+  .home .sluzby .sluzbyCards .karticka .iconCircle {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: calc(50% - 35px);
+  }
+}
 .home .sluzby .sluzbyCards .karticka .iconCircle .iconCircle_ikonka {
   font-size: 4rem;
   color: #817969;
 }
+@media only screen and (max-width: 600px) {
+  .home .sluzby .sluzbyCards .karticka .iconCircle .iconCircle_ikonka {
+    font-size: 3.6rem;
+  }
+}
 .home .sluzby .sluzbyCards .karticka h3 {
   font-size: 2rem;
   letter-spacing: 1.2px;
+}
+@media only screen and (max-width: 400px) {
+  .home .sluzby .sluzbyCards .karticka h3 {
+    font-size: 1.8rem;
+  }
 }
 .home .sluzby .sluzbyCards .karticka h4 {
   font-size: 1.8rem;
@@ -520,9 +669,7 @@ form .button {
   padding: 0;
 }
 .home .sluzby .sluzbyCards .karticka ul li {
-  font-size: 1.8rem;
   margin-bottom: 2rem;
-  letter-spacing: 1.2px;
 }
 .home .sluzby .sluzbyCards .karticka ul li span {
   font-weight: 600;
@@ -533,6 +680,12 @@ form .button {
 }
 .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
   margin-right: 6rem;
+}
+@media only screen and (max-width: 1400px) {
+  .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
+    margin-right: 0;
+    margin-bottom: 9rem;
+  }
 }
 .home .tym {
   width: 100%;
@@ -551,6 +704,11 @@ form .button {
   align-items: center;
   margin-top: 9rem;
 }
+@media only screen and (max-width: 1400px) {
+  .home .tym .container .medailonky {
+    margin-top: 6rem;
+  }
+}
 .home .tym .container .medailonky .medailonek {
   margin-bottom: 7rem;
   width: auto;
@@ -560,6 +718,34 @@ form .button {
   padding-left: 18rem;
   position: relative;
 }
+@media only screen and (max-width: 1400px) {
+  .home .tym .container .medailonky .medailonek {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .tym .container .medailonky .medailonek {
+    max-width: 100%;
+    padding-left: 4rem;
+    min-height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .tym .container .medailonky .medailonek {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .home .tym .container .medailonky .medailonek:nth-of-type(1) {
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .tym .container .medailonky .medailonek:nth-of-type(1) {
+    margin-bottom: 4rem;
+  }
+}
 .home .tym .container .medailonky .medailonek .imgCase {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
@@ -567,6 +753,11 @@ form .button {
   top: calc(50% - 150px);
   left: -60px;
   width: 200px;
+}
+@media only screen and (max-width: 1000px) {
+  .home .tym .container .medailonky .medailonek .imgCase {
+    display: none;
+  }
 }
 .home .tym .container .medailonky .medailonek .imgCase img {
   border-radius: 3px;
@@ -576,8 +767,18 @@ form .button {
 .home .tym .container .medailonky .medailonek .title {
   max-width: 400px;
 }
+@media only screen and (max-width: 1000px) {
+  .home .tym .container .medailonky .medailonek .title {
+    max-width: 100%;
+  }
+}
 .home .tym .container .medailonky .medailonek .title h4 {
   font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .home .tym .container .medailonky .medailonek .title h4 {
+    font-size: 1.8rem;
+  }
 }
 .home .tym .container .medailonky .medailonek .title .line {
   width: 40%;
@@ -586,6 +787,16 @@ form .button {
   border-radius: 10px;
   margin-top: 0.5rem;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1000px) {
+  .home .tym .container .medailonky .medailonek .title .line {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .tym .container .medailonky .medailonek .title .line {
+    width: 30%;
+  }
 }
 .home .tym .carouselBox {
   display: flex;
@@ -614,6 +825,14 @@ form .button {
   justify-content: space-between;
   align-items: start;
 }
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container .mistoCas {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .home .oteviracka .container .mistoCas .misto {
   display: flex;
   flex-direction: column;
@@ -622,9 +841,42 @@ form .button {
   margin-right: 4rem;
   text-align: left;
 }
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container .mistoCas .misto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.home .oteviracka .container .mistoCas .misto .mistoPhoneDisplay {
+  width: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container .mistoCas .misto .mistoPhoneDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .oteviracka .container .mistoCas .misto .mistoPhoneDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .home .oteviracka .container .mistoCas .misto h3 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .home .oteviracka .container .mistoCas .misto h3 {
+    font-size: 2rem;
+  }
 }
 .home .oteviracka .container .mistoCas .misto .info {
   cursor: pointer;
@@ -642,14 +894,27 @@ form .button {
   font-size: 3rem;
   margin-right: 2rem;
 }
+@media only screen and (max-width: 600px) {
+  .home .oteviracka .container .mistoCas .misto .info a .mistoIkonka {
+    margin-right: 1rem;
+  }
+}
 .home .oteviracka .container .mistoCas .misto .info a:hover {
   color: #996f31;
 }
-.home .oteviracka .container .mistoCas .misto span {
-  font-size: 1.8rem;
-}
 .home .oteviracka .container .mistoCas .misto .mistoAdresa {
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container .mistoCas .misto .mistoAdresa {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .oteviracka .container .mistoCas .misto .mistoAdresa {
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
 }
 .home .oteviracka .container .mistoCas .misto .mistoKontakt .info:nth-of-type(1) {
   margin-bottom: 2rem;
@@ -663,10 +928,37 @@ form .button {
   align-items: start;
   max-width: 60%;
 }
+@media only screen and (max-width: 1600px) {
+  .home .oteviracka .container .mistoCas .cas {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container .mistoCas .cas {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .oteviracka .container .mistoCas .cas {
+    padding: 4rem 3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home .oteviracka .container .mistoCas .cas {
+    padding: 4rem 2rem;
+  }
+}
 .home .oteviracka .container .mistoCas .cas h3 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   align-self: center;
+}
+@media only screen and (max-width: 600px) {
+  .home .oteviracka .container .mistoCas .cas h3 {
+    font-size: 2rem;
+  }
 }
 .home .oteviracka .container .mistoCas .cas .casDny {
   margin-top: 3rem;
@@ -675,6 +967,30 @@ form .button {
 }
 .home .oteviracka .container .mistoCas .cas .casDny .row {
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .home .oteviracka .container .mistoCas .cas .casDny .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n+1) {
+    width: 30%;
+  }
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n) {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n+1) {
+    width: 100%;
+  }
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n) {
+    width: 100%;
+  }
 }
 .home .oteviracka .container .mistoCas .cas .casDny .row .col-6 span {
   font-weight: 500;
@@ -688,7 +1004,6 @@ form .button {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-height: 350px;
   overflow: auto;
   border-radius: 3px;
   margin: 6rem 0 12rem 0;
@@ -812,9 +1127,7 @@ form .button {
   padding: 0;
 }
 .servicesPrices .dermatologickeSluzby .container ul li {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
-  letter-spacing: 1.2px;
 }
 .servicesPrices .dermatologickeSluzby .container ul li span {
   font-weight: 600;
@@ -1004,9 +1317,6 @@ form .button {
 }
 .kontakt .container .informace a:hover {
   color: #996f31;
-}
-.kontakt .container .informace ul li {
-  font-size: 1.8rem;
 }
 .kontakt .container .informace ul li span {
   font-weight: 600;

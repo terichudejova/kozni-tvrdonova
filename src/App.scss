@@ -30,7 +30,17 @@ h1 {
     letter-spacing: 2.2px;
     text-transform: uppercase;
     margin-bottom: $s-m;
+
+    @include w-1000 {
+        font-size: $f-xxxl;
+    }
+
+    @include w-600 {
+        font-size: $f-xl;
+    }
 }
+
+
 
 p {
     font-family: $main-font;
@@ -39,6 +49,20 @@ p {
 
     span {
         font-weight: 500;
+    }
+
+    @include w-600 {
+        font-size: $f-xs;
+    }
+}
+
+li {
+    font-family: $main-font;
+    font-size: $f-s;
+    letter-spacing: 1.2px;
+
+    @include w-600 {
+        font-size: $f-xs;
     }
 }
 
@@ -78,6 +102,15 @@ b, strong {
         background-color: $base2-color;
         color: $font-color;
     }
+
+    @include w-1000 {
+        font-size: $f-s;
+    }
+
+    @include w-600 {
+        font-size: $f-xs;
+        padding: $s-xxs $s-xxs;
+    }
 }
 
 .brown-button {
@@ -91,6 +124,11 @@ b, strong {
         background-color: $contrast-color;
         color: white;
     }
+
+    @include w-600 {
+        font-size: $f-xs;
+        padding: $s-xxs $s-xxs;
+    }
 }
 
 .container {
@@ -102,10 +140,12 @@ b, strong {
         padding: $s-xs $s-s;
         margin-bottom: $s-s;
 
+        @include w-600 {
+            padding-left: $s-xs;
+        }
+
         p {
             color: white;
-            font-size: $f-s;
-            letter-spacing: 0.5px;
             margin: 0;
         }
     }
@@ -417,6 +457,22 @@ form {
                 letter-spacing: 2.2px;
                 line-height: 1.5;
                 margin-bottom: $s-xxs;
+
+                @include w-1400 {
+                    font-size: 2 * $f-xxl;
+                }
+
+                @include w-1000 {
+                    font-size: $f-xxxl;
+                }
+
+                @include w-600 {
+                    font-size: $f-l;
+                }
+            }
+
+            @include w-1000 {
+                margin-top: 2 * $s-xxxl;
             }
 
             p {
@@ -427,6 +483,15 @@ form {
                 @include row-between-center;
                 margin-top: $s-xxxl;
                 margin-bottom: $s-s;
+
+                @include w-1000 {
+                    margin-top: $s-m;
+                    margin-bottom: $s-xxxl;
+                }
+
+                @include w-800 {
+                    @include column-start-start;
+                }
 
                 .button {
                     text-decoration: none;
@@ -440,6 +505,16 @@ form {
 
                     &:nth-child(1) {
                         margin-right: $s-l;
+
+                        @include w-1000 {
+                            margin-right: $s-s;
+                        }
+
+                        @include w-800 {
+                            margin-bottom: $s-xs;
+                            margin-right: 0;
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -453,6 +528,11 @@ form {
             cursor: pointer;
             margin-bottom: 0;
 
+            @include w-600 {
+                bottom: $s-xs;
+                right: 20px;
+            }
+
             a {
                 color: white;
                 text-decoration: none;
@@ -460,6 +540,22 @@ form {
 
                 .phoneIcon {
                     font-size: $f-xxl;
+
+                    @include w-1000 {
+                        font-size: $f-l;
+                    }
+
+                    @include w-600 {
+                        font-size: $f-m;
+                    }
+                }
+
+                @include w-1000 {
+                    font-size: $f-m;
+                }
+
+                @include w-600 {
+                    font-size: $f-s;
                 }
             }
 
@@ -492,7 +588,6 @@ form {
             ul {
 
                 li {
-                    font-size: $f-s;
                     margin-bottom: $s-xxs;
 
                     span {
@@ -509,6 +604,18 @@ form {
             margin-top: $s-xxxl;
             height: auto;
 
+            @include w-1400 {
+                grid-template-areas:
+                "pojistovny"
+                "derma"
+                "estetika";
+                width: 60%;
+            }
+
+            @include w-1000 {
+                width: 100%;
+            }
+
             .karticka {
                 color: $contrast-color; //VERZE 2
                 padding: $s-s;
@@ -518,6 +625,10 @@ form {
                 
                 &.pojistovny {
                     grid-area: pojistovny;
+                    
+                    ul {
+                        align-self: flex-start;
+                    }
                 }
 
                 &.derma {
@@ -550,16 +661,31 @@ form {
                     border: 3px solid white;
                     box-shadow: $main-shadow;
 
+                    @include w-600 {
+                        width: 70px;
+                        height: 70px;
+                        top: -35px;
+                        left: calc(50% - 35px);
+                    }
+
                     .iconCircle_ikonka {
                         font-size: 2 * $f-m;
                         // color: $base2-color; VERZE 1
                         color: $contrast-color; //VERZE2
+
+                        @include w-600 {
+                            font-size: $f-xxl;
+                        }
                     }
                 }
 
                 h3 {
                     font-size: $f-m;
                     letter-spacing: 1.2px;
+
+                    @include w-400 {
+                        font-size: $f-s;
+                    }
                 }
 
                 h4 {
@@ -600,9 +726,7 @@ form {
                     padding: 0;
 
                     li {
-                        font-size: $f-s;
                         margin-bottom: $s-xs;
-                        letter-spacing: 1.2px;
     
                         span {
                             font-weight: 600;
@@ -620,6 +744,11 @@ form {
                 &:nth-child(1),
                 &:nth-child(2) {
                     margin-right: $s-xl;
+
+                    @include w-1400 {
+                        margin-right: 0;
+                        margin-bottom: $s-xxxl;
+                    }
                 }
             }
         }
@@ -640,15 +769,20 @@ form {
 
             p {
 
-                    span {
-                        font-weight: 600;
-                    }
+                span {
+                    font-weight: 600;
+                }
             }
 
             .medailonky {
                 width: 100%;
                 @include column-start-center;
                 margin-top: $s-xxxl;
+
+                @include w-1400 {
+                    margin-top: $s-xl;
+                }
+
 
                 .medailonek {
                     margin-bottom: $s-xxl;
@@ -659,6 +793,32 @@ form {
                     padding-left: 3 * $s-xl;
                     position: relative;
 
+                    @include w-1400 {
+                        max-width: 80%;
+                    }
+
+                    @include w-1000 {
+                        max-width: 100%;
+                        padding-left: $s-m;
+                        min-height: auto;
+                    }
+
+                    @include w-600 {
+                        padding: $s-xs;
+                        margin-bottom: $s-s;
+                    }
+
+                    &:nth-of-type(1) {
+
+                        @include w-1400 {
+                            margin-bottom: $s-xl;
+                        }
+
+                        @include w-600 {
+                            margin-bottom: $s-m;
+                        }
+                    }
+
                     .imgCase {
                         border-radius: 3px;
                         box-shadow: $main-shadow;
@@ -666,6 +826,10 @@ form {
                         top: calc(50% - 150px);
                         left: -60px;
                         width: 200px;
+
+                        @include w-1000 {
+                            display: none;
+                        }
 
                         img {
                             border-radius: 3px;
@@ -677,8 +841,16 @@ form {
                     .title {
                         max-width: 400px;
 
+                        @include w-1000 {
+                            max-width: 100%;
+                        }
+
                         h4 {
                             font-size: $f-m;
+
+                            @include w-600 {
+                                font-size: $f-s;
+                            }
                         }
     
                         .line {
@@ -688,6 +860,14 @@ form {
                             border-radius: 10px;
                             margin-top: $s-xxxs;
                             margin-bottom: $s-s;
+
+                            @include w-1000 {
+                                width: 25%;
+                            }
+
+                            @include w-800 {
+                                width: 30%;
+                            }
                         }
                     }
                 }
@@ -727,14 +907,39 @@ form {
             .mistoCas {
                 @include row-between-start;
 
+                @include w-1400 {
+                    @include column-start-start;
+                }
+
                 .misto {
                     @include column-start-start;
                     margin-right: $s-m;
                     text-align: left;
 
+                    @include w-1400 {
+                        width: 100%;
+                        @include column-start-start;
+                    }
+
+                    .mistoPhoneDisplay {
+                        width: 100%;
+                        
+                        @include w-1400 {
+                            @include row-between-start;
+                        }
+
+                        @include w-1000 {
+                            @include column-start-start;
+                        }
+                    }
+
                     h3 {
                         font-size: $f-l;
                         margin-bottom: $s-xs;
+
+                        @include w-600 {
+                            font-size: $f-m;
+                        }
                     }
 
                     .info {
@@ -749,6 +954,10 @@ form {
                             .mistoIkonka {
                                 font-size: $f-xl;
                                 margin-right: $s-xs;
+                                
+                                @include w-600 {
+                                    margin-right: $s-xxs;
+                                }
                             }
 
                             &:hover {
@@ -757,12 +966,17 @@ form {
                         }
                     }
 
-                    span {
-                        font-size: $f-s;
-                    }
-
                     .mistoAdresa {
                         margin-bottom: $s-s;
+
+                        @include w-1400 {
+                            order: 2;
+                        }
+
+                        @include w-1000 {
+                            margin-bottom: 0;
+                            margin-top: $s-m;
+                        }
                     }
 
                     .mistoKontakt {
@@ -782,10 +996,32 @@ form {
                     @include column-start-start;
                     max-width: 60%;
 
+                    @include w-1600 {
+                        max-width: 50%;
+                    }
+
+                    @include w-1400 {
+                        max-width: 100%;
+                        width: 100%;
+                        margin-top: $s-xl;
+                    }
+
+                    @include w-1000 {
+                        padding: $s-m $s-s;
+                    }
+
+                    @include w-400 {
+                        padding: $s-m $s-xs;
+                    }
+
                     h3 {
                         font-size: $f-l;
                         margin-bottom: $s-s;
                         align-self: center;
+
+                        @include w-600 {
+                            font-size: $f-m;
+                        }
                     }
 
                     .casDny {
@@ -795,8 +1031,33 @@ form {
                         
                         .row {
                             margin-bottom: $s-xs;
+                            
+                            @include w-600 {
+                                @include column-start-start;
+                            }
 
                             .col-6 {
+
+                                @include w-1000 {
+
+                                    &:nth-child(2n+1) {
+                                        width: 30%;
+                                    }
+
+                                    &:nth-child(2n) {
+                                        width: 70%;
+                                    }
+                                }
+
+                                @include w-600 {
+                                    &:nth-child(2n+1) {
+                                        width: 100%;
+                                    }
+
+                                    &:nth-child(2n) {
+                                        width: 100%;
+                                    }
+                                };
 
                                 span {
                                     font-weight: 500;
@@ -825,7 +1086,6 @@ form {
                 display: flex;
                 flex-wrap: wrap;
                 margin: 0 auto;
-                max-height: 350px;
                 overflow: auto;
                 border-radius: 3px;
                 margin: $s-xl 0 (2 * $s-xl) 0;
@@ -976,9 +1236,7 @@ form {
                 padding: 0;
 
                 li {
-                    font-size: $f-s;
                     margin-bottom: $s-xxs;
-                    letter-spacing: 1.2px;
 
                     span {
                         font-weight: 600;
@@ -1261,7 +1519,6 @@ form {
             ul {
 
                 li {
-                    font-size: $f-s;
 
                     span {
                         font-weight: 600;
