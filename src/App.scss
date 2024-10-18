@@ -59,7 +59,7 @@ b, strong {
 }
 
 .button {
-    background-color: #e4decf7f;
+    background-color: $button-color;
     color: white;
     border-radius: 3px;
     font-size: $f-m;
@@ -94,6 +94,15 @@ b, strong {
     }
 }
 
+.glassEffect {
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
 //WEB SECTIONS
 /* NAVBAR */
 .navbarBox {
@@ -126,7 +135,7 @@ b, strong {
                 cursor: pointer;
     
                 &:hover { 
-                    background-color: #766f639c;
+                    background-color: $navbar-hover-color;
                     border-radius: 3px;
                 }
     
@@ -167,7 +176,7 @@ b, strong {
                     }
 
                     &:hover { 
-                        background-color: #8474579c;
+                        background-color: $navbar-scrolled-hover-color;
                     }
                 }
             }
@@ -314,12 +323,7 @@ b, strong {
 form {
     @include column-start-start;
     padding: $s-s;
-    background: rgba(255, 255, 255, 0.37);
-    border-radius: 3px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.2px);
-    -webkit-backdrop-filter: blur(4.2px);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    @extend .glassEffect;
 
     label {
         font-size: $f-s;
@@ -342,12 +346,7 @@ form {
         font-size: $f-s;
         margin-bottom: $s-s;
         min-width: 600px;
-        background: rgba(255, 255, 255, 0.37);
-        border-radius: 3px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(4.2px);
-        -webkit-backdrop-filter: blur(4.2px);
-        border: 1px solid rgba(255, 255, 255, 0.3); 
+        @extend .glassEffect;
     }
 
     textarea {
@@ -356,20 +355,13 @@ form {
         font-size: $f-s;
         margin-right: $s-s;
         min-height: 150px;
-        background: rgba(255, 255, 255, 0.37);
-        border-radius: 3px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(4.2px);
-        -webkit-backdrop-filter: blur(4.2px);
-        border: 1px solid rgba(255, 255, 255, 0.3); 
+        @extend .glassEffect;
     }
-
-    
 
     .button {
         margin-top: $s-s;
         text-decoration: none;
-        background-color: #c1b6a0;
+        background-color: $button-second-color;
         font-size: $f-s;
         color: $font-color;
         cursor: pointer;
@@ -505,31 +497,18 @@ form {
                 height: auto;
                 min-width: 350px;
                 max-width: 500px;
-                // background-color: $contrast-color; VERZE 1
-                // color: $base2-color; VERZE 1
-                background-color: white; //VERZE 2
                 color: $contrast-color; //VERZE 2
-                border: $base2-color 3px solid; //VERZE 2
                 padding: $s-s;
                 padding-top: $s-xxl;
-                box-shadow: $main-shadow;
-                border-radius: 3px;
                 position: relative;
                 @include column-start-center;
-
-                background: rgba(255, 255, 255, 0.37);
-                    border-radius: 3px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(4.2px);
-                    -webkit-backdrop-filter: blur(4.2px);
-                    border: 1px solid rgba(255, 255, 255, 0.3); 
 
                 .iconCircle {
                     border-radius: 50%;
                     width: 80px;
                     height: 80px;
                     // background-color: $contrast-color; VERZE1
-                    background-color: #f0ece4; //VERZE 2
+                    background-color: $beige-glass-color; //VERZE 2
                     @include row-center-center;
                     position: absolute;
                     top: -40px;
@@ -602,7 +581,7 @@ form {
                 .button {
                     margin: $s-s 0 0 0;
                     text-decoration: none;
-                    background-color: #c1b6a0;
+                    background-color: $button-second-color;
                     margin-top: $s-xxs;
                     font-size: $f-s;
                     color: $font-color;
@@ -655,31 +634,21 @@ form {
                     width: auto;
                     max-width: 90%;
                     min-height: 400px;
-                    background-color: white;
                     padding: $s-m;
                     padding-left: 3 * $s-xl;
-                    border-radius: 3px;
-                    box-shadow: $main-shadow;
                     position: relative;
-
-                    background: rgba(255, 255, 255, 0.37);
-                    border-radius: 3px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(4.2px);
-                    -webkit-backdrop-filter: blur(4.2px);
-                    border: 1px solid rgba(255, 255, 255, 0.3); 
 
                     .imgCase {
                         border-radius: 3px;
                         box-shadow: $main-shadow;
-                        // border: 3px solid $base1-color;
                         position: absolute;
                         top: calc(50% - 150px);
                         left: -60px;
+                        width: 200px;
 
                         img {
                             border-radius: 3px;
-                            height: 300px;
+                            height: 280px;
                             width: auto;
                         }
                     }
@@ -790,18 +759,10 @@ form {
                 }
 
                 .cas {
-                    background-color: white;
                     padding: $s-m $s-l;
                     border-radius: 3px;
                     @include column-start-start;
                     max-width: 60%;
-
-                    background: rgba(255, 255, 255, 0.37);
-                    border-radius: 3px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(4.2px);
-                    -webkit-backdrop-filter: blur(4.2px);
-                    border: 1px solid rgba(255, 255, 255, 0.3); 
 
                     h3 {
                         font-size: $f-l;
@@ -908,7 +869,7 @@ form {
 
   .galleryButton {
     font-size: $f-s !important;
-    background-color: #8f9a92 !important;
+    background-color: $green-button-color !important;
     color: white !important;
     font-family: $main-font !important;
     letter-spacing: 1px !important;
@@ -972,7 +933,7 @@ form {
                     }
 
                     .button {
-                        background-color: #c1b6a0;
+                        background-color: $button-second-color;
                         margin-top: $s-xxs;
                         font-size: $f-s;
                         color: $font-color;
@@ -1049,18 +1010,10 @@ form {
 
                 .sluzba {
                     padding: $s-xs;
-                    background-color: white;
-                    border-radius: 3px;
                     @include column-center-center;
                     text-align: center;
                     color: $font-color;
-
-                    background: rgba(255, 255, 255, 0.37);
-                    border-radius: 3px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(4.2px);
-                    -webkit-backdrop-filter: blur(4.2px);
-                    border: 1px solid rgba(255, 255, 255, 0.3); 
+                    @extend .glassEffect;
 
                     &.prvni {
                         grid-area: prvni;
@@ -1086,7 +1039,7 @@ form {
 
             .button {
                 text-decoration: none;
-                background-color: #c1b6a0;
+                background-color: $button-second-color;
                 margin-top: $s-xxs;
                 font-size: $f-s;
                 color: $font-color;
@@ -1152,18 +1105,10 @@ form {
 
                 .sluzba {
                     padding: $s-xs;
-                    background-color: white;
-                    border-radius: 3px;
                     @include column-center-center;
                     text-align: center;
                     color: $hover-color;
-
-                    background: rgba(255, 255, 255, 0.37);
-                    border-radius: 3px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(4.2px);
-                    -webkit-backdrop-filter: blur(4.2px);
-                    border: 1px solid rgba(255, 255, 255, 0.3); 
+                    @extend .glassEffect;
 
                     &.prvni {
                         grid-area: prvni;
@@ -1213,7 +1158,7 @@ form {
 
             .button {
                 text-decoration: none;
-                background-color: #8f9a92;
+                background-color: $green-button-color;
                 margin-top: $s-xxs;
                 font-size: $f-s;
                 color: white;
@@ -1259,13 +1204,7 @@ form {
 
                 .card {
                     margin-bottom: $s-xxxs;
-
-                    background: rgba(255, 255, 255, 0.37);
-                    border-radius: 3px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(4.2px);
-                    -webkit-backdrop-filter: blur(4.2px);
-                    border: 1px solid rgba(255, 255, 255, 0.3); 
+                    @extend .glassEffect;
                     
                     .card-header {
                         border: none;
@@ -1291,7 +1230,7 @@ form {
             }
 
             .button {
-                background-color: #c1b6a0;
+                background-color: $button-second-color;
                 margin-top: $s-xxs;
                 font-size: $f-s;
                 color: $font-color;
@@ -1311,7 +1250,7 @@ form {
 .kontakt {
     .line {
         width: 100%;
-        background-color: #c1b6a0;
+        background-color: $button-second-color;
         height: 120px;
     }
 

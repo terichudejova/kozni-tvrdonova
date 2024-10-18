@@ -59,7 +59,7 @@ export default function Home() {
                     </ul>
                 </div>
                 <div className="sluzbyCards container">
-                    <div className="pojistovny karticka">
+                    <div className="pojistovny karticka glassEffect">
                         <div className="iconCircle">
                             <LocalHospitalIcon className='iconCircle_ikonka'/>
                         </div>
@@ -74,7 +74,7 @@ export default function Home() {
                         </ul>
                         <p>Pacienti jiných zdravotních pojišťoven nebo nepojištění pacienti mohou být ošetřeni za&nbsp;přímou úhradu.</p>
                     </div>
-                    <div className="derma karticka">
+                    <div className="derma karticka glassEffect">
                         <div className="iconCircle">
                             <HealingIcon className='iconCircle_ikonka'/>
                         </div>
@@ -86,7 +86,7 @@ export default function Home() {
                         <p>Klientům pojišťoven 111, 211, 201, 205 bude <span>poplatek 500Kč</span>, který uhradí v&nbsp;ordinaci, vrácen po předložení žádosti o&nbsp;příspěvek a&nbsp;dokladu o&nbsp;zaplacení z&nbsp;fondu prevence ZP. Klienti <span>pojišťovny 207</span> mají vyšetření <span>bez poplatku</span>.</p>
                         <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
                     </div>
-                    <div className="estetika karticka">
+                    <div className="estetika karticka glassEffect">
                         <div className="iconCircle">
                             <VaccinesIcon className='iconCircle_ikonka'/>
                         </div>
@@ -104,7 +104,7 @@ export default function Home() {
                     <h2>Náš tým</h2>
                     <p>V naší dermatologické ordinaci klademe důraz na&nbsp;<span>individuální přístup</span> a&nbsp;<span>profesionální péči</span> o&nbsp;každého pacienta. Snažíme se vytvořit prostředí, kde se budete cítit v&nbsp;pohodlí a&nbsp;s&nbsp;jistotou, že vaše zdraví a&nbsp;vzhled jsou v&nbsp;těch nejlepších rukou. Naše ordinace je vedena <span>zkušenou dermatoložkou</span>, která se specializuje na&nbsp;<span>diagnostiku a&nbsp;léčbu kožních onemocnění</span> i&nbsp;na&nbsp;<span>estetickou dermatologii</span>. Po jejím boku působí odborná sestra, která se s&nbsp;maximální péčí postará o&nbsp;vaši pohodu při každé návštěvě. Společně se věnujeme nejen léčbě, ale také <span>prevenci a&nbsp;péči</span> o&nbsp;zdravou a&nbsp;krásnou pokožku.</p>
                     <div className="medailonky">
-                        <div className="medailonek">
+                        <div className="medailonek glassEffect">
                             <div className="imgCase"><img src='images/doktorka_noBG.png'/></div>
                             <div className="title">
                                 <h4>MUDr. Kateřina Tvrdoňová</h4>
@@ -113,7 +113,7 @@ export default function Home() {
                             </div>
                             <p>V roce 1993 promovala na&nbsp;<span>1.&nbsp;lékařské fakultě UK v&nbsp;Praze</span>. V&nbsp;témže roce nastoupila na&nbsp;<span>2.&nbsp;kožní kliniku VFN v&nbsp;Praze</span>, zde pracovala jako sekundární lékařka a&nbsp;specializovala se na&nbsp;obor dermatochirurgie. Po <span>I.&nbsp;atestaci</span> v&nbsp;roce 1996 vedla ambulanci pro kožní choroby z&nbsp;povolání a&nbsp;alergologii, připojila se ke&nbsp;kolektivu lékařek věnujících se problematice pigmentových projevů a&nbsp;léčbě maligního melanomu. V roce 2002 složila <span>atestaci 2. stupně v&nbsp;oboru dermatovenerologie</span>. V letech 2002 až 2012 pracovala v&nbsp;laserovém centru – <span>Medical Laser Centre</span> na&nbsp;Praze 10. Věnuje se <span>korektivní dermatologii</span>, <span>estetické medicíně</span> a&nbsp;<span>kožní laserové terapii</span>. Od ledna 2009 má privátní praxi na&nbsp;Praze&nbsp;6.</p>
                         </div>
-                        <div className="medailonek">
+                        <div className="medailonek glassEffect">
                             <div className="imgCase"><img src='images/sestricka_noBG.png'/></div>
                             <div className="title">
                                 <h4>Barbora Šeráková</h4>
@@ -168,7 +168,7 @@ export default function Home() {
                                 <p><span>E-mail neslouží k objednávání pacientů.</span></p>
                             </div>
                         </div>
-                        <div className="cas">
+                        <div className="cas glassEffect">
                             <h3>Ordinační hodiny</h3>
                             <p>Na každou návštěvu ordinace je nutné se <span>předem objednat</span>.</p>
                             <p>Poslední pacient bude ošetřen <span>30 minut před koncem</span> pracovní doby.</p>

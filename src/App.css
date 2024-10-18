@@ -96,6 +96,15 @@ b, strong {
   margin: 0;
 }
 
+.glassEffect, .servicesPrices .cenik .container #accordion .card, .servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba, .servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba, form textarea, form input, form {
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 /* NAVBAR */
 .navbarBox {
   position: fixed;
@@ -288,12 +297,6 @@ form {
   justify-content: start;
   align-items: start;
   padding: 3rem;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 form label {
   font-size: 1.8rem;
@@ -310,12 +313,6 @@ form input {
   font-size: 1.8rem;
   margin-bottom: 3rem;
   min-width: 600px;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 form textarea {
   width: 100%;
@@ -323,12 +320,6 @@ form textarea {
   font-size: 1.8rem;
   margin-right: 3rem;
   min-height: 150px;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 form .button {
   margin-top: 3rem;
@@ -448,24 +439,14 @@ form .button:hover {
   height: auto;
   min-width: 350px;
   max-width: 500px;
-  background-color: white;
   color: #817969;
-  border: #e4decf 3px solid;
   padding: 3rem;
   padding-top: 7rem;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
-  border-radius: 3px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .home .sluzby .sluzbyCards .karticka .iconCircle {
   border-radius: 50%;
@@ -565,18 +546,9 @@ form .button:hover {
   width: auto;
   max-width: 90%;
   min-height: 400px;
-  background-color: white;
   padding: 4rem;
   padding-left: 18rem;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
   position: relative;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .home .tym .container .medailonky .medailonek .imgCase {
   border-radius: 3px;
@@ -584,10 +556,11 @@ form .button:hover {
   position: absolute;
   top: calc(50% - 150px);
   left: -60px;
+  width: 200px;
 }
 .home .tym .container .medailonky .medailonek .imgCase img {
   border-radius: 3px;
-  height: 300px;
+  height: 280px;
   width: auto;
 }
 .home .tym .container .medailonky .medailonek .title {
@@ -678,7 +651,6 @@ form .button:hover {
   margin-bottom: 2rem;
 }
 .home .oteviracka .container .mistoCas .cas {
-  background-color: white;
   padding: 4rem 5rem;
   border-radius: 3px;
   display: flex;
@@ -686,12 +658,6 @@ form .button:hover {
   justify-content: start;
   align-items: start;
   max-width: 60%;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .home .oteviracka .container .mistoCas .cas h3 {
   font-size: 2.5rem;
@@ -888,20 +854,12 @@ form .button:hover {
 }
 .servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba {
   padding: 2rem;
-  background-color: white;
-  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #4d4639;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.prvni {
   grid-area: prvni;
@@ -964,20 +922,12 @@ form .button:hover {
 }
 .servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba {
   padding: 2rem;
-  background-color: white;
-  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #586b5c;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba.prvni {
   grid-area: prvni;
@@ -1049,12 +999,6 @@ form .button:hover {
 }
 .servicesPrices .cenik .container #accordion .card {
   margin-bottom: 0.5rem;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 3px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  -webkit-backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .servicesPrices .cenik .container #accordion .card .card-header {
   border: none;
