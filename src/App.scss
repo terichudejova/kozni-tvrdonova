@@ -24,8 +24,12 @@ h1 {
     font-family: $header-font;
 }
 
-h2 {
+.h2 {
     font-family: $header-font;
+    font-size: 2 * $f-l;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    margin-bottom: $s-m;
 }
 
 p {
@@ -73,6 +77,19 @@ b, strong {
     &:hover {
         background-color: $base2-color;
         color: $font-color;
+    }
+}
+
+.brown-button {
+    text-decoration: none;
+    background-color: $button-second-color;
+    font-size: $f-s;
+    color: $font-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $contrast-color;
+        color: white;
     }
 }
 
@@ -346,6 +363,7 @@ form {
         font-size: $f-s;
         margin-bottom: $s-s;
         min-width: 600px;
+        width: 100%;
         @extend .glassEffect;
     }
 
@@ -360,16 +378,7 @@ form {
 
     .button {
         margin-top: $s-s;
-        text-decoration: none;
-        background-color: $button-second-color;
-        font-size: $f-s;
-        color: $font-color;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $contrast-color;
-            color: white;
-        }
+        @extend .brown-button;
     }
 }
 
@@ -424,6 +433,11 @@ form {
                     letter-spacing: 1.2px;
                     cursor: pointer;
 
+                    .phoneIcon {
+                        font-size: $f-l;
+                        margin-left: $s-xxxs;
+                    }
+
                     &:nth-child(1) {
                         margin-right: $s-l;
                     }
@@ -442,8 +456,9 @@ form {
             a {
                 color: white;
                 text-decoration: none;
+                font-size: $f-l;
 
-                #phoneIcon {
+                .phoneIcon {
                     font-size: $f-xxl;
                 }
             }
@@ -459,13 +474,11 @@ form {
         margin-top: $s-xxxl;
         margin-bottom: 2 * $s-l;
         width: 100%;
+        height: auto;
 
         .container {
             h2 {
-                font-size: 2 * $f-l;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                margin-bottom: $s-m;
+                @extend .h2;
             }
     
             p {
@@ -490,18 +503,39 @@ form {
         }
 
         .sluzbyCards {
-            @include row-between-start;
+            display: grid;
+            grid-template-areas:
+            "pojistovny derma estetika";
             margin-top: $s-xxxl;
+            height: auto;
 
             .karticka {
-                height: auto;
-                min-width: 350px;
-                max-width: 500px;
                 color: $contrast-color; //VERZE 2
                 padding: $s-s;
                 padding-top: $s-xxl;
                 position: relative;
                 @include column-start-center;
+                
+                &.pojistovny {
+                    grid-area: pojistovny;
+                }
+
+                &.derma {
+                    grid-area: derma;
+                }
+
+                &.estetika {
+                    grid-area: estetika;
+                }
+
+                .obsah {
+                    @include column-between-center;
+                    height: 100%;
+
+                    .horni {
+                        @include column-start-center;
+                    }
+                }
 
                 .iconCircle {
                     border-radius: 50%;
@@ -580,17 +614,7 @@ form {
 
                 .button {
                     margin: $s-s 0 0 0;
-                    text-decoration: none;
-                    background-color: $button-second-color;
-                    margin-top: $s-xxs;
-                    font-size: $f-s;
-                    color: $font-color;
-                    cursor: pointer;
-    
-                    &:hover {
-                        background-color: $contrast-color;
-                        color: white;
-                    }
+                    @extend .brown-button;
                 }
 
                 &:nth-child(1),
@@ -611,10 +635,7 @@ form {
         .container {
 
             h2 {
-                font-size: 2 * $f-l;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                margin-bottom: $s-m;
+                @extend .h2;
             }
 
             p {
@@ -700,10 +721,7 @@ form {
         .container {
 
             h2 {
-                font-size: 2 * $f-l;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                margin-bottom: $s-xl;
+                @extend .h2;
             }
 
             .mistoCas {
@@ -933,16 +951,7 @@ form {
                     }
 
                     .button {
-                        background-color: $button-second-color;
-                        margin-top: $s-xxs;
-                        font-size: $f-s;
-                        color: $font-color;
-                        cursor: pointer;
-
-                        &:hover {
-                            background-color: $contrast-color;
-                            color: white;
-                        }
+                        @extend .brown-button;
                     }
                 }
             }
@@ -959,10 +968,7 @@ form {
         .container {
 
             h2 {
-                font-size: 2 * $f-l;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                margin-bottom: $s-m;
+                @extend .h2;
             }
 
             ul {
@@ -1038,17 +1044,7 @@ form {
             }
 
             .button {
-                text-decoration: none;
-                background-color: $button-second-color;
-                margin-top: $s-xxs;
-                font-size: $f-s;
-                color: $font-color;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $contrast-color;
-                    color: white;
-                }
+                @extend .brown-button;
             }
         }
     }
@@ -1064,10 +1060,7 @@ form {
         .container {
             
             h2 {
-                font-size: 2 * $f-l;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                margin-bottom: $s-m;
+                @extend .h2;
             }
 
             h3 {
@@ -1183,10 +1176,7 @@ form {
         .container {
             
             h2 {
-                font-size: 2 * $f-l;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                margin-bottom: $s-m;
+                @extend .h2;
             }
 
             a {
@@ -1230,16 +1220,7 @@ form {
             }
 
             .button {
-                background-color: $button-second-color;
-                margin-top: $s-xxs;
-                font-size: $f-s;
-                color: $font-color;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $contrast-color;
-                    color: white;
-                }
+                @extend .brown-button;
             }
         }
     }
@@ -1262,9 +1243,8 @@ form {
             @include row-between-start;
 
             h2 {
-                text-transform: uppercase;
-                font-size: $f-xxl;
-                margin-bottom: $s-s;
+                @extend .h2;
+                font-size: $f-xxxl;
             }
 
             a {
@@ -1308,6 +1288,19 @@ form {
                             margin-right: $s-xxs;
                         }
                     }
+
+                    .objednatSeLink {
+                        background-color: $button-second-color;
+                        @include row-start-center;
+                        padding: $s-xxxs;
+                        margin-bottom: $s-xxs;
+                        border-radius: 3px;
+                        
+                        &:hover {
+                            background-color: $contrast-color;
+                            color: $base2-color;
+                        }
+                    }
                 }
 
                 .spojeni {
@@ -1320,6 +1313,13 @@ form {
 
             .right {
                 @include column-start-start;
+
+                .formular {
+
+                    p {
+                        margin-bottom: $s-s;
+                    }
+                }
             }
         }
 

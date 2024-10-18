@@ -36,8 +36,12 @@ h1 {
   font-family: "Baskervville", serif;
 }
 
-h2 {
+.h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
   font-family: "Baskervville", serif;
+  font-size: 5rem;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 p {
@@ -80,6 +84,18 @@ b, strong {
 .button:hover {
   background-color: #e4decf;
   color: #4d4639;
+}
+
+.brown-button, .servicesPrices .cenik .container .button, .servicesPrices .dermatologickeSluzby .container .button, .servicesPrices .landingPage .container .boxes .dermaBox .button, .servicesPrices .landingPage .container .boxes .estetikaBox .button, .home .sluzby .sluzbyCards .karticka .button, form .button {
+  text-decoration: none;
+  background-color: #c1b6a0;
+  font-size: 1.8rem;
+  color: #4d4639;
+  cursor: pointer;
+}
+.brown-button:hover, .servicesPrices .cenik .container .button:hover, .servicesPrices .dermatologickeSluzby .container .button:hover, .servicesPrices .landingPage .container .boxes .dermaBox .button:hover, .servicesPrices .landingPage .container .boxes .estetikaBox .button:hover, .home .sluzby .sluzbyCards .karticka .button:hover, form .button:hover {
+  background-color: #817969;
+  color: white;
 }
 
 .container .alert {
@@ -313,6 +329,7 @@ form input {
   font-size: 1.8rem;
   margin-bottom: 3rem;
   min-width: 600px;
+  width: 100%;
 }
 form textarea {
   width: 100%;
@@ -323,15 +340,6 @@ form textarea {
 }
 form .button {
   margin-top: 3rem;
-  text-decoration: none;
-  background-color: #c1b6a0;
-  font-size: 1.8rem;
-  color: #4d4639;
-  cursor: pointer;
-}
-form .button:hover {
-  background-color: #817969;
-  color: white;
 }
 
 .home .landingPage {
@@ -385,6 +393,10 @@ form .button:hover {
   letter-spacing: 1.2px;
   cursor: pointer;
 }
+.home .landingPage .headingBox .buttons .button .phoneIcon {
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+}
 .home .landingPage .headingBox .buttons .button:nth-child(1) {
   margin-right: 5rem;
 }
@@ -399,8 +411,9 @@ form .button:hover {
 .home .landingPage #phoneNumber a {
   color: white;
   text-decoration: none;
+  font-size: 2.5rem;
 }
-.home .landingPage #phoneNumber a #phoneIcon {
+.home .landingPage #phoneNumber a .phoneIcon {
   font-size: 3.6rem;
 }
 .home .landingPage #phoneNumber:hover {
@@ -410,12 +423,7 @@ form .button:hover {
   margin-top: 9rem;
   margin-bottom: 10rem;
   width: 100%;
-}
-.home .sluzby .container h2 {
-  font-size: 5rem;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
+  height: auto;
 }
 .home .sluzby .container p:nth-of-type(2) {
   margin-top: 2rem;
@@ -429,20 +437,38 @@ form .button:hover {
   font-weight: 600;
 }
 .home .sluzby .sluzbyCards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
+  display: grid;
+  grid-template-areas: "pojistovny derma estetika";
   margin-top: 9rem;
+  height: auto;
 }
 .home .sluzby .sluzbyCards .karticka {
-  height: auto;
-  min-width: 350px;
-  max-width: 500px;
   color: #817969;
   padding: 3rem;
   padding-top: 7rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.home .sluzby .sluzbyCards .karticka.pojistovny {
+  grid-area: pojistovny;
+}
+.home .sluzby .sluzbyCards .karticka.derma {
+  grid-area: derma;
+}
+.home .sluzby .sluzbyCards .karticka.estetika {
+  grid-area: estetika;
+}
+.home .sluzby .sluzbyCards .karticka .obsah {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.home .sluzby .sluzbyCards .karticka .obsah .horni {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -504,16 +530,6 @@ form .button:hover {
 }
 .home .sluzby .sluzbyCards .karticka .button {
   margin: 3rem 0 0 0;
-  text-decoration: none;
-  background-color: #c1b6a0;
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  color: #4d4639;
-  cursor: pointer;
-}
-.home .sluzby .sluzbyCards .karticka .button:hover {
-  background-color: #817969;
-  color: white;
 }
 .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
   margin-right: 6rem;
@@ -523,12 +539,6 @@ form .button:hover {
   background-color: #effdec;
   color: #586b5c;
   padding-top: 9rem;
-}
-.home .tym .container h2 {
-  font-size: 5rem;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
 }
 .home .tym .container p span {
   font-weight: 600;
@@ -597,12 +607,6 @@ form .button:hover {
   color: #4d4639;
   padding-top: 9rem;
   padding-bottom: 9rem;
-}
-.home .oteviracka .container h2 {
-  font-size: 5rem;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
 }
 .home .oteviracka .container .mistoCas {
   display: flex;
@@ -797,28 +801,11 @@ form .button:hover {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.servicesPrices .landingPage .container .boxes .dermaBox .button, .servicesPrices .landingPage .container .boxes .estetikaBox .button {
-  background-color: #c1b6a0;
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  color: #4d4639;
-  cursor: pointer;
-}
-.servicesPrices .landingPage .container .boxes .dermaBox .button:hover, .servicesPrices .landingPage .container .boxes .estetikaBox .button:hover {
-  background-color: #817969;
-  color: white;
-}
 .servicesPrices .dermatologickeSluzby {
   width: 100%;
   background-color: #e4decf;
   padding-top: 9rem;
   padding-bottom: 10rem;
-}
-.servicesPrices .dermatologickeSluzby .container h2 {
-  font-size: 5rem;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
 }
 .servicesPrices .dermatologickeSluzby .container ul {
   list-style-type: none;
@@ -876,30 +863,12 @@ form .button:hover {
 .servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba.pata {
   grid-area: pata;
 }
-.servicesPrices .dermatologickeSluzby .container .button {
-  text-decoration: none;
-  background-color: #c1b6a0;
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  color: #4d4639;
-  cursor: pointer;
-}
-.servicesPrices .dermatologickeSluzby .container .button:hover {
-  background-color: #817969;
-  color: white;
-}
 .servicesPrices .estetickeSluzby {
   width: 100%;
   background-color: #effdec;
   padding-top: 9rem;
   padding-bottom: 10rem;
   color: #586b5c;
-}
-.servicesPrices .estetickeSluzby .container h2 {
-  font-size: 5rem;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
 }
 .servicesPrices .estetickeSluzby .container h3 {
   margin-top: 7rem;
@@ -980,12 +949,6 @@ form .button:hover {
   padding-top: 9rem;
   padding-bottom: 10rem;
 }
-.servicesPrices .cenik .container h2 {
-  font-size: 5rem;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-}
 .servicesPrices .cenik .container a {
   text-decoration: none;
   color: #4d4639;
@@ -1015,18 +978,6 @@ form .button:hover {
 .servicesPrices .cenik .container #accordion .card .card-body p.cena {
   font-weight: 500;
 }
-.servicesPrices .cenik .container .button {
-  background-color: #c1b6a0;
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  color: #4d4639;
-  cursor: pointer;
-}
-.servicesPrices .cenik .container .button:hover {
-  background-color: #817969;
-  color: white;
-}
-
 .kontakt .line {
   width: 100%;
   background-color: #c1b6a0;
@@ -1043,9 +994,7 @@ form .button:hover {
   align-items: start;
 }
 .kontakt .container .informace h2 {
-  text-transform: uppercase;
-  font-size: 3.6rem;
-  margin-bottom: 3rem;
+  font-size: 4rem;
 }
 .kontakt .container .informace a {
   font-size: 1.8rem;
@@ -1085,6 +1034,20 @@ form .button:hover {
   font-size: 2.5rem;
   margin-right: 1rem;
 }
+.kontakt .container .informace .left .udaje .objednatSeLink {
+  background-color: #c1b6a0;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+.kontakt .container .informace .left .udaje .objednatSeLink:hover {
+  background-color: #817969;
+  color: #e4decf;
+}
 .kontakt .container .informace .left .spojeni .bus {
   font-weight: 600;
 }
@@ -1093,6 +1056,9 @@ form .button:hover {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+}
+.kontakt .container .informace .right .formular p {
+  margin-bottom: 3rem;
 }
 .kontakt .container .mapa {
   display: flex;

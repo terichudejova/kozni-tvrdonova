@@ -92,6 +92,13 @@ $s-xxxl: 9rem;
     align-items: center;
 }
 
+@mixin column-between-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin row-center-center {
     display: flex;
     flex-direction: row;

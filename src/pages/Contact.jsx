@@ -18,7 +18,7 @@ export default function Contact() {
                             <p><ApartmentIcon className='kontaktIkonka'/> Kožní ordinace Tvrdoňová, s.r.o.</p>
                             <a target='_blank' href='https://www.google.cz/maps/dir//%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy/@50.0682106,14.3055251,596m/data=!3m1!1e3!4m18!1m8!3m7!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2s%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy!3b1!8m2!3d50.0682106!4d14.3081!16s%2Fg%2F11c2h56zs6!4m8!1m0!1m5!1m1!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2m2!1d14.3081!2d50.0682106!3e3?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D'><LocationOnIcon className='kontaktIkonka'/> <p>Poliklinika Žufanova 1114/1<br/>
                             Praha 6, Řepy 163 00</p></a>
-                            <a target='_blank' href="tel:+420235310315"><PhoneIcon className='kontaktIkonka'/> <p>+420 235 310 315</p></a>
+                            <a target='_blank' href="tel:+420235310315" className='objednatSeLink'><PhoneIcon className='kontaktIkonka'/> +420 235 310 315</a>
                             <a target='_blank' href="mailto:kozni.tvrdonova@email.cz?subject=Dotaz&body=Dobrý%20den,%20mám%20dotaz..."><EmailIcon className='kontaktIkonka'/> <p>kozni.tvrdonova@email.cz</p></a>
                             <p><ContactPageIcon className='kontaktIkonka'/> IČ: 24247723</p>
                         </div>
@@ -39,6 +39,7 @@ export default function Contact() {
                     <div className="right">
                         <div className="formular">
                             <h2>Kontaktní formulář</h2>
+                            <p>Máte nějaký dotaz? Využijte náš kontaktní formulář. <span>Formulář neslouží k objednávání pacientů.</span></p>
                             <div className="formBox">
                                 <ContactFormular />
                             </div>

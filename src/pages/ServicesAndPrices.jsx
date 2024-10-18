@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 
 export default function ServicesAndPrices() {
@@ -35,6 +36,13 @@ export default function ServicesAndPrices() {
             behavior: 'smooth'
         });
     };
+
+    const [isAllCollapsed, setIsAllCollapsed] = useState(false);
+
+    const toggleCollapse = () => {
+        setIsAllCollapsed(!isAllCollapsed);
+    };
+
 
 
     return (
@@ -153,12 +161,16 @@ export default function ServicesAndPrices() {
                     <p>Na všechny placené korektivní zákroky je nutné předem se objednat na telefonním čísle <span><a href="tel:+420235310315" target="_blank">+420 235 310 315</a></span>.</p>
                     <div id="accordion">
                         <div class="card">
+                            <button className="button" onClick={toggleCollapse}>{isAllCollapsed ? "Sbalit" : "Rozbalit všechny ceny"}</button>
+                        </div>
+
+                        <div class="card">
                             <div class="card-header">
                             <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
                                 Odstranění drobných kožních útvarů a znamének laserem
                             </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseOne" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>absolutně šetrná metoda vhodná k řezání a odpaření tkáně, rána se nehojí klasickou jizvou</p>
                                 <p className="cena">1 projev od 1200 Kč</p>
@@ -172,7 +184,7 @@ export default function ServicesAndPrices() {
                                 Odstranění drobných kožních útvarů elektrokauterem
                             </a>
                             </div>
-                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseTwo" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>bez místního znecitlivění</p>
                                 <p className="cena">od 500 Kč</p>
@@ -186,7 +198,7 @@ export default function ServicesAndPrices() {
                                 Odstranění drobných kožních útvarů radiofrekvencí
                             </a>
                             </div>
-                            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseThree" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>netraumatická metoda vhodná k řezání, koagulaci a odpaření tkáně, rána se nehojí klasickou jizvou</p>
                                 <p className="cena">1 projev od 800 Kč</p>
@@ -200,7 +212,7 @@ export default function ServicesAndPrices() {
                                 Odstranění xanthelasmat (laser, radiofrekvence)
                             </a>
                             </div>
-                            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseFour" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">od 2000 Kč</p>
                             </div>
@@ -213,7 +225,7 @@ export default function ServicesAndPrices() {
                                 Chemický peeling
                             </a>
                             </div>
-                            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseFive" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>Systémem AHA-kyselinami</p>
                                 <p className="cena">1 sezení za 1500 Kč</p>
@@ -229,7 +241,7 @@ export default function ServicesAndPrices() {
                                 Ošetření frakčním laserem
                             </a>
                             </div>
-                            <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseSix" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>odstraňování jizev</p>
                                 <p className="cena">1 sezení od 1200 Kč</p>
@@ -243,7 +255,7 @@ export default function ServicesAndPrices() {
                                 Aplikace výplňových materiálů
                             </a>
                             </div>
-                            <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseSeven" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">od 6500 Kč dle množství a druhu materiálu</p>
                             </div>
@@ -256,7 +268,7 @@ export default function ServicesAndPrices() {
                                 Korekce a zvětšení rtů výplňovými materiály
                             </a>
                             </div>
-                            <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseEight" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">od 7500 Kč dle množství a druhu materiálu</p>
                             </div>
@@ -269,7 +281,7 @@ export default function ServicesAndPrices() {
                                 Chirurgická excize šitá
                             </a>
                             </div>
-                            <div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseNine" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">od 1000 Kč</p>
                             </div>
@@ -282,7 +294,7 @@ export default function ServicesAndPrices() {
                                 Poradna pro péči o pleť
                             </a>
                             </div>
-                            <div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseTen" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">konzultace 500 Kč</p>
                             </div>
@@ -295,7 +307,7 @@ export default function ServicesAndPrices() {
                                 Sklerotizace mikrovarixů (metliček)
                             </a>
                             </div>
-                            <div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseEleven" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">1. ošetření 3000 Kč</p>
                                 <p className="cena">2. ošetření od 2500 Kč</p>
@@ -309,7 +321,7 @@ export default function ServicesAndPrices() {
                                 Aplikace botulického toxinu ke korekci vrásek
                             </a>
                             </div>
-                            <div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseTwelve" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">1 lokalita od 4000 Kč</p>
                             </div>
@@ -322,7 +334,7 @@ export default function ServicesAndPrices() {
                                 Léčba nadměrného pocení (hyperhidrozy) botulickým toxinem
                             </a>
                             </div>
-                            <div id="collapseThirteen" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseThirteen" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">od 11000 Kč</p>
                             </div>
@@ -335,7 +347,7 @@ export default function ServicesAndPrices() {
                                 Nastřelování náušnic systémem Blomdahl
                             </a>
                             </div>
-                            <div id="collapseFourteen" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseFourteen" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">1 náušnice + aplikace 500 Kč</p>
                                 <p className="cena">2 náušnice + aplikace 800 Kč</p>
@@ -349,7 +361,7 @@ export default function ServicesAndPrices() {
                                 Aplikace místní anestezie-injekční
                             </a>
                             </div>
-                            <div id="collapseFifteen" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseFifteen" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>Emla, jednorázový materiál</p>
                                 <p className="cena">200 Kč</p>
@@ -363,7 +375,7 @@ export default function ServicesAndPrices() {
                                 Test na HIV
                             </a>
                             </div>
-                            <div id="collapseSixteen" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseSixteen" class={`collapse ${isAllCollapsed ? "show" : ""}`} data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p className="cena">700 Kč</p>
                             </div>

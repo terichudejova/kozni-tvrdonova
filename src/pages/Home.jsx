@@ -36,10 +36,10 @@ export default function Home() {
                     <p>Soukromá dermatologická klinika v Praze</p>
                     <div className="buttons">
                         <a className="button" onClick={scrollToSection}>Naše služby</a>
-                        <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se</NavLink>
+                        <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se <LocalPhoneIcon className="phoneIcon"/></NavLink>
                     </div>
                 </div>
-                <p id="phoneNumber"><a href="tel:+420235310315" target='_blank'><LocalPhoneIcon id="phoneIcon"/> +420 235 310 315</a></p>
+                <p id="phoneNumber"><a href="tel:+420235310315" target='_blank'><LocalPhoneIcon className="phoneIcon"/> +420 235 310 315</a></p>
             </div>
 
             {/* Sekce info a služby */}
@@ -78,22 +78,30 @@ export default function Home() {
                         <div className="iconCircle">
                             <HealingIcon className='iconCircle_ikonka'/>
                         </div>
-                        <h3>Dermatologie</h3>
-                        <div className="line"></div>
-                        <p>Naše soukromá kožní ordinace poskytuje běžnou lékařskou péči, která je hrazena z&nbsp;veřejného zdravotního pojištění.</p>
-                        <h4>Prevence-vyšetření kožních znamének dermatoskopem</h4>
-                        {/* <div className="line line2"></div> */}
-                        <p>Klientům pojišťoven 111, 211, 201, 205 bude <span>poplatek 500Kč</span>, který uhradí v&nbsp;ordinaci, vrácen po předložení žádosti o&nbsp;příspěvek a&nbsp;dokladu o&nbsp;zaplacení z&nbsp;fondu prevence ZP. Klienti <span>pojišťovny 207</span> mají vyšetření <span>bez poplatku</span>.</p>
-                        <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
+                        <div className="obsah">
+                            <div className="horni">
+                                <h3>Dermatologie</h3>
+                                <div className="line"></div>
+                                <p>Naše soukromá kožní ordinace poskytuje běžnou lékařskou péči, která je hrazena z&nbsp;veřejného zdravotního pojištění.</p>
+                                <h4>Prevence-vyšetření kožních znamének dermatoskopem</h4>
+                                {/* <div className="line line2"></div> */}
+                                <p>Klientům pojišťoven 111, 211, 201, 205 bude <span>poplatek 500Kč</span>, který uhradí v&nbsp;ordinaci, vrácen po předložení žádosti o&nbsp;příspěvek a&nbsp;dokladu o&nbsp;zaplacení z&nbsp;fondu prevence ZP. Klienti <span>pojišťovny 207</span> mají vyšetření <span>bez poplatku</span>.</p>
+                            </div>
+                            <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
+                        </div>
                     </div>
                     <div className="estetika karticka glassEffect">
                         <div className="iconCircle">
                             <VaccinesIcon className='iconCircle_ikonka'/>
                         </div>
-                        <h3>Estetická dermatologie</h3>
-                        <div className="line"></div>
-                        <p>Jedná se o&nbsp;nadstandardní zákroky, které nejsou hrazené zdravotními pojišťovnami a&nbsp;klient si je hradí sám. Nabízíme například <span>korekci vrásek</span> botulickým toxinem, chemický peeling, <span>zvětšení rtů</span>, <span>nastřelování náušnic</span> a&nbsp;další.</p>
-                        <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
+                        <div className="obsah">
+                            <div className="horni">
+                                <h3>Estetická dermatologie</h3>
+                                <div className="line"></div>
+                                <p>Jedná se o&nbsp;nadstandardní zákroky, které nejsou hrazené zdravotními pojišťovnami a&nbsp;klient si je hradí sám. Nabízíme například <span>korekci vrásek</span> botulickým toxinem, chemický peeling, <span>zvětšení rtů</span>, <span>nastřelování náušnic</span> a&nbsp;další.</p>
+                            </div>
+                            <NavLink to="/kozni-tvrdonova/sluzbyacenik" className='button'>Více informací</NavLink>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,10 +146,10 @@ export default function Home() {
             {/* navštivte nás */}
             <div className="oteviracka">
                 <div className="container">
-                    <h2>Navštivte nás</h2>
                     <div className="mistoCas">
                         <div className="misto">
                             <div className="mistoAdresa">
+                                <h2>Navštivte nás</h2>
                                 <h3>Adresa:</h3>
                                 <div className="info">
                                     <a target='_blank' href='https://www.google.cz/maps/dir//%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy/@50.0682106,14.3055251,596m/data=!3m1!1e3!4m18!1m8!3m7!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2s%C5%BDufanova+1114%2F1,+163+00+Praha+17-%C5%98epy!3b1!8m2!3d50.0682106!4d14.3081!16s%2Fg%2F11c2h56zs6!4m8!1m0!1m5!1m1!1s0x470bbe3ec5d93449:0xa060c91a94be1641!2m2!1d14.3081!2d50.0682106!3e3?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D'>
