@@ -180,6 +180,10 @@ b, strong {
     box-sizing: border-box;
     z-index: 2;
 
+    @include w-600 {
+        padding-left: $s-xxs;
+    }
+
     //navbar - desktop
     .nav-links {
         width: 100%;
@@ -287,10 +291,6 @@ b, strong {
             border-radius: 3px;
             transition: all 0.3s ease;
             margin-bottom: 10px;
-
-            @include w-500 {
-                background-color: $font-color;
-            }
         }
 
         // .hamburger responsivity

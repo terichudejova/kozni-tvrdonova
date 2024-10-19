@@ -192,6 +192,11 @@ b, strong {
   z-index: 2;
   /* Přechod hamburgeru na křížek */
 }
+@media only screen and (max-width: 600px) {
+  .navbarBox {
+    padding-left: 1rem;
+  }
+}
 .navbarBox .nav-links {
   width: 100%;
   display: flex;
@@ -279,11 +284,6 @@ b, strong {
   border-radius: 3px;
   transition: all 0.3s ease;
   margin-bottom: 10px;
-}
-@media only screen and (max-width: 500px) {
-  .navbarBox .hamburger .bar {
-    background-color: #4d4639;
-  }
 }
 @media only screen and (max-width: 1000px) {
   .navbarBox .hamburger {
