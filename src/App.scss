@@ -366,22 +366,73 @@ b, strong {
     padding-top: $s-m;
     padding-bottom: $s-m;
 
+    @include w-600 {
+        padding-top: $s-xs;
+        padding-bottom: $s-xs;
+    }
+
     .footerInfo {
         @include row-between-start;
 
         .footerColumn {
             @include column-start-start;
+            
+            @include w-1200 {
+                width: 35%;
+
+                &:nth-of-type(1) {
+                    width: 20%;
+                }
+            }
+
+            @include w-1000 {
+
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    display: none;
+                }
+
+                &:nth-of-type(3) {
+                    width: 100%;
+
+
+                }
+            }
 
             h5 {
                 font-size: $f-xs;
                 margin-bottom: $s-xxs;
                 letter-spacing: 2px;
+
+                @include w-600 {
+                    font-size: $f-xxs;
+                }
             }
 
             p {
                 font-size: $f-xxs;
                 letter-spacing: 1.2px;
                 margin-bottom: $s-xxs;
+
+                &.copyrightMobile {
+                    display: none;
+
+                    @include w-600 {
+                        display: flex;
+                    }
+                }
+
+                &.copyrightDesktop,
+                &.ico {
+
+                    @include w-600 {
+                        display: none;
+                    }
+                }
+
+                @include w-600 {
+                    font-size: $f-xxxs;
+                }
             }
 
             a {

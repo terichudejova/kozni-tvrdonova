@@ -30,8 +30,9 @@ export default function FooterSection() {
                     </div>
                     <div className="footerColumn">
                         <h5>Kožní ordinace Tvrdoňová, s.r.o.</h5>
-                        <p>IČO: 24247723</p>
-                        <p>Copyright © {(new Date().getFullYear())} All rights reserved MUDr. Kateřina Tvrdoňová</p>
+                        <p className="ico">IČO: 24247723</p>
+                        <p className="copyrightDesktop">Copyright © {(new Date().getFullYear())} All rights reserved MUDr. Kateřina Tvrdoňová</p>
+                        <p className="copyrightMobile">Copyright © {(new Date().getFullYear())} MUDr. Kateřina Tvrdoňová</p>
                         <p>Web Development - Ing. Tereza Chudějová</p>
                     </div>
                 </div>
