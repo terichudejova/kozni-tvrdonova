@@ -382,11 +382,26 @@ form {
     padding: $s-s;
     @extend .glassEffect;
 
+    @include w-1600 {
+        width: 100%;
+    }
+
+    @include w-600 {
+        padding: $s-s $s-xs;
+    }
+
+    @include w-400 {
+        padding: $s-s $s-xxs;
+    }
+
     label {
         font-size: $f-s;
         margin-right: $s-xs;
         margin-bottom: $s-xxs;
         
+        @include w-600 {
+            font-size: $f-xs;
+        }
     }
 
     input, textarea {
@@ -405,6 +420,14 @@ form {
         min-width: 600px;
         width: 100%;
         @extend .glassEffect;
+
+        @include w-1600 {
+            min-width: 100%;
+        }
+
+        @include w-600 {
+            font-size: $f-xs;
+        }
     }
 
     textarea {
@@ -414,6 +437,15 @@ form {
         margin-right: $s-s;
         min-height: 150px;
         @extend .glassEffect;
+
+        @include w-600 {
+            min-height: 200px;
+            font-size: $f-xs;
+        }
+
+        @include w-400 {
+            min-height: 250px;
+        }
     }
 
     .button {
@@ -1574,12 +1606,38 @@ form {
         padding-top: $s-xxxl;
         padding-bottom: 2 * $s-l;
 
+        @include w-600 {
+            padding-top: $s-xxl;
+            padding-bottom: $s-xxxl;
+        }
+
+        @include w-400 {
+            padding-top: $s-xl;
+        }
+
         .informace {
             @include row-between-start;
 
+            @include w-1600 {
+                @include column-start-center;
+            }
+
             h2 {
                 @extend .h2;
-                font-size: $f-xxxl;
+                    font-size: $f-xxxl;
+
+                @include w-1200 {
+                    margin-bottom: $s-s;
+                }
+
+                @include w-800 {
+                    font-size: $f-xl;
+                    margin-bottom: $s-xs;
+                }
+
+                @include w-400 {
+                    font-size: $f-l;
+                }
             }
 
             a {
@@ -1610,9 +1668,43 @@ form {
             .left {
                 @include column-start-start;
                 margin-right: $s-xxxl;
+                width: 100%;
+
+                @include w-1600 {
+                    @include row-between-start;
+                    margin-right: 0;
+                    margin-bottom: $s-xxxl;
+                }
+
+                @include w-1200 {
+                    @include column-start-center;
+                }
+
+                @include w-600 {
+                    margin-bottom: $s-xxl;
+                }
+
+                @include w-600 {
+                    margin-bottom: $s-l;
+                }
 
                 .udaje {
                     margin-bottom: $s-m;
+
+                    @include w-1600 {
+                        margin-right: $s-xxxl;
+                        width: 50%;
+                    }
+
+                    @include w-1200 {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: $s-l;
+                    }
+
+                    @include w-600 {
+                        margin-bottom: $s-m;
+                    }
 
                     p, a {
                         @include row-start-start;
@@ -1629,6 +1721,7 @@ form {
                         padding: $s-xxxs;
                         margin-bottom: $s-xxs;
                         border-radius: 3px;
+                        max-width: 220px;
                         
                         &:hover {
                             background-color: $contrast-color;
@@ -1639,6 +1732,14 @@ form {
 
                 .spojeni {
 
+                    @include w-1600 {
+                        width: 50%;
+                    }
+
+                    @include w-1200 {
+                        width: 100%;
+                    }
+
                     .bus {
                         font-weight: 600;
                     }
@@ -1647,8 +1748,10 @@ form {
 
             .right {
                 @include column-start-start;
+                width: 100%;
 
                 .formular {
+                    width: 100%;
 
                     p {
                         margin-bottom: $s-s;
@@ -1660,6 +1763,40 @@ form {
         .mapa {
             @include column-start-center;
             margin-top: $s-xxxl;
+            width: 100%;
+
+            @include w-600 {
+                margin-top: $s-xl;
+            }
+
+            .google-map-code {
+                @include column-start-center;
+                width: 100%;
+
+                iframe {
+
+                    @include w-2000 {
+                        width: 1700px;
+                    }
+
+                    @include w-1600 {
+                        width: 100%;
+                    }
+
+                    @include w-800 {
+                        height: 400px;
+                    }
+
+                    @include w-600 {
+                        height: 350px;
+                        width: 90%;
+                    }
+
+                    @include w-400 {
+                        height: 250px;
+                    }
+                }
+            }
         }
     }
 }

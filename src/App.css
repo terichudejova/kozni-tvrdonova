@@ -360,10 +360,30 @@ form {
   align-items: start;
   padding: 3rem;
 }
+@media only screen and (max-width: 1600px) {
+  form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 3rem 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  form {
+    padding: 3rem 1rem;
+  }
+}
 form label {
   font-size: 1.8rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  form label {
+    font-size: 1.5rem;
+  }
 }
 form input:focus, form textarea:focus {
   outline: none;
@@ -377,12 +397,33 @@ form input {
   min-width: 600px;
   width: 100%;
 }
+@media only screen and (max-width: 1600px) {
+  form input {
+    min-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  form input {
+    font-size: 1.5rem;
+  }
+}
 form textarea {
   width: 100%;
   margin-bottom: 1rem;
   font-size: 1.8rem;
   margin-right: 3rem;
   min-height: 150px;
+}
+@media only screen and (max-width: 600px) {
+  form textarea {
+    min-height: 200px;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  form textarea {
+    min-height: 250px;
+  }
 }
 form .button {
   margin-top: 3rem;
@@ -1388,14 +1429,49 @@ form .button {
   padding-top: 9rem;
   padding-bottom: 10rem;
 }
+@media only screen and (max-width: 600px) {
+  .kontakt .container {
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .kontakt .container {
+    padding-top: 6rem;
+  }
+}
 .kontakt .container .informace {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
 }
+@media only screen and (max-width: 1600px) {
+  .kontakt .container .informace {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
 .kontakt .container .informace h2 {
   font-size: 4rem;
+}
+@media only screen and (max-width: 1200px) {
+  .kontakt .container .informace h2 {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .kontakt .container .informace h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .kontakt .container .informace h2 {
+    font-size: 2.5rem;
+  }
 }
 .kontakt .container .informace a {
   font-size: 1.8rem;
@@ -1418,9 +1494,56 @@ form .button {
   justify-content: start;
   align-items: start;
   margin-right: 9rem;
+  width: 100%;
+}
+@media only screen and (max-width: 1600px) {
+  .kontakt .container .informace .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-right: 0;
+    margin-bottom: 9rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .kontakt .container .informace .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .kontakt .container .informace .left {
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .kontakt .container .informace .left {
+    margin-bottom: 5rem;
+  }
 }
 .kontakt .container .informace .left .udaje {
   margin-bottom: 4rem;
+}
+@media only screen and (max-width: 1600px) {
+  .kontakt .container .informace .left .udaje {
+    margin-right: 9rem;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .kontakt .container .informace .left .udaje {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .kontakt .container .informace .left .udaje {
+    margin-bottom: 4rem;
+  }
 }
 .kontakt .container .informace .left .udaje p, .kontakt .container .informace .left .udaje a {
   display: flex;
@@ -1441,10 +1564,21 @@ form .button {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 3px;
+  max-width: 220px;
 }
 .kontakt .container .informace .left .udaje .objednatSeLink:hover {
   background-color: #817969;
   color: #e4decf;
+}
+@media only screen and (max-width: 1600px) {
+  .kontakt .container .informace .left .spojeni {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .kontakt .container .informace .left .spojeni {
+    width: 100%;
+  }
 }
 .kontakt .container .informace .left .spojeni .bus {
   font-weight: 600;
@@ -1454,6 +1588,10 @@ form .button {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  width: 100%;
+}
+.kontakt .container .informace .right .formular {
+  width: 100%;
 }
 .kontakt .container .informace .right .formular p {
   margin-bottom: 3rem;
@@ -1464,4 +1602,43 @@ form .button {
   justify-content: start;
   align-items: center;
   margin-top: 9rem;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .kontakt .container .mapa {
+    margin-top: 6rem;
+  }
+}
+.kontakt .container .mapa .google-map-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (min-width: 2000px) {
+  .kontakt .container .mapa .google-map-code iframe {
+    width: 1700px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .kontakt .container .mapa .google-map-code iframe {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .kontakt .container .mapa .google-map-code iframe {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .kontakt .container .mapa .google-map-code iframe {
+    height: 350px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .kontakt .container .mapa .google-map-code iframe {
+    height: 250px;
+  }
 }/*# sourceMappingURL=App.css.map */
