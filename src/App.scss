@@ -84,6 +84,14 @@ b, strong {
     &:hover {
         transform: scale(1.05);
     }
+
+    @include w-1000 {
+        width: 60px;
+    }
+
+    @include w-600 {
+        display: none;
+    }
 }
 
 .button {
@@ -178,8 +186,16 @@ b, strong {
         @include row-between-center;
 
         .right {
-            width: 50%;
+            width: 55%;
             @include row-between-center;
+
+            // @include w-1600 {
+            //     width: 50%;
+            // }
+
+            // @include w-1200 {
+            //     width: 60%;
+            // }
 
             .navLink {
                 text-decoration: none;
@@ -190,6 +206,17 @@ b, strong {
                 color: white;
                 transition: all 0.2s ease-in-out;
                 cursor: pointer;
+
+                // .navLink responsivity
+                @include w-1000 {
+                    margin-bottom: $s-xxs;
+                    color: $font-color;
+                    font-size: $f-s;
+                }
+
+                @include w-600 {
+                    font-size: $f-xs;
+                }
     
                 &:hover { 
                     background-color: $navbar-hover-color;
@@ -200,12 +227,15 @@ b, strong {
                     color: $font-color;
                     background-color: $base2-color;
                     border-radius: 3px;
+
+                    @include w-1000 {
+                        background-color: $contrast-color;
+                        color: $base2-color;
+                    }
                 }
-    
-                // .navLink responsivity
-                @include w-1000 {
-                    margin-bottom: $s-xxs;
-                    color: $base1-color;
+
+                &:nth-of-type(1) {
+                    margin-right: $s-xxs;
                 }
             }
     
@@ -238,6 +268,10 @@ b, strong {
                 }
             }
         }
+
+        .hamburger .bar {
+            background-color: $font-color;
+        }
     }
 
     //navbar - hamburger
@@ -249,17 +283,22 @@ b, strong {
         .bar {
             height: 3px;
             width: 35px;
-            background-color: $hover-color;
+            background-color: $base2-color;
             border-radius: 3px;
             transition: all 0.3s ease;
             margin-bottom: 10px;
+
+            @include w-500 {
+                background-color: $font-color;
+            }
         }
 
         // .hamburger responsivity
         @include w-1000 {
             display: flex;
             z-index: 2;
-            margin-top: $s-s;
+            margin-top: $s-xxs;
+            margin-right: $s-l;
         }
     }
 
@@ -282,13 +321,13 @@ b, strong {
 
             // .bar - responsivity
             @include w-1000 {
-                background-color: $hover-color;
+                background-color: $font-color;
             }
         }
 
         // .nav.open - responsivity
         @include w-1000 {
-            padding-top: 0;
+            padding-top: $s-xs;
 
             .nav-links .right {
                 display: flex;
@@ -303,7 +342,7 @@ b, strong {
                 z-index: 1;
                 padding-top: $s-xs;
                 padding-bottom: $s-xs;
-                background-color: red;
+                background-color: $base2-color;
 
                 &.show {
 

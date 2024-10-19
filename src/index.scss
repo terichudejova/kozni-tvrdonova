@@ -153,6 +153,7 @@ $s-xxxl: 9rem;
 $breakpoints: (
     "w-330": 330px,
     "w-400": 400px,
+    "w-500": 500px,
     "w-600": 600px,
     "w-800": 800px,
     "w-1000": 1000px,
@@ -171,6 +172,12 @@ $breakpoints: (
 
 @mixin w-400 {
     @media only screen and (max-width: map-get($breakpoints, "w-400")) {
+        @content;
+    }
+};
+
+@mixin w-500 {
+    @media only screen and (max-width: map-get($breakpoints, "w-500")) {
         @content;
     }
 };
