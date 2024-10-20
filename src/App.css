@@ -194,6 +194,11 @@ b, strong {
 }
 @media only screen and (max-width: 600px) {
   .navbarBox {
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbarBox {
     padding-left: 1rem;
   }
 }
@@ -591,6 +596,22 @@ form .button {
 }
 .home .landingPage .headingBox p {
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}
+@media only screen and (max-width: 500px) {
+  .home .landingPage .headingBox p {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .home .landingPage .headingBox p {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .home .landingPage .headingBox p {
+    width: 80%;
+  }
 }
 .home .landingPage .headingBox .buttons {
   display: flex;

@@ -181,6 +181,10 @@ b, strong {
     z-index: 2;
 
     @include w-600 {
+        padding-left: $s-xs;
+    }
+
+    @include w-400 {
         padding-left: $s-xxs;
     }
 
@@ -620,6 +624,19 @@ form {
 
             p {
                 color: white;
+                box-shadow: $main-shadow;
+
+                @include w-500 {
+                    width: 60%;
+                }
+
+                @media only screen and (max-width: 420px) {
+                    width: 70%;
+                }
+
+                @media only screen and (max-width: 360px) {
+                    width: 80%;
+                }
             }
 
             .buttons {
