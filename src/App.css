@@ -285,12 +285,12 @@ b, strong {
   transition: all 0.3s ease;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 500px) and (min-height: 800px) {
+@media only screen and (max-width: 420px) and (min-height: 730px) {
   .navbarBox .hamburger .bar {
     background-color: #4d4639;
   }
 }
-@media only screen and (max-width: 400px) and (min-height: 700px) {
+@media only screen and (max-width: 360px) and (min-height: 650px) {
   .navbarBox .hamburger .bar {
     background-color: #4d4639;
   }
