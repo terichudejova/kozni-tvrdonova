@@ -676,6 +676,10 @@ form {
                 right: 20px;
             }
 
+            @include w-500 {
+                bottom: $s-xxxl;
+            }
+
             a {
                 color: white;
                 text-decoration: none;

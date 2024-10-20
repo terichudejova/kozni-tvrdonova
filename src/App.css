@@ -652,6 +652,11 @@ form .button {
     right: 20px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .home .landingPage #phoneNumber {
+    bottom: 9rem;
+  }
+}
 .home .landingPage #phoneNumber a {
   color: white;
   text-decoration: none;
