@@ -16,6 +16,7 @@ function App() {
   //Hamburger Menu
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -25,7 +26,12 @@ function App() {
   //Zavření hamburger menu při kliknutí na obrazovku
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
+      if (
+        navRef.current && 
+        !navRef.current.contains(event.target) && 
+        hamburgerRef.current && 
+        !hamburgerRef.current.contains(event.target)
+      ) {
         setIsOpen(false);
       }
     };
@@ -69,7 +75,7 @@ function App() {
     <div className='outerBox'>
           <ScrollToTop/>
           <nav className={`navbarBox ${isOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
-            <div className="hamburger" onClick={toggleMenu}>
+            <div ref={hamburgerRef} className="hamburger" onClick={toggleMenu}>
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
