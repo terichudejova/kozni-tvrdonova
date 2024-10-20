@@ -672,12 +672,19 @@ form {
             margin-bottom: 0;
 
             @include w-600 {
-                bottom: $s-xs;
                 right: 20px;
             }
 
             @include w-500 {
                 bottom: $s-xxxl;
+            }
+
+            @media only screen and (max-height: 600px) {
+                bottom: $s-xs;
+            }
+
+            @media only screen and (max-height: 520px) {
+                display: none;
             }
 
             a {
