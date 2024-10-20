@@ -27,7 +27,7 @@ body, html {
   align-items: center;
 }
 @media only screen and (min-width: 1400px) {
-  .outerBox .container {
+  .outerBox > .container {
     max-width: 85%;
   }
 }
@@ -354,8 +354,12 @@ b, strong {
 }
 @media only screen and (max-width: 600px) {
   .footerSection {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footerSection {
+    padding: 1rem;
   }
 }
 .footerSection .footerInfo {
@@ -546,6 +550,18 @@ form .button {
   align-items: start;
   margin-top: 15%;
 }
+@media only screen and (max-width: 600px) {
+  .home .landingPage .headingBox {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home .landingPage .headingBox {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .home .landingPage .headingBox h1 {
   color: white;
   font-size: 9rem;
@@ -672,6 +688,18 @@ form .button {
   margin-bottom: 10rem;
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .home .sluzby {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home .sluzby {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .home .sluzby .container p:nth-of-type(2) {
   margin-top: 2rem;
@@ -823,6 +851,18 @@ form .button {
   color: #586b5c;
   padding-top: 9rem;
 }
+@media only screen and (max-width: 600px) {
+  .home .tym {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home .tym {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .home .tym .container p span {
   font-weight: 600;
 }
@@ -948,6 +988,18 @@ form .button {
   color: #4d4639;
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+@media only screen and (max-width: 600px) {
+  .home .oteviracka {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home .oteviracka {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .home .oteviracka .container .mistoCas {
   display: flex;
@@ -1244,6 +1296,18 @@ form .button {
 .servicesPrices .landingPage .container {
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 600px) {
+  .servicesPrices .landingPage .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesPrices .landingPage .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .servicesPrices .landingPage .container .boxes {
   margin-top: 18rem;
   color: #4d4639;
@@ -1307,8 +1371,13 @@ form .button {
 }
 @media only screen and (max-width: 600px) {
   .servicesPrices .dermatologickeSluzby {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding: 7rem 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesPrices .dermatologickeSluzby {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .servicesPrices .dermatologickeSluzby .container ul {
@@ -1388,8 +1457,13 @@ form .button {
 }
 @media only screen and (max-width: 600px) {
   .servicesPrices .estetickeSluzby {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding: 7rem 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesPrices .estetickeSluzby {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .servicesPrices .estetickeSluzby .container h3 {
@@ -1487,8 +1561,13 @@ form .button {
 }
 @media only screen and (max-width: 600px) {
   .servicesPrices .cenik {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding: 7rem 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesPrices .cenik {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .servicesPrices .cenik .container a {
@@ -1542,13 +1621,14 @@ form .button {
 }
 @media only screen and (max-width: 600px) {
   .kontakt .container {
-    padding-top: 7rem;
-    padding-bottom: 9rem;
+    padding: 7rem 2rem 9rem 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
   .kontakt .container {
     padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .kontakt .container .informace {

@@ -9,7 +9,7 @@
     width: 100%;
     @include column-start-center;
 
-    .container {
+    > .container {
         // border: 1px solid black;
         
         @include w-1400-min {
@@ -375,8 +375,11 @@ b, strong {
     padding-bottom: $s-m;
 
     @include w-600 {
-        padding-top: $s-xs;
-        padding-bottom: $s-xs;
+        padding: $s-xs;
+    }
+
+    @include w-400 {
+        padding: $s-xxs;
     }
 
     .footerInfo {
@@ -581,6 +584,16 @@ form {
             @include column-start-start;
             margin-top: 15%;
 
+            @include w-600 {
+                padding-left: $s-xs;
+                padding-right: $s-xs;
+            }
+
+            @include w-400 {
+                padding-left: $s-xxs;
+                padding-right: $s-xxs;
+            }
+
             h1 {
                 color: white;
                 font-size: 3 * $f-xl;
@@ -701,6 +714,16 @@ form {
         margin-bottom: 2 * $s-l;
         width: 100%;
         height: auto;
+
+        @include w-600 {
+            padding-left: $s-xs;
+            padding-right: $s-xs;
+        }
+
+        @include w-400 {
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
+        }
 
         .container {
             h2 {
@@ -891,6 +914,16 @@ form {
         color: $hover-color;
         padding-top: $s-xxxl;
 
+        @include w-600 {
+            padding-left: $s-xs;
+            padding-right: $s-xs;
+        }
+
+        @include w-400 {
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
+        }
+
         .container {
 
             h2 {
@@ -1027,6 +1060,16 @@ form {
         color: $font-color;
         padding-top: $s-xxxl;
         padding-bottom: $s-xxxl;
+
+        @include w-600 {
+            padding-left: $s-xs;
+            padding-right: $s-xs;
+        }
+
+        @include w-400 {
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
+        }
 
         .container {
 
@@ -1341,6 +1384,16 @@ form {
         .container {
             margin-bottom: $s-s;
 
+            @include w-600 {
+                padding-left: $s-xs;
+                padding-right: $s-xs;
+            }
+    
+            @include w-400 {
+                padding-left: $s-xxs;
+                padding-right: $s-xxs;
+            }
+
             .boxes {
                 margin-top: 2 * $s-xxxl;
                 color: $font-color;
@@ -1410,8 +1463,12 @@ form {
         padding-bottom: 2 * $s-l;
 
         @include w-600 {
-            padding-top: $s-xxl;
-            padding-bottom: $s-xxl;
+            padding: $s-xxl $s-xs;
+        }
+
+        @include w-400 {
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
         }
         
         .container {
@@ -1518,8 +1575,12 @@ form {
         color: $hover-color;
 
         @include w-600 {
-            padding-top: $s-xxl;
-            padding-bottom: $s-xxl;
+            padding: $s-xxl $s-xs;
+        }
+
+        @include w-400 {
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
         }
         
         .container {
@@ -1652,8 +1713,12 @@ form {
         padding-bottom: 2 * $s-l;
 
         @include w-600 {
-            padding-top: $s-xxl;
-            padding-bottom: $s-xxl;
+            padding: $s-xxl $s-xs;
+        }
+
+        @include w-400 {
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
         }
         
         .container {
@@ -1732,12 +1797,13 @@ form {
         padding-bottom: 2 * $s-l;
 
         @include w-600 {
-            padding-top: $s-xxl;
-            padding-bottom: $s-xxxl;
+            padding: $s-xxl $s-xs $s-xxxl $s-xs;
         }
 
         @include w-400 {
             padding-top: $s-xl;
+            padding-left: $s-xxs;
+            padding-right: $s-xxs;
         }
 
         .informace {
