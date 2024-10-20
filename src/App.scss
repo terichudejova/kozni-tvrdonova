@@ -291,6 +291,14 @@ b, strong {
             border-radius: 3px;
             transition: all 0.3s ease;
             margin-bottom: 10px;
+
+            @media only screen and (max-width: 500px) and (min-height: 800px) {
+                background-color: $font-color;
+            }
+    
+            @media only screen and (max-width: 400px) and (min-height: 700px) {
+                background-color: $font-color;
+            }
         }
 
         // .hamburger responsivity
