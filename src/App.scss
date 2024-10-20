@@ -1144,6 +1144,10 @@ form {
                         padding: $s-m $s-xs;
                     }
 
+                    @include w-330 {
+                        padding: $s-m $s-xxs;
+                    }
+
                     h3 {
                         font-size: $f-l;
                         margin-bottom: $s-s;
@@ -1163,10 +1167,33 @@ form {
                             margin-bottom: $s-xs;
                             
                             @include w-600 {
-                                @include column-start-start;
+                                @include column-start-center;
+                                text-align: center;
                             }
 
                             .col-6 {
+
+                                @include w-1600 {
+
+                                    &:nth-child(2n+1) {
+                                        width: 40%;
+                                    }
+
+                                    &:nth-child(2n) {
+                                        width: 60%;
+                                    }
+                                }
+
+                                @include w-1400 {
+
+                                    &:nth-child(2n+1) {
+                                        width: 50%;
+                                    }
+
+                                    &:nth-child(2n) {
+                                        width: 50%;
+                                    }
+                                }
 
                                 @include w-1000 {
 

@@ -1080,6 +1080,11 @@ form .button {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (max-width: 330px) {
+  .home .oteviracka .container .mistoCas .cas {
+    padding: 4rem 1rem;
+  }
+}
 .home .oteviracka .container .mistoCas .cas h3 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
@@ -1103,7 +1108,24 @@ form .button {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n+1) {
+    width: 40%;
+  }
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n) {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n+1) {
+    width: 50%;
+  }
+  .home .oteviracka .container .mistoCas .cas .casDny .row .col-6:nth-child(2n) {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 1000px) {
