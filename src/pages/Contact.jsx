@@ -20,6 +20,7 @@ export default function Contact() {
                             Praha 6, Řepy 163 00</p></a>
                             <a target='_blank' href="tel:+420235310315" className='objednatSeLink'><PhoneIcon className='kontaktIkonka'/> +420 235 310 315</a>
                             <a target='_blank' href="mailto:kozni.tvrdonova@email.cz?subject=Dotaz&body=Dobrý%20den,%20mám%20dotaz..."><EmailIcon className='kontaktIkonka'/> <p>kozni.tvrdonova@email.cz</p></a>
+                            <p><span>Email neslouží k objednávání pacientů.</span></p>
                             <p><ContactPageIcon className='kontaktIkonka'/> IČ: 24247723</p>
                         </div>
                         <div className="spojeni">
