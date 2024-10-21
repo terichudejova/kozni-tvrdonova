@@ -300,7 +300,7 @@ b, strong {
                 background-color: $font-color;
             }
 
-            @media only screen and (max-width: 360px) and (min-height: 650px) {
+            @media only screen and (max-width: 360px) and (min-height: 600px) {
                 background-color: $font-color;
             }
         }
@@ -624,7 +624,6 @@ form {
 
             p {
                 color: white;
-                box-shadow: $main-shadow;
 
                 @include w-500 {
                     width: 60%;
@@ -689,10 +688,6 @@ form {
             margin-bottom: 0;
 
             @include w-600 {
-                right: 20px;
-            }
-
-            @include w-500 {
                 bottom: $s-xxxl;
             }
 
@@ -700,7 +695,7 @@ form {
                 bottom: $s-xs;
             }
 
-            @media only screen and (max-height: 520px) {
+            @media only screen and (max-height: 525px) {
                 display: none;
             }
 

@@ -295,7 +295,7 @@ b, strong {
     background-color: #4d4639;
   }
 }
-@media only screen and (max-width: 360px) and (min-height: 650px) {
+@media only screen and (max-width: 360px) and (min-height: 600px) {
   .navbarBox .hamburger .bar {
     background-color: #4d4639;
   }
@@ -596,7 +596,6 @@ form .button {
 }
 .home .landingPage .headingBox p {
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
 @media only screen and (max-width: 500px) {
   .home .landingPage .headingBox p {
@@ -669,11 +668,6 @@ form .button {
 }
 @media only screen and (max-width: 600px) {
   .home .landingPage #phoneNumber {
-    right: 20px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .home .landingPage #phoneNumber {
     bottom: 9rem;
   }
 }
@@ -682,7 +676,7 @@ form .button {
     bottom: 2rem;
   }
 }
-@media only screen and (max-height: 520px) {
+@media only screen and (max-height: 525px) {
   .home .landingPage #phoneNumber {
     display: none;
   }
