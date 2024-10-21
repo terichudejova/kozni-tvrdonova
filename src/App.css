@@ -42,6 +42,7 @@ h1 {
   letter-spacing: 2.2px;
   text-transform: uppercase;
   margin-bottom: 4rem;
+  text-wrap: wrap;
 }
 @media only screen and (max-width: 1000px) {
   .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
@@ -51,6 +52,12 @@ h1 {
 @media only screen and (max-width: 600px) {
   .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
     font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -725,6 +732,8 @@ form .button {
   .home .sluzby {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 9rem;
   }
 }
 .home .sluzby .container p:nth-of-type(2) {
@@ -824,6 +833,7 @@ form .button {
 .home .sluzby .sluzbyCards .karticka h3 {
   font-size: 2rem;
   letter-spacing: 1.2px;
+  text-align: center;
 }
 @media only screen and (max-width: 400px) {
   .home .sluzby .sluzbyCards .karticka h3 {
@@ -871,6 +881,11 @@ form .button {
     margin-bottom: 9rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
+    margin-bottom: 7rem;
+  }
+}
 .home .tym {
   width: 100%;
   background-color: #effdec;
@@ -887,6 +902,7 @@ form .button {
   .home .tym {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 6rem;
   }
 }
 .home .tym .container p span {
@@ -994,19 +1010,11 @@ form .button {
     width: 30%;
   }
 }
-.home .tym .carouselBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-}
-.home .tym .carouselBox .carouselGallery {
-  width: 500px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
-}
-.home .tym .carouselBox .carouselGallery img {
-  max-width: 90%; /* Obrázek nebude nikdy větší než 90% šířky okna */
-  max-height: 90%; /* Obrázek nebude nikdy větší než 90% výšky okna */
+@media only screen and (max-width: 400px) {
+  .home .tym .bordercontainer .experiment .content {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
 }
 .home .oteviracka {
   width: 100%;
@@ -1025,6 +1033,8 @@ form .button {
   .home .oteviracka {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 .home .oteviracka .container .mistoCas {
@@ -1156,6 +1166,7 @@ form .button {
 @media only screen and (max-width: 400px) {
   .home .oteviracka .container .mistoCas .cas {
     padding: 4rem 2rem;
+    margin-top: 4rem;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -1404,6 +1415,8 @@ form .button {
   .servicesPrices .dermatologickeSluzby {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 .servicesPrices .dermatologickeSluzby .container ul {
@@ -1495,6 +1508,8 @@ form .button {
   .servicesPrices .estetickeSluzby {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 .servicesPrices .estetickeSluzby .container h3 {
@@ -1604,6 +1619,8 @@ form .button {
   .servicesPrices .cenik {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 .servicesPrices .cenik .container a {
@@ -1665,6 +1682,7 @@ form .button {
     padding-top: 6rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 6rem;
   }
 }
 .kontakt .container .informace {

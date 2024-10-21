@@ -30,6 +30,7 @@ h1 {
     letter-spacing: 2.2px;
     text-transform: uppercase;
     margin-bottom: $s-m;
+    text-wrap: wrap;
 
     @include w-1000 {
         font-size: $f-xxxl;
@@ -37,6 +38,11 @@ h1 {
 
     @include w-600 {
         font-size: $f-xl;
+    }
+
+    @include w-400 {
+        font-size: $f-l;
+        margin-bottom: $s-xs;
     }
 }
 
@@ -339,7 +345,6 @@ b, strong {
 
         // .nav.open - responsivity
         @include w-1000 {
-            // padding-top: $s-xs; //změna
 
             .nav-links .right {
                 display: flex;
@@ -746,6 +751,8 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            margin-top: $s-xl;
+            margin-bottom: $s-xxxl;
         }
 
         .container {
@@ -858,6 +865,7 @@ form {
                 h3 {
                     font-size: $f-m;
                     letter-spacing: 1.2px;
+                    text-align: center;
 
                     @include w-400 {
                         font-size: $f-s;
@@ -925,6 +933,10 @@ form {
                         margin-right: 0;
                         margin-bottom: $s-xxxl;
                     }
+
+                    @include w-400 {
+                        margin-bottom: $s-xxl;
+                    }
                 }
             }
         }
@@ -945,6 +957,7 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            padding-top: $s-xl;
         }
 
         .container {
@@ -1061,16 +1074,16 @@ form {
             
         }
 
-        .carouselBox {
-            @include column-start-center;
-            
-            .carouselGallery {
-                width: 500px;
-                box-shadow: $main-shadow;
+        .bordercontainer {
 
-                img {
-                    max-width: 90%; /* Obrázek nebude nikdy větší než 90% šířky okna */
-                    max-height: 90%; /* Obrázek nebude nikdy větší než 90% výšky okna */
+            .experiment {
+
+                .content {
+
+                    @include w-400 {
+                        margin-top: $s-s;
+                        margin-bottom: $s-xl;
+                    }
                 }
             }
         }
@@ -1092,6 +1105,8 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            padding-top: $s-xl;
+            padding-bottom: $s-xl;
         }
 
         .container {
@@ -1208,6 +1223,7 @@ form {
 
                     @include w-400 {
                         padding: $s-m $s-xs;
+                        margin-top: $s-m;
                     }
 
                     @include w-330 {
@@ -1492,6 +1508,8 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            padding-top: $s-xl;
+            padding-bottom: $s-xl;
         }
         
         .container {
@@ -1608,6 +1626,8 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            padding-top: $s-xl;
+            padding-bottom: $s-xl;
         }
         
         .container {
@@ -1750,6 +1770,8 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            padding-top: $s-xl;
+            padding-bottom: $s-xl;
         }
         
         .container {
@@ -1835,6 +1857,7 @@ form {
             padding-top: $s-xl;
             padding-left: $s-xxs;
             padding-right: $s-xxs;
+            padding-bottom: $s-xl;
         }
 
         .informace {
