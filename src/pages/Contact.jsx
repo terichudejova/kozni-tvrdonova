@@ -38,7 +38,7 @@ export default function Contact() {
                     </div>
                     <div className="right">
                         <div className="formular">
-                            <h2>Kontaktní formulář</h2>
+                            <h2>Případné dotazy</h2>
                             <p>Máte nějaký dotaz? Využijte náš kontaktní formulář. <span>Formulář neslouží k objednávání pacientů.</span></p>
                             <div className="formBox">
                                 <ContactFormular />

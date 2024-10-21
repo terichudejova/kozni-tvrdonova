@@ -36,7 +36,10 @@ export default function Home() {
                     <p>Soukromá dermatologická klinika v&nbsp;Praze</p>
                     <div className="buttons">
                         <a className="button" onClick={scrollToSection}>Naše služby</a>
-                        <NavLink to="/kozni-tvrdonova/kontakt" className="button">Objednat se <LocalPhoneIcon className="phoneIcon"/></NavLink>
+                        <NavLink to="/kozni-tvrdonova/kontakt" className="button">
+                            Objednat se
+                            {/* <LocalPhoneIcon className="phoneIcon"/> */}
+                        </NavLink>
                     </div>
                 </div>
                 <p id="phoneNumber"><a href="tel:+420235310315" target='_blank'><LocalPhoneIcon className="phoneIcon"/> +420 235 310 315</a></p>
