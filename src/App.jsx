@@ -46,7 +46,7 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 30) {
       setIsScrolled(true);
     }
     else {

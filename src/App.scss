@@ -309,7 +309,7 @@ b, strong {
         @include w-1000 {
             display: flex;
             z-index: 2;
-            // margin-top: $s-xxs;  //změna
+            margin-top: $s-xxs;  
         }
     }
 

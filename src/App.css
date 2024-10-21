@@ -304,6 +304,7 @@ b, strong {
   .navbarBox .hamburger {
     display: flex;
     z-index: 2;
+    margin-top: 1rem;
   }
 }
 .navbarBox.open .bar:nth-child(1) {
