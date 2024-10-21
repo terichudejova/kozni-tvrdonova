@@ -339,7 +339,7 @@ b, strong {
 
         // .nav.open - responsivity
         @include w-1000 {
-            padding-top: $s-xs;
+            // padding-top: $s-xs; //změna
 
             .nav-links .right {
                 display: flex;

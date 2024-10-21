@@ -323,9 +323,6 @@ b, strong {
   }
 }
 @media only screen and (max-width: 1000px) {
-  .navbarBox.open {
-    padding-top: 2rem;
-  }
   .navbarBox.open .nav-links .right {
     display: flex;
     flex-direction: column;
