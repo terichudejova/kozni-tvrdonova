@@ -10,9 +10,9 @@ body, html {
   color: #4d4639;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  -moz-text-size-adjust: none;
-       text-size-adjust: none;
-  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none !important;
+       text-size-adjust: none !important;
+  -webkit-text-size-adjust: none !important;
 }
 
 .container-fluid {
@@ -304,8 +304,6 @@ b, strong {
   .navbarBox .hamburger {
     display: flex;
     z-index: 2;
-    margin-top: 1rem;
-    margin-right: 5rem;
   }
 }
 .navbarBox.open .bar:nth-child(1) {
