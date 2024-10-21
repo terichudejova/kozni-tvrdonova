@@ -257,6 +257,7 @@ b, strong {
     //navbar - scrolled
     &.scrolled {
         background-color: $base2-color;
+        margin-top: 0;
 
         .nav-links {
 

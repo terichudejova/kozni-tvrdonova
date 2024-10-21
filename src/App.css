@@ -263,6 +263,7 @@ b, strong {
 }
 .navbarBox.scrolled {
   background-color: #e4decf;
+  margin-top: 0;
 }
 .navbarBox.scrolled .nav-links .right .navLink {
   color: #4d4639;
