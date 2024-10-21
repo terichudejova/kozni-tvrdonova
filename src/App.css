@@ -13,6 +13,7 @@ body, html {
   -moz-text-size-adjust: none !important;
        text-size-adjust: none !important;
   -webkit-text-size-adjust: none !important;
+  text-wrap: wrap !important;
 }
 
 .container-fluid {
@@ -722,10 +723,11 @@ form .button {
   transform: scale(1.05);
 }
 .home .sluzby {
-  margin-top: 9rem;
-  margin-bottom: 10rem;
+  padding-top: 9rem;
+  padding-bottom: 10rem;
   width: 100%;
   height: auto;
+  background-color: #e4decf;
 }
 @media only screen and (max-width: 600px) {
   .home .sluzby {
@@ -1667,6 +1669,9 @@ form .button {
 }
 .servicesPrices .cenik .container #accordion .card .card-body p.cena {
   font-weight: 500;
+}
+.kontakt {
+  background-color: #e4decf;
 }
 .kontakt .line {
   width: 100%;

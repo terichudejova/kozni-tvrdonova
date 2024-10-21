@@ -744,10 +744,11 @@ form {
 
     //SEKCE SLUZBY
     .sluzby {
-        margin-top: $s-xxxl;
-        margin-bottom: 2 * $s-l;
+        padding-top: $s-xxxl;
+        padding-bottom: 2 * $s-l;
         width: 100%;
         height: auto;
+        background-color: $base2-color;
 
         @include w-600 {
             padding-left: $s-xs;
@@ -1844,6 +1845,8 @@ form {
 
 //SEKCE KONTAKT
 .kontakt {
+    background-color: $base2-color;
+    
     .line {
         width: 100%;
         background-color: $button-second-color;
