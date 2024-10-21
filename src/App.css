@@ -1445,6 +1445,11 @@ form .button {
     grid-template-areas: "prvni" "druha" "treti" "ctvrta" "pata";
   }
 }
+@media only screen and (max-width: 400px) {
+  .servicesPrices .dermatologickeSluzby .container .konkretniSluzby {
+    gap: 1rem;
+  }
+}
 .servicesPrices .dermatologickeSluzby .container .konkretniSluzby .sluzba {
   padding: 2rem;
   display: flex;
@@ -1518,6 +1523,11 @@ form .button {
 @media only screen and (max-width: 1000px) {
   .servicesPrices .estetickeSluzby .container .konkretniSluzby {
     grid-template-areas: "prvni" "druha" "treti" "ctvrta" "pata" "sesta" "sedma" "osma" "devata" "desata" "jedenacta";
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesPrices .estetickeSluzby .container .konkretniSluzby {
+    gap: 1rem;
   }
 }
 .servicesPrices .estetickeSluzby .container .konkretniSluzby .sluzba {

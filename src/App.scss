@@ -1546,6 +1546,10 @@ form {
                     "pata";
                 }
 
+                @include w-400 {
+                    gap: $s-xxs;
+                }
+
                 .sluzba {
                     padding: $s-xs;
                     @include column-center-center;
@@ -1648,6 +1652,10 @@ form {
                     "devata"
                     "desata"
                     "jedenacta";
+                }
+
+                @include w-400 {
+                    gap: $s-xxs;
                 }
 
                 .sluzba {
