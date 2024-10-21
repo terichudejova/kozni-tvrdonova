@@ -313,6 +313,7 @@ b, strong {
     display: flex;
     z-index: 2;
     margin-top: 1rem;
+    margin-right: 3rem;
   }
 }
 .navbarBox.open .bar:nth-child(1) {
