@@ -248,6 +248,6 @@ body, html {
     color: $font-color;
     font-family: $main-font;
     overflow-x: hidden;
-    text-size-adjust: none !important;
-    -webkit-text-size-adjust: none !important;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
