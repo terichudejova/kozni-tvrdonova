@@ -37,15 +37,7 @@ export default function Contact() {
                             </ul>
                         </div>
                     </div>
-                    <div className="right">
-                        <div className="formular">
-                            <h2>Případné dotazy</h2>
-                            <p>Máte nějaký dotaz? Využijte náš kontaktní formulář. <span>Formulář neslouží k objednávání pacientů.</span></p>
-                            <div className="formBox">
-                                <ContactFormular />
-                            </div>
-                        </div>
-                    </div>
+                    <img id="tree2" src="images/tree_noBG.png"/>
                 </div>
                 <div className="mapa">
                     <AddressMap />
