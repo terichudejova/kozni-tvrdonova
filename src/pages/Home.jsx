@@ -33,7 +33,7 @@ export default function Home() {
             <div className="landingPage">
                 <div className="container headingBox">
                     <h1 className="text-uppercase">Kožní ordinace<br/>Tvrdoňová</h1>
-                    <p>Soukromá dermatologická klinika v&nbsp;Praze</p>
+                    <p>Soukromá dermatologická ordinace v&nbsp;Praze</p>
                     <div className="buttons">
                         <a className="button" onClick={scrollToSection}>Naše služby</a>
                         <NavLink to="/kozni-tvrdonova/kontakt" className="button">
@@ -107,6 +107,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <img id='tree' src="images/tree_noBG.png"/>
             </div>
 
             {/* sekce Náš tým */}
@@ -211,6 +212,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    <img id="tree3" src='images/tree_noBG.png'/>
                 </div>
             </div>
 

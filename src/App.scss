@@ -237,7 +237,7 @@ b, strong {
                 }
     
                 &:hover { 
-                    background-color: $navbar-hover-color;
+                    background-color: $button-second-color;
                     border-radius: 3px;
                 }
     
@@ -306,14 +306,6 @@ b, strong {
             border-radius: 3px;
             transition: all 0.3s ease;
             margin-bottom: 10px;
-
-            @media only screen and (max-width: 420px) and (min-height: 730px) {
-                background-color: $font-color;
-            }
-
-            @media only screen and (max-width: 360px) and (min-height: 600px) {
-                background-color: $font-color;
-            }
         }
 
         // .hamburger responsivity
@@ -576,28 +568,18 @@ form {
 
     //SEKCE LANDING PAGE
     .landingPage {
-        background-image: url("/images/background.jpg");
+        background-image: linear-gradient(to left, #817969e3, #746c5de3, #665f50e1, #3d3931e5, #1f1c17e2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
-        height: 100vh;
+        height: auto;
         width: 100%;
         position: relative;
-
-        @include w-1000 {
-            min-height: 400px;
-            height: auto;
-        }
-
-        @include w-600 {
-            height: 100vh;
-            background-position: right;
-        }
         
-
         .headingBox {
             @include column-start-start;
             margin-top: 15%;
+            margin-bottom: 15%;
 
             @include w-600 {
                 padding-left: $s-xs;
@@ -667,11 +649,6 @@ form {
                     text-decoration: none;
                     letter-spacing: 1.2px;
                     cursor: pointer;
-
-                    .phoneIcon {
-                        font-size: $f-l;
-                        margin-left: $s-xxxs;
-                    }
 
                     &:nth-child(1) {
                         margin-right: $s-l;
@@ -749,6 +726,7 @@ form {
         width: 100%;
         height: auto;
         background-color: $base2-color;
+        position: relative;
 
         @include w-600 {
             padding-left: $s-xs;
@@ -758,8 +736,6 @@ form {
         @include w-400 {
             padding-left: $s-xxs;
             padding-right: $s-xxs;
-            margin-top: $s-xl;
-            margin-bottom: $s-xxxl;
         }
 
         .container {
@@ -812,6 +788,8 @@ form {
                 padding-top: $s-xxl;
                 position: relative;
                 @include column-start-center;
+                z-index: 1;
+                background-color: rgba(240, 235, 225, 0.7);
                 
                 &.pojistovny {
                     grid-area: pojistovny;
@@ -945,6 +923,21 @@ form {
                         margin-bottom: $s-xxl;
                     }
                 }
+            }
+        }
+
+        #tree {
+            position: absolute;
+            // max-height: 800px;
+            // max-width: 80%;
+            right: -300px;
+            bottom: 0;
+            z-index: 0;
+            opacity: 0.07;
+            height: 80%;
+
+            @include w-800 {
+                display: none;
             }
         }
     }
@@ -1098,6 +1091,7 @@ form {
 
     //SEKCE OTEVÍRACÍ DOBA
     .oteviracka {
+        overflow: hidden;
         width: 100%;
         background-color: $base2-color;
         color: $font-color;
@@ -1117,6 +1111,7 @@ form {
         }
 
         .container {
+            position: relative;
 
             h2 {
                 @extend .h2;
@@ -1213,6 +1208,7 @@ form {
                     border-radius: 3px;
                     @include column-start-start;
                     max-width: 60%;
+                    z-index: 1;
 
                     @include w-1600 {
                         max-width: 50%;
@@ -1319,6 +1315,24 @@ form {
                     }
                 }
             }
+
+            #tree3 {
+                position: absolute;
+                max-width: 80%;
+                opacity: 0.03;
+                left: -20%;
+                bottom: -200px;
+
+                @include w-1400 {
+                    max-height: 100%;
+                    max-width: 100%;
+                    left: -500px;
+                }
+
+                @include w-800 {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -1409,17 +1423,13 @@ form {
 .servicesPrices {
 
     .landingPage {
-        background-image: url("/images/background.jpg");
+        background-image: linear-gradient(to left, #817969e3, #746c5de3, #665f50e1, #3d3931e5, #1f1c17e2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
-        height: 100vh;
+        height: auto;
         width: 100%;
         position: relative;
-
-        @media only screen and (max-height: 800px) {
-            height: auto;
-        }   
 
         @media only screen and (orientation: portrait) {
             background-image: none;
@@ -1856,6 +1866,7 @@ form {
     .container {
         padding-top: $s-xxxl;
         padding-bottom: 2 * $s-l;
+        overflow: hidden;
 
         @include w-600 {
             padding: $s-xxl $s-xs $s-xxxl $s-xs;
@@ -1869,8 +1880,10 @@ form {
         }
 
         .informace {
-            @include row-between-start;
-
+            position: relative;
+            @include row-center-start;
+            width: 100%;
+        
             @include w-1600 {
                 @include column-start-center;
             }
@@ -1919,14 +1932,17 @@ form {
             }
 
             .left {
-                @include column-start-start;
-                margin-right: $s-xxxl;
                 width: 100%;
+                @include row-between-start;
+                margin-right: 0;
+                margin-bottom: $s-xxxl;
 
-                @include w-1600 {
-                    @include row-between-start;
-                    margin-right: 0;
-                    margin-bottom: $s-xxxl;
+                @include w-2000 {
+                    width: 80%;
+                }
+
+                @include w-3000 {
+                    width: 60%;
                 }
 
                 @include w-1200 {
@@ -2011,16 +2027,32 @@ form {
                     }
                 }
             }
+
+            #tree2 {
+                position: absolute;
+                max-width: 70%;
+                right: 0;
+                bottom: -20%;
+                opacity: 0.07;
+
+                @include w-1200 {
+                    bottom: 0;
+                    max-width: 80%;
+                }
+
+                @include w-1000 {
+                    max-width: 80%;
+                }
+
+                @include w-800 {
+                    display: none;
+                }
+            }
         }
 
         .mapa {
             @include column-start-center;
-            margin-top: $s-xxxl;
             width: 100%;
-
-            @include w-600 {
-                margin-top: $s-xl;
-            }
 
             .google-map-code {
                 @include column-start-center;

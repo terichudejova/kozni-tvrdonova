@@ -33,7 +33,6 @@ export default function FooterSection() {
                         <p className="ico">IČO: 24247723</p>
                         <p className="copyrightDesktop">Copyright © {(new Date().getFullYear())} All rights reserved MUDr. Kateřina Tvrdoňová</p>
                         <p className="copyrightMobile">Copyright © {(new Date().getFullYear())} MUDr. Kateřina Tvrdoňová</p>
-                        <p>Web Development - Ing. Tereza Chudějová</p>
                     </div>
                 </div>
             </div>

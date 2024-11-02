@@ -250,7 +250,7 @@ b, strong {
   }
 }
 .navbarBox .nav-links .right .navLink:hover {
-  background-color: rgba(118, 111, 99, 0.6117647059);
+  background-color: #c1b6a0;
   border-radius: 3px;
 }
 .navbarBox .nav-links .right .navLink.active {
@@ -301,16 +301,6 @@ b, strong {
   border-radius: 3px;
   transition: all 0.3s ease;
   margin-bottom: 10px;
-}
-@media only screen and (max-width: 420px) and (min-height: 730px) {
-  .navbarBox .hamburger .bar {
-    background-color: #4d4639;
-  }
-}
-@media only screen and (max-width: 360px) and (min-height: 600px) {
-  .navbarBox .hamburger .bar {
-    background-color: #4d4639;
-  }
 }
 @media only screen and (max-width: 1000px) {
   .navbarBox .hamburger {
@@ -538,25 +528,13 @@ form .button {
 }
 
 .home .landingPage {
-  background-image: url("/images/background.jpg");
+  background-image: linear-gradient(to left, rgba(129, 121, 105, 0.8901960784), rgba(116, 108, 93, 0.8901960784), rgba(102, 95, 80, 0.8823529412), rgba(61, 57, 49, 0.8980392157), rgba(31, 28, 23, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  height: 100vh;
+  height: auto;
   width: 100%;
   position: relative;
-}
-@media only screen and (max-width: 1000px) {
-  .home .landingPage {
-    min-height: 400px;
-    height: auto;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .home .landingPage {
-    height: 100vh;
-    background-position: right;
-  }
 }
 .home .landingPage .headingBox {
   display: flex;
@@ -564,6 +542,7 @@ form .button {
   justify-content: start;
   align-items: start;
   margin-top: 15%;
+  margin-bottom: 15%;
 }
 @media only screen and (max-width: 600px) {
   .home .landingPage .headingBox {
@@ -649,10 +628,6 @@ form .button {
   letter-spacing: 1.2px;
   cursor: pointer;
 }
-.home .landingPage .headingBox .buttons .button .phoneIcon {
-  font-size: 2.5rem;
-  margin-left: 0.5rem;
-}
 .home .landingPage .headingBox .buttons .button:nth-child(1) {
   margin-right: 5rem;
 }
@@ -728,6 +703,7 @@ form .button {
   width: 100%;
   height: auto;
   background-color: #e4decf;
+  position: relative;
 }
 @media only screen and (max-width: 600px) {
   .home .sluzby {
@@ -739,8 +715,6 @@ form .button {
   .home .sluzby {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: 6rem;
-    margin-bottom: 9rem;
   }
 }
 .home .sluzby .container p:nth-of-type(2) {
@@ -779,6 +753,8 @@ form .button {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  z-index: 1;
+  background-color: rgba(240, 235, 225, 0.7);
 }
 .home .sluzby .sluzbyCards .karticka.pojistovny {
   grid-area: pojistovny;
@@ -891,6 +867,19 @@ form .button {
 @media only screen and (max-width: 400px) {
   .home .sluzby .sluzbyCards .karticka:nth-child(1), .home .sluzby .sluzbyCards .karticka:nth-child(2) {
     margin-bottom: 7rem;
+  }
+}
+.home .sluzby #tree {
+  position: absolute;
+  right: -300px;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0.07;
+  height: 80%;
+}
+@media only screen and (max-width: 800px) {
+  .home .sluzby #tree {
+    display: none;
   }
 }
 .home .tym {
@@ -1024,6 +1013,7 @@ form .button {
   }
 }
 .home .oteviracka {
+  overflow: hidden;
   width: 100%;
   background-color: #e4decf;
   color: #4d4639;
@@ -1043,6 +1033,9 @@ form .button {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+}
+.home .oteviracka .container {
+  position: relative;
 }
 .home .oteviracka .container .mistoCas {
   display: flex;
@@ -1152,6 +1145,7 @@ form .button {
   justify-content: start;
   align-items: start;
   max-width: 60%;
+  z-index: 1;
 }
 @media only screen and (max-width: 1600px) {
   .home .oteviracka .container .mistoCas .cas {
@@ -1247,6 +1241,25 @@ form .button {
 .home .oteviracka .container .mistoCas .cas .casDny .row:last-of-type {
   margin-bottom: 0;
 }
+.home .oteviracka .container #tree3 {
+  position: absolute;
+  max-width: 80%;
+  opacity: 0.03;
+  left: -20%;
+  bottom: -200px;
+}
+@media only screen and (max-width: 1400px) {
+  .home .oteviracka .container #tree3 {
+    max-height: 100%;
+    max-width: 100%;
+    left: -500px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .oteviracka .container #tree3 {
+    display: none;
+  }
+}
 .home .bordercontainer .experiment .content {
   max-width: 100%;
   display: flex;
@@ -1317,18 +1330,13 @@ form .button {
 }
 
 .servicesPrices .landingPage {
-  background-image: url("/images/background.jpg");
+  background-image: linear-gradient(to left, rgba(129, 121, 105, 0.8901960784), rgba(116, 108, 93, 0.8901960784), rgba(102, 95, 80, 0.8823529412), rgba(61, 57, 49, 0.8980392157), rgba(31, 28, 23, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  height: 100vh;
+  height: auto;
   width: 100%;
   position: relative;
-}
-@media only screen and (max-height: 800px) {
-  .servicesPrices .landingPage {
-    height: auto;
-  }
 }
 @media only screen and (orientation: portrait) {
   .servicesPrices .landingPage {
@@ -1681,6 +1689,7 @@ form .button {
 .kontakt .container {
   padding-top: 9rem;
   padding-bottom: 10rem;
+  overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
   .kontakt .container {
@@ -1696,10 +1705,12 @@ form .button {
   }
 }
 .kontakt .container .informace {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
+  width: 100%;
 }
 @media only screen and (max-width: 1600px) {
   .kontakt .container .informace {
@@ -1744,21 +1755,22 @@ form .button {
   margin-bottom: 3rem;
 }
 .kontakt .container .informace .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  margin-right: 9rem;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-right: 0;
+  margin-bottom: 9rem;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 2000px) {
   .kontakt .container .informace .left {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    margin-right: 0;
-    margin-bottom: 9rem;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .kontakt .container .informace .left {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1851,18 +1863,35 @@ form .button {
 .kontakt .container .informace .right .formular p {
   margin-bottom: 3rem;
 }
+.kontakt .container .informace #tree2 {
+  position: absolute;
+  max-width: 70%;
+  right: 0;
+  bottom: -20%;
+  opacity: 0.07;
+}
+@media only screen and (max-width: 1200px) {
+  .kontakt .container .informace #tree2 {
+    bottom: 0;
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .kontakt .container .informace #tree2 {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .kontakt .container .informace #tree2 {
+    display: none;
+  }
+}
 .kontakt .container .mapa {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: 9rem;
   width: 100%;
-}
-@media only screen and (max-width: 600px) {
-  .kontakt .container .mapa {
-    margin-top: 6rem;
-  }
 }
 .kontakt .container .mapa .google-map-code {
   display: flex;
