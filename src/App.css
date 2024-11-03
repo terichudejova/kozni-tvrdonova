@@ -937,7 +937,7 @@ form .button {
   padding: 4rem;
   padding-left: 18rem;
   position: relative;
-  background-image: url(../images/tree_green_BG.png);
+  background-image: url(/images/tree_green_BG.png);
 }
 @media only screen and (max-width: 1400px) {
   .home .tym .container .medailonky .medailonek {
@@ -1530,7 +1530,7 @@ form .button {
   padding-top: 9rem;
   padding-bottom: 10rem;
   color: #586b5c;
-  background-image: url(../images/tree_green_BG.png);
+  background-image: url(/images/tree_green_BG.png);
 }
 @media only screen and (max-width: 600px) {
   .servicesPrices .estetickeSluzby {
@@ -1709,7 +1709,7 @@ form .button {
 .kontakt .box {
   overflow: hidden;
   width: 100%;
-  background-image: url(../images/tree_lowOpacity.png);
+  background-image: url(/images/tree_lowOpacity.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
