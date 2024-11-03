@@ -998,7 +998,7 @@ form {
                     padding: $s-m;
                     padding-left: 3 * $s-xl;
                     position: relative;
-                    background-image: url(public/images/tree_green_BG.png);
+                    background-image: url(/images/tree_green_BG.png);
 
                     @include w-1400 {
                         max-width: 80%;
@@ -1645,7 +1645,7 @@ form {
         padding-top: $s-xxxl;
         padding-bottom: 2 * $s-l;
         color: $hover-color;
-        background-image: url(public/images/tree_green_BG.png);
+        background-image: url(/images/tree_green_BG.png);
 
         @include w-600 {
             padding: $s-xxl $s-xs;
@@ -1880,7 +1880,7 @@ form {
     .box {
         overflow: hidden;
         width: 100%;
-        background-image: url(public/images/tree_lowOpacity.png);
+        background-image: url(/images/tree_lowOpacity.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
