@@ -37,7 +37,7 @@ h1 {
   font-family: "Baskervville", serif;
 }
 
-.h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+.h2, .kontakt .box .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
   font-family: "Baskervville", serif;
   font-size: 5rem;
   letter-spacing: 2.2px;
@@ -46,17 +46,17 @@ h1 {
   text-wrap: wrap;
 }
 @media only screen and (max-width: 1000px) {
-  .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+  .h2, .kontakt .box .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
     font-size: 4rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+  .h2, .kontakt .box .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
     font-size: 3rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  .h2, .kontakt .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
+  .h2, .kontakt .box .container .informace h2, .servicesPrices .cenik .container h2, .servicesPrices .estetickeSluzby .container h2, .servicesPrices .dermatologickeSluzby .container h2, .home .oteviracka .container h2, .home .tym .container h2, .home .sluzby .container h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
@@ -704,6 +704,7 @@ form .button {
   height: auto;
   background-color: #e4decf;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
   .home .sluzby {
@@ -871,11 +872,18 @@ form .button {
 }
 .home .sluzby #tree {
   position: absolute;
-  right: -300px;
+  right: -400px;
   bottom: 0;
   z-index: 0;
   opacity: 0.07;
   height: 80%;
+}
+@media only screen and (max-width: 1400px) {
+  .home .sluzby #tree {
+    opacity: 0.03;
+    height: 120%;
+    bottom: -400px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .home .sluzby #tree {
@@ -887,6 +895,7 @@ form .button {
   background-color: #effdec;
   color: #586b5c;
   padding-top: 9rem;
+  overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
   .home .tym {
@@ -900,6 +909,9 @@ form .button {
     padding-right: 1rem;
     padding-top: 6rem;
   }
+}
+.home .tym .container {
+  position: relative;
 }
 .home .tym .container p span {
   font-weight: 600;
@@ -925,6 +937,7 @@ form .button {
   padding: 4rem;
   padding-left: 18rem;
   position: relative;
+  background-image: url(images/tree_green_BG.png);
 }
 @media only screen and (max-width: 1400px) {
   .home .tym .container .medailonky .medailonek {
@@ -942,6 +955,7 @@ form .button {
   .home .tym .container .medailonky .medailonek {
     padding: 2rem;
     margin-bottom: 3rem;
+    background-image: none;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -970,7 +984,7 @@ form .button {
 .home .tym .container .medailonky .medailonek .imgCase img {
   border-radius: 3px;
   height: 280px;
-  width: auto;
+  width: 100%;
 }
 .home .tym .container .medailonky .medailonek .title {
   max-width: 400px;
@@ -1250,12 +1264,15 @@ form .button {
 }
 @media only screen and (max-width: 1400px) {
   .home .oteviracka .container #tree3 {
-    max-height: 100%;
-    max-width: 100%;
-    left: -500px;
+    max-height: 150%;
+    height: 150%;
+    max-width: 150%;
+    width: 150%;
+    left: -400px;
+    bottom: -400px;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .home .oteviracka .container #tree3 {
     display: none;
   }
@@ -1513,10 +1530,12 @@ form .button {
   padding-top: 9rem;
   padding-bottom: 10rem;
   color: #586b5c;
+  background-image: url(images/tree_green_BG.png);
 }
 @media only screen and (max-width: 600px) {
   .servicesPrices .estetickeSluzby {
     padding: 7rem 2rem;
+    background-image: none;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1680,31 +1699,45 @@ form .button {
 }
 .kontakt {
   background-color: #e4decf;
+  overflow: hidden;
 }
 .kontakt .line {
   width: 100%;
   background-color: #c1b6a0;
   height: 120px;
 }
-.kontakt .container {
+.kontakt .box {
+  overflow: hidden;
+  width: 100%;
+  background-image: url(images/tree_lowOpacity.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+  .kontakt .box {
+    background-image: none;
+  }
+}
+.kontakt .box .container {
   padding-top: 9rem;
   padding-bottom: 10rem;
   overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
-  .kontakt .container {
+  .kontakt .box .container {
     padding: 7rem 2rem 9rem 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  .kontakt .container {
+  .kontakt .box .container {
     padding-top: 6rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 6rem;
   }
 }
-.kontakt .container .informace {
+.kontakt .box .container .informace {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -1713,48 +1746,48 @@ form .button {
   width: 100%;
 }
 @media only screen and (max-width: 1600px) {
-  .kontakt .container .informace {
+  .kontakt .box .container .informace {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
   }
 }
-.kontakt .container .informace h2 {
+.kontakt .box .container .informace h2 {
   font-size: 4rem;
 }
 @media only screen and (max-width: 1200px) {
-  .kontakt .container .informace h2 {
+  .kontakt .box .container .informace h2 {
     margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 800px) {
-  .kontakt .container .informace h2 {
+  .kontakt .box .container .informace h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  .kontakt .container .informace h2 {
+  .kontakt .box .container .informace h2 {
     font-size: 2.5rem;
   }
 }
-.kontakt .container .informace a {
+.kontakt .box .container .informace a {
   font-size: 1.8rem;
   text-decoration: none;
   color: #4d4639;
   cursor: pointer;
 }
-.kontakt .container .informace a:hover {
+.kontakt .box .container .informace a:hover {
   color: #996f31;
 }
-.kontakt .container .informace ul li span {
+.kontakt .box .container .informace ul li span {
   font-weight: 600;
 }
-.kontakt .container .informace ul:nth-of-type(1) {
+.kontakt .box .container .informace ul:nth-of-type(1) {
   margin-bottom: 3rem;
 }
-.kontakt .container .informace .left {
+.kontakt .box .container .informace .left {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1764,17 +1797,17 @@ form .button {
   margin-bottom: 9rem;
 }
 @media only screen and (min-width: 2000px) {
-  .kontakt .container .informace .left {
+  .kontakt .box .container .informace .left {
     width: 80%;
   }
 }
 @media only screen and (min-width: 3000px) {
-  .kontakt .container .informace .left {
+  .kontakt .box .container .informace .left {
     width: 60%;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .kontakt .container .informace .left {
+  .kontakt .box .container .informace .left {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1782,47 +1815,47 @@ form .button {
   }
 }
 @media only screen and (max-width: 600px) {
-  .kontakt .container .informace .left {
+  .kontakt .box .container .informace .left {
     margin-bottom: 7rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  .kontakt .container .informace .left {
+  .kontakt .box .container .informace .left {
     margin-bottom: 5rem;
   }
 }
-.kontakt .container .informace .left .udaje {
+.kontakt .box .container .informace .left .udaje {
   margin-bottom: 4rem;
 }
 @media only screen and (max-width: 1600px) {
-  .kontakt .container .informace .left .udaje {
+  .kontakt .box .container .informace .left .udaje {
     margin-right: 9rem;
     width: 50%;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .kontakt .container .informace .left .udaje {
+  .kontakt .box .container .informace .left .udaje {
     width: 100%;
     margin-right: 0;
     margin-bottom: 5rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  .kontakt .container .informace .left .udaje {
+  .kontakt .box .container .informace .left .udaje {
     margin-bottom: 4rem;
   }
 }
-.kontakt .container .informace .left .udaje p, .kontakt .container .informace .left .udaje a {
+.kontakt .box .container .informace .left .udaje p, .kontakt .box .container .informace .left .udaje a {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: start;
 }
-.kontakt .container .informace .left .udaje p .kontaktIkonka, .kontakt .container .informace .left .udaje a .kontaktIkonka {
+.kontakt .box .container .informace .left .udaje p .kontaktIkonka, .kontakt .box .container .informace .left .udaje a .kontaktIkonka {
   font-size: 2.5rem;
   margin-right: 1rem;
 }
-.kontakt .container .informace .left .udaje .objednatSeLink {
+.kontakt .box .container .informace .left .udaje .objednatSeLink {
   background-color: #c1b6a0;
   display: flex;
   flex-direction: row;
@@ -1833,67 +1866,44 @@ form .button {
   border-radius: 3px;
   max-width: 220px;
 }
-.kontakt .container .informace .left .udaje .objednatSeLink:hover {
+.kontakt .box .container .informace .left .udaje .objednatSeLink:hover {
   background-color: #817969;
   color: #e4decf;
 }
 @media only screen and (max-width: 1600px) {
-  .kontakt .container .informace .left .spojeni {
+  .kontakt .box .container .informace .left .spojeni {
     width: 50%;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .kontakt .container .informace .left .spojeni {
+  .kontakt .box .container .informace .left .spojeni {
     width: 100%;
   }
 }
-.kontakt .container .informace .left .spojeni .bus {
+.kontakt .box .container .informace .left .spojeni .bus {
   font-weight: 600;
 }
-.kontakt .container .informace .right {
+.kontakt .box .container .informace .right {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   width: 100%;
 }
-.kontakt .container .informace .right .formular {
+.kontakt .box .container .informace .right .formular {
   width: 100%;
 }
-.kontakt .container .informace .right .formular p {
+.kontakt .box .container .informace .right .formular p {
   margin-bottom: 3rem;
 }
-.kontakt .container .informace #tree2 {
-  position: absolute;
-  max-width: 70%;
-  right: 0;
-  bottom: -20%;
-  opacity: 0.07;
-}
-@media only screen and (max-width: 1200px) {
-  .kontakt .container .informace #tree2 {
-    bottom: 0;
-    max-width: 80%;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .kontakt .container .informace #tree2 {
-    max-width: 80%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .kontakt .container .informace #tree2 {
-    display: none;
-  }
-}
-.kontakt .container .mapa {
+.kontakt .box .container .mapa {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   width: 100%;
 }
-.kontakt .container .mapa .google-map-code {
+.kontakt .box .container .mapa .google-map-code {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1901,28 +1911,51 @@ form .button {
   width: 100%;
 }
 @media only screen and (min-width: 2000px) {
-  .kontakt .container .mapa .google-map-code iframe {
+  .kontakt .box .container .mapa .google-map-code iframe {
     width: 1700px;
   }
 }
 @media only screen and (max-width: 1600px) {
-  .kontakt .container .mapa .google-map-code iframe {
+  .kontakt .box .container .mapa .google-map-code iframe {
     width: 100%;
   }
 }
 @media only screen and (max-width: 800px) {
-  .kontakt .container .mapa .google-map-code iframe {
+  .kontakt .box .container .mapa .google-map-code iframe {
     height: 400px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .kontakt .container .mapa .google-map-code iframe {
+  .kontakt .box .container .mapa .google-map-code iframe {
     height: 350px;
     width: 90%;
   }
 }
 @media only screen and (max-width: 400px) {
-  .kontakt .container .mapa .google-map-code iframe {
+  .kontakt .box .container .mapa .google-map-code iframe {
     height: 250px;
+  }
+}
+.kontakt .box #tree2 {
+  position: absolute;
+  max-width: 70%;
+  right: 0;
+  bottom: -20%;
+  opacity: 0.03;
+}
+@media only screen and (max-width: 1200px) {
+  .kontakt .box #tree2 {
+    bottom: 0;
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .kontakt .box #tree2 {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .kontakt .box #tree2 {
+    display: none;
   }
 }/*# sourceMappingURL=App.css.map */

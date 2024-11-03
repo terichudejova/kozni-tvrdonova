@@ -727,6 +727,7 @@ form {
         height: auto;
         background-color: $base2-color;
         position: relative;
+        overflow: hidden;
 
         @include w-600 {
             padding-left: $s-xs;
@@ -928,13 +929,17 @@ form {
 
         #tree {
             position: absolute;
-            // max-height: 800px;
-            // max-width: 80%;
-            right: -300px;
+            right: -400px;
             bottom: 0;
             z-index: 0;
             opacity: 0.07;
             height: 80%;
+
+            @include w-1400 {
+                opacity: 0.03;
+                height: 120%;
+                bottom: -400px;
+            }
 
             @include w-800 {
                 display: none;
@@ -948,6 +953,7 @@ form {
         background-color: $base1-color;
         color: $hover-color;
         padding-top: $s-xxxl;
+        overflow: hidden;
 
         @include w-600 {
             padding-left: $s-xs;
@@ -961,6 +967,7 @@ form {
         }
 
         .container {
+            position: relative;
 
             h2 {
                 @extend .h2;
@@ -991,6 +998,7 @@ form {
                     padding: $s-m;
                     padding-left: 3 * $s-xl;
                     position: relative;
+                    background-image: url(images/tree_green_BG.png);
 
                     @include w-1400 {
                         max-width: 80%;
@@ -1005,6 +1013,7 @@ form {
                     @include w-600 {
                         padding: $s-xs;
                         margin-bottom: $s-s;
+                        background-image: none;
                     }
 
                     &:nth-of-type(1) {
@@ -1033,7 +1042,7 @@ form {
                         img {
                             border-radius: 3px;
                             height: 280px;
-                            width: auto;
+                            width: 100%;
                         }
                     }
                     
@@ -1071,7 +1080,6 @@ form {
                     }
                 }
             }
-            
         }
 
         .bordercontainer {
@@ -1324,12 +1332,15 @@ form {
                 bottom: -200px;
 
                 @include w-1400 {
-                    max-height: 100%;
-                    max-width: 100%;
-                    left: -500px;
+                    max-height: 150%;
+                    height: 150%;
+                    max-width: 150%;
+                    width: 150%;
+                    left: -400px;
+                    bottom: -400px;
                 }
 
-                @include w-800 {
+                @include w-1000 {
                     display: none;
                 }
             }
@@ -1634,9 +1645,11 @@ form {
         padding-top: $s-xxxl;
         padding-bottom: 2 * $s-l;
         color: $hover-color;
+        background-image: url(images/tree_green_BG.png);
 
         @include w-600 {
             padding: $s-xxl $s-xs;
+            background-image: none;
         }
 
         @include w-400 {
@@ -1856,231 +1869,245 @@ form {
 //SEKCE KONTAKT
 .kontakt {
     background-color: $base2-color;
-    
+    overflow: hidden;
+
     .line {
         width: 100%;
         background-color: $button-second-color;
         height: 120px;
     }
 
-    .container {
-        padding-top: $s-xxxl;
-        padding-bottom: 2 * $s-l;
+    .box {
         overflow: hidden;
+        width: 100%;
+        background-image: url(images/tree_lowOpacity.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-        @include w-600 {
-            padding: $s-xxl $s-xs $s-xxxl $s-xs;
+        @include w-800 {
+            background-image: none;
         }
 
-        @include w-400 {
-            padding-top: $s-xl;
-            padding-left: $s-xxs;
-            padding-right: $s-xxs;
-            padding-bottom: $s-xl;
-        }
+        .container {
+            padding-top: $s-xxxl;
+            padding-bottom: 2 * $s-l;
+            overflow: hidden;
 
-        .informace {
-            position: relative;
-            @include row-center-start;
-            width: 100%;
-        
-            @include w-1600 {
-                @include column-start-center;
+            @include w-600 {
+                padding: $s-xxl $s-xs $s-xxxl $s-xs;
             }
 
-            h2 {
-                @extend .h2;
-                    font-size: $f-xxxl;
-
-                @include w-1200 {
-                    margin-bottom: $s-s;
-                }
-
-                @include w-800 {
-                    font-size: $f-xl;
-                    margin-bottom: $s-xs;
-                }
-
-                @include w-400 {
-                    font-size: $f-l;
-                }
+            @include w-400 {
+                padding-top: $s-xl;
+                padding-left: $s-xxs;
+                padding-right: $s-xxs;
+                padding-bottom: $s-xl;
             }
 
-            a {
-                font-size: $f-s;
-                text-decoration: none;
-                color: $font-color;
-                cursor: pointer;
-
-                &:hover {
-                    color: $link-color;
-                }
-            }
-
-            ul {
-
-                li {
-
-                    span {
-                        font-weight: 600;
-                    }
-                }
-
-                &:nth-of-type(1) {
-                    margin-bottom: $s-s;
-                }
-            }
-
-            .left {
+            .informace {
+                position: relative;
+                @include row-center-start;
                 width: 100%;
-                @include row-between-start;
-                margin-right: 0;
-                margin-bottom: $s-xxxl;
-
-                @include w-2000 {
-                    width: 80%;
-                }
-
-                @include w-3000 {
-                    width: 60%;
-                }
-
-                @include w-1200 {
+            
+                @include w-1600 {
                     @include column-start-center;
                 }
 
-                @include w-600 {
-                    margin-bottom: $s-xxl;
-                }
-
-                @include w-600 {
-                    margin-bottom: $s-l;
-                }
-
-                .udaje {
-                    margin-bottom: $s-m;
-
-                    @include w-1600 {
-                        margin-right: $s-xxxl;
-                        width: 50%;
-                    }
+                h2 {
+                    @extend .h2;
+                        font-size: $f-xxxl;
 
                     @include w-1200 {
-                        width: 100%;
-                        margin-right: 0;
-                        margin-bottom: $s-l;
+                        margin-bottom: $s-s;
                     }
 
-                    @include w-600 {
-                        margin-bottom: $s-m;
+                    @include w-800 {
+                        font-size: $f-xl;
+                        margin-bottom: $s-xs;
                     }
 
-                    p, a {
-                        @include row-start-start;
+                    @include w-400 {
+                        font-size: $f-l;
+                    }
+                }
 
-                        .kontaktIkonka {
-                            font-size: $f-l;
-                            margin-right: $s-xxs;
+                a {
+                    font-size: $f-s;
+                    text-decoration: none;
+                    color: $font-color;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $link-color;
+                    }
+                }
+
+                ul {
+
+                    li {
+
+                        span {
+                            font-weight: 600;
                         }
                     }
 
-                    .objednatSeLink {
-                        background-color: $button-second-color;
-                        @include row-start-center;
-                        padding: $s-xxxs;
-                        margin-bottom: $s-xxs;
-                        border-radius: 3px;
-                        max-width: 220px;
-                        
-                        &:hover {
-                            background-color: $contrast-color;
-                            color: $base2-color;
-                        }
-                    }
-                }
-
-                .spojeni {
-
-                    @include w-1600 {
-                        width: 50%;
-                    }
-
-                    @include w-1200 {
-                        width: 100%;
-                    }
-
-                    .bus {
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            .right {
-                @include column-start-start;
-                width: 100%;
-
-                .formular {
-                    width: 100%;
-
-                    p {
+                    &:nth-of-type(1) {
                         margin-bottom: $s-s;
                     }
                 }
+
+                .left {
+                    width: 100%;
+                    @include row-between-start;
+                    margin-right: 0;
+                    margin-bottom: $s-xxxl;
+
+                    @include w-2000 {
+                        width: 80%;
+                    }
+
+                    @include w-3000 {
+                        width: 60%;
+                    }
+
+                    @include w-1200 {
+                        @include column-start-center;
+                    }
+
+                    @include w-600 {
+                        margin-bottom: $s-xxl;
+                    }
+
+                    @include w-600 {
+                        margin-bottom: $s-l;
+                    }
+
+                    .udaje {
+                        margin-bottom: $s-m;
+
+                        @include w-1600 {
+                            margin-right: $s-xxxl;
+                            width: 50%;
+                        }
+
+                        @include w-1200 {
+                            width: 100%;
+                            margin-right: 0;
+                            margin-bottom: $s-l;
+                        }
+
+                        @include w-600 {
+                            margin-bottom: $s-m;
+                        }
+
+                        p, a {
+                            @include row-start-start;
+
+                            .kontaktIkonka {
+                                font-size: $f-l;
+                                margin-right: $s-xxs;
+                            }
+                        }
+
+                        .objednatSeLink {
+                            background-color: $button-second-color;
+                            @include row-start-center;
+                            padding: $s-xxxs;
+                            margin-bottom: $s-xxs;
+                            border-radius: 3px;
+                            max-width: 220px;
+                            
+                            &:hover {
+                                background-color: $contrast-color;
+                                color: $base2-color;
+                            }
+                        }
+                    }
+
+                    .spojeni {
+
+                        @include w-1600 {
+                            width: 50%;
+                        }
+
+                        @include w-1200 {
+                            width: 100%;
+                        }
+
+                        .bus {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .right {
+                    @include column-start-start;
+                    width: 100%;
+
+                    .formular {
+                        width: 100%;
+
+                        p {
+                            margin-bottom: $s-s;
+                        }
+                    }
+                }
             }
 
-            #tree2 {
-                position: absolute;
-                max-width: 70%;
-                right: 0;
-                bottom: -20%;
-                opacity: 0.07;
+            .mapa {
+                @include column-start-center;
+                width: 100%;
 
-                @include w-1200 {
-                    bottom: 0;
-                    max-width: 80%;
-                }
+                .google-map-code {
+                    @include column-start-center;
+                    width: 100%;
 
-                @include w-1000 {
-                    max-width: 80%;
-                }
+                    iframe {
 
-                @include w-800 {
-                    display: none;
+                        @include w-2000 {
+                            width: 1700px;
+                        }
+
+                        @include w-1600 {
+                            width: 100%;
+                        }
+
+                        @include w-800 {
+                            height: 400px;
+                        }
+
+                        @include w-600 {
+                            height: 350px;
+                            width: 90%;
+                        }
+
+                        @include w-400 {
+                            height: 250px;
+                        }
+                    }
                 }
             }
         }
 
-        .mapa {
-            @include column-start-center;
-            width: 100%;
+        #tree2 {
+            position: absolute;
+            max-width: 70%;
+            right: 0;
+            bottom: -20%;
+            opacity: 0.03;
 
-            .google-map-code {
-                @include column-start-center;
-                width: 100%;
+            @include w-1200 {
+                bottom: 0;
+                max-width: 80%;
+            }
 
-                iframe {
+            @include w-1000 {
+                max-width: 80%;
+            }
 
-                    @include w-2000 {
-                        width: 1700px;
-                    }
-
-                    @include w-1600 {
-                        width: 100%;
-                    }
-
-                    @include w-800 {
-                        height: 400px;
-                    }
-
-                    @include w-600 {
-                        height: 350px;
-                        width: 90%;
-                    }
-
-                    @include w-400 {
-                        height: 250px;
-                    }
-                }
+            @include w-800 {
+                display: none;
             }
         }
     }
