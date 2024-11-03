@@ -122,18 +122,9 @@ export default function Home() {
                                 <h4>MUDr. Kateřina Tvrdoňová</h4>
                                 <p>Lékařka</p>
                                 <div className="line"></div>
-                                <div className="imgCase phoneDisplay"><img src='images/doktorka_noBG.png'/></div>
+                                <div className="imgCase phoneDisplay"><img src='images/doktorka.jpeg'/></div>
                             </div>
                             <p>V roce 1993 promovala na&nbsp;<span>1.&nbsp;lékařské fakultě UK v&nbsp;Praze</span>. V&nbsp;témže roce nastoupila na&nbsp;<span>2.&nbsp;kožní kliniku VFN v&nbsp;Praze</span>, zde pracovala jako sekundární lékařka a&nbsp;specializovala se na&nbsp;obor dermatochirurgie. Po <span>I.&nbsp;atestaci</span> v&nbsp;roce 1996 vedla ambulanci pro kožní choroby z&nbsp;povolání a&nbsp;alergologii, připojila se ke&nbsp;kolektivu lékařek věnujících se problematice pigmentových projevů a&nbsp;léčbě maligního melanomu. V roce 2002 složila <span>atestaci 2. stupně v&nbsp;oboru dermatovenerologie</span>. V letech 2002 až 2012 pracovala v&nbsp;laserovém centru – <span>Medical Laser Centre</span> na&nbsp;Praze 10. Věnuje se <span>korektivní dermatologii</span>, <span>estetické medicíně</span> a&nbsp;<span>kožní laserové terapii</span>. Od ledna 2009 má privátní praxi na&nbsp;Praze&nbsp;6.</p>
-                        </div>
-                        <div className="medailonek glassEffect">
-                            <div className="imgCase"><img src='images/sestricka_noBG.png'/></div>
-                            <div className="title">
-                                <h4>Barbora Šeráková</h4>
-                                <p>Zdravotní sestra</p>
-                                <div className="line"></div>
-                            </div>
-                            <p>V roce 1991 maturovala v&nbsp;oboru zdratovní sestra. V&nbsp;témže roce nastoupila na&nbsp;<span>jednotku intenzivní péče III.&nbsp;chirurgické kliniky</span> pod&nbsp;vedením prof.&nbsp;Pafka, kde pracovala 12&nbsp;let. V&nbsp;roce 1997 úspěšně absolvovala <span>postgraduální studium ARIP-anestezie, resuscitace, intenzivní péče</span>. Od roku 2009 pracuje v&nbsp;soukromé kožní ordinaci na Praze&nbsp;6.</p>
                         </div>
                     </div>
                 </div>
