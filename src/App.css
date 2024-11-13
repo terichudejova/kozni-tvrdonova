@@ -160,7 +160,7 @@ b, strong {
 }
 
 .container .alert {
-  background-color: #817969;
+  background-color: rgba(59, 35, 17, 0.7294117647);
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
   padding: 2rem 3rem;
@@ -350,7 +350,7 @@ b, strong {
 }
 
 .footerSection {
-  background-color: #817969;
+  background-color: #635b4c;
   color: white;
   width: 100%;
   height: auto;
@@ -528,7 +528,7 @@ form .button {
 }
 
 .home .landingPage {
-  background-image: linear-gradient(to left, rgba(129, 121, 105, 0.8901960784), rgba(116, 108, 93, 0.8901960784), rgba(102, 95, 80, 0.8823529412), rgba(61, 57, 49, 0.8980392157), rgba(31, 28, 23, 0.8862745098)), url("/images/tree.jpg");
+  background-image: linear-gradient(to left, rgba(112, 95, 69, 0.8862745098), rgba(71, 58, 37, 0.8862745098), rgba(52, 40, 33, 0.8862745098), rgba(35, 26, 21, 0.8862745098), rgba(36, 23, 14, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -746,7 +746,7 @@ form .button {
   }
 }
 .home .sluzby .sluzbyCards .karticka {
-  color: #817969;
+  color: #4d4639;
   padding: 3rem;
   padding-top: 7rem;
   position: relative;
@@ -892,7 +892,7 @@ form .button {
 }
 .home .tym {
   width: 100%;
-  background-color: #effdec;
+  background-color: #e3f5df;
   color: #586b5c;
   padding-top: 9rem;
   overflow: hidden;
@@ -938,6 +938,7 @@ form .button {
   padding-left: 18rem;
   position: relative;
   background-image: url(/images/tree_green_BG.png);
+  text-align: justify;
 }
 @media only screen and (max-width: 1400px) {
   .home .tym .container .medailonky .medailonek {
@@ -1347,7 +1348,7 @@ form .button {
 }
 
 .servicesPrices .landingPage {
-  background-image: linear-gradient(to left, rgba(129, 121, 105, 0.8901960784), rgba(116, 108, 93, 0.8901960784), rgba(102, 95, 80, 0.8823529412), rgba(61, 57, 49, 0.8980392157), rgba(31, 28, 23, 0.8862745098)), url("/images/tree.jpg");
+  background-image: linear-gradient(to left, rgba(112, 95, 69, 0.8862745098), rgba(71, 58, 37, 0.8862745098), rgba(52, 40, 33, 0.8862745098), rgba(35, 26, 21, 0.8862745098), rgba(36, 23, 14, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -1526,7 +1527,7 @@ form .button {
 }
 .servicesPrices .estetickeSluzby {
   width: 100%;
-  background-color: #effdec;
+  background-color: #e3f5df;
   padding-top: 9rem;
   padding-bottom: 10rem;
   color: #586b5c;
@@ -1703,7 +1704,10 @@ form .button {
 }
 .kontakt .line {
   width: 100%;
-  background-color: #c1b6a0;
+  background-image: linear-gradient(to left, rgba(112, 95, 69, 0.8862745098), rgba(71, 58, 37, 0.8862745098), rgba(52, 40, 33, 0.8862745098), rgba(35, 26, 21, 0.8862745098), rgba(36, 23, 14, 0.8862745098)), url("/images/tree.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
   height: 120px;
 }
 .kontakt .box {
