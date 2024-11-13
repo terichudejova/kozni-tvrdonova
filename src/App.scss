@@ -148,7 +148,7 @@ b, strong {
 .container {
 
     .alert {
-        background-color: $contrast-color;
+        background-color: $alert-color;
         width: 100%;
         box-shadow: $main-shadow;
         padding: $s-xs $s-s;
@@ -374,7 +374,7 @@ b, strong {
 
 //FOOTER
 .footerSection {
-    background-color: $contrast-color;
+    background-color: $footer-color;
     color: white;
     width: 100%;
     height: auto;
@@ -568,7 +568,7 @@ form {
 
     //SEKCE LANDING PAGE
     .landingPage {
-        background-image: linear-gradient(to left, #817969e3, #746c5de3, #665f50e1, #3d3931e5, #1f1c17e2), url("/images/tree.jpg");
+        background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
@@ -784,7 +784,7 @@ form {
             }
 
             .karticka {
-                color: $contrast-color; //VERZE 2
+                color: $font-color;
                 padding: $s-s;
                 padding-top: $s-xxl;
                 position: relative;
@@ -999,6 +999,7 @@ form {
                     padding-left: 3 * $s-xl;
                     position: relative;
                     background-image: url(/images/tree_green_BG.png);
+                    text-align: justify;
 
                     @include w-1400 {
                         max-width: 80%;
@@ -1434,7 +1435,7 @@ form {
 .servicesPrices {
 
     .landingPage {
-        background-image: linear-gradient(to left, #817969e3, #746c5de3, #665f50e1, #3d3931e5, #1f1c17e2), url("/images/tree.jpg");
+        background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
@@ -1873,7 +1874,10 @@ form {
 
     .line {
         width: 100%;
-        background-color: $button-second-color;
+        background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
         height: 120px;
     }
 
