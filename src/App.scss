@@ -571,7 +571,7 @@ form {
         background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: top;
         height: auto;
         width: 100%;
         position: relative;
@@ -1438,16 +1438,10 @@ form {
         background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: top;
         height: auto;
         width: 100%;
         position: relative;
-
-        @media only screen and (orientation: portrait) {
-            background-image: none;
-            background-color: $navbar-scrolled-hover-color;
-            height: auto;
-        }
 
         .container {
             margin-bottom: $s-s;
@@ -1877,7 +1871,7 @@ form {
         background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: top;
         height: 120px;
     }
 
@@ -1968,11 +1962,7 @@ form {
                     margin-bottom: $s-xxxl;
 
                     @include w-2000 {
-                        width: 80%;
-                    }
-
-                    @include w-3000 {
-                        width: 60%;
+                        width: 100%;
                     }
 
                     @include w-1200 {
@@ -2068,10 +2058,7 @@ form {
                     width: 100%;
 
                     iframe {
-
-                        @include w-2000 {
-                            width: 1700px;
-                        }
+                        
 
                         @include w-1600 {
                             width: 100%;
@@ -2088,6 +2075,10 @@ form {
 
                         @include w-400 {
                             height: 250px;
+                        }
+
+                        @include w-2000 {
+                            width: 100%;
                         }
                     }
                 }

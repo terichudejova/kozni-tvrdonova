@@ -531,7 +531,7 @@ form .button {
   background-image: linear-gradient(to left, rgba(112, 95, 69, 0.8862745098), rgba(71, 58, 37, 0.8862745098), rgba(52, 40, 33, 0.8862745098), rgba(35, 26, 21, 0.8862745098), rgba(36, 23, 14, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: top;
   height: auto;
   width: 100%;
   position: relative;
@@ -1351,17 +1351,10 @@ form .button {
   background-image: linear-gradient(to left, rgba(112, 95, 69, 0.8862745098), rgba(71, 58, 37, 0.8862745098), rgba(52, 40, 33, 0.8862745098), rgba(35, 26, 21, 0.8862745098), rgba(36, 23, 14, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: top;
   height: auto;
   width: 100%;
   position: relative;
-}
-@media only screen and (orientation: portrait) {
-  .servicesPrices .landingPage {
-    background-image: none;
-    background-color: rgba(132, 116, 87, 0.6117647059);
-    height: auto;
-  }
 }
 .servicesPrices .landingPage .container {
   margin-bottom: 3rem;
@@ -1707,7 +1700,7 @@ form .button {
   background-image: linear-gradient(to left, rgba(112, 95, 69, 0.8862745098), rgba(71, 58, 37, 0.8862745098), rgba(52, 40, 33, 0.8862745098), rgba(35, 26, 21, 0.8862745098), rgba(36, 23, 14, 0.8862745098)), url("/images/tree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: top;
   height: 120px;
 }
 .kontakt .box {
@@ -1802,12 +1795,7 @@ form .button {
 }
 @media only screen and (min-width: 2000px) {
   .kontakt .box .container .informace .left {
-    width: 80%;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .kontakt .box .container .informace .left {
-    width: 60%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1914,11 +1902,6 @@ form .button {
   align-items: center;
   width: 100%;
 }
-@media only screen and (min-width: 2000px) {
-  .kontakt .box .container .mapa .google-map-code iframe {
-    width: 1700px;
-  }
-}
 @media only screen and (max-width: 1600px) {
   .kontakt .box .container .mapa .google-map-code iframe {
     width: 100%;
@@ -1938,6 +1921,11 @@ form .button {
 @media only screen and (max-width: 400px) {
   .kontakt .box .container .mapa .google-map-code iframe {
     height: 250px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .kontakt .box .container .mapa .google-map-code iframe {
+    width: 100%;
   }
 }
 .kontakt .box #tree2 {
