@@ -541,8 +541,13 @@ form .button {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage .headingBox {
+    margin-bottom: 100px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .home .landingPage .headingBox {
@@ -623,6 +628,11 @@ form .button {
     align-items: start;
   }
 }
+@media only screen and (max-width: 400px) {
+  .home .landingPage .headingBox .buttons {
+    margin-bottom: 3rem;
+  }
+}
 .home .landingPage .headingBox .buttons .button {
   text-decoration: none;
   letter-spacing: 1.2px;
@@ -650,11 +660,6 @@ form .button {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   margin-bottom: 0;
-}
-@media only screen and (max-width: 600px) {
-  .home .landingPage #phoneNumber {
-    bottom: 9rem;
-  }
 }
 @media only screen and (max-height: 600px) {
   .home .landingPage #phoneNumber {

@@ -578,8 +578,12 @@ form {
         
         .headingBox {
             @include column-start-start;
-            margin-top: 15%;
-            margin-bottom: 15%;
+            margin-top: 150px;
+            margin-bottom: 150px;
+
+            @include w-1000 {
+                margin-bottom: 100px;
+            }
 
             @include w-600 {
                 padding-left: $s-xs;
@@ -645,6 +649,10 @@ form {
                     @include column-start-start;
                 }
 
+                @include w-400 {
+                    margin-bottom: $s-s;
+                }
+
                 .button {
                     text-decoration: none;
                     letter-spacing: 1.2px;
@@ -674,10 +682,6 @@ form {
             transition: all 0.2s ease-in-out;
             cursor: pointer;
             margin-bottom: 0;
-
-            @include w-600 {
-                bottom: $s-xxxl;
-            }
 
             @media only screen and (max-height: 600px) {
                 bottom: $s-xs;
