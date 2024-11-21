@@ -536,6 +536,36 @@ form .button {
   width: 100%;
   position: relative;
 }
+@media only screen and (max-width: 1400px) {
+  .home .landingPage {
+    background-size: 150%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .landingPage {
+    background-size: 200%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .landingPage {
+    background-size: 250%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .landingPage {
+    background-size: 350%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home .landingPage {
+    background-size: 500%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .home .landingPage {
+    background-size: 600%;
+  }
+}
 .home .landingPage .headingBox {
   display: flex;
   flex-direction: column;
@@ -1361,6 +1391,36 @@ form .button {
   width: 100%;
   position: relative;
 }
+@media only screen and (max-width: 1400px) {
+  .servicesPrices .landingPage {
+    background-size: 150%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .servicesPrices .landingPage {
+    background-size: 200%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .servicesPrices .landingPage {
+    background-size: 250%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .servicesPrices .landingPage {
+    background-size: 350%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesPrices .landingPage {
+    background-size: 500%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .servicesPrices .landingPage {
+    background-size: 600%;
+  }
+}
 .servicesPrices .landingPage .container {
   margin-bottom: 3rem;
 }
@@ -1708,11 +1768,41 @@ form .button {
   background-position: top;
   height: 120px;
 }
+@media only screen and (max-width: 1400px) {
+  .kontakt .line {
+    background-size: 150%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .kontakt .line {
+    background-size: 200%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .kontakt .line {
+    background-size: 250%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .kontakt .line {
+    background-size: 350%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .kontakt .line {
+    background-size: 500%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .kontakt .line {
+    background-size: 600%;
+  }
+}
 .kontakt .box {
   overflow: hidden;
   width: 100%;
   background-image: url(/images/tree_lowOpacity.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
