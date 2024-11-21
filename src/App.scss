@@ -575,7 +575,31 @@ form {
         height: auto;
         width: 100%;
         position: relative;
-        
+
+        @include w-1400 {
+            background-size: 150%;
+        }
+
+        @include w-1000 {
+            background-size: 200%;
+        }
+
+        @include w-800 {
+            background-size: 250%;
+        }
+
+        @include w-600 {
+            background-size: 350%;
+        }
+
+        @include w-400 {
+            background-size: 500%;
+        }
+
+        @include w-330 {
+            background-size: 600%;
+        }
+
         .headingBox {
             @include column-start-start;
             margin-top: 150px;
@@ -1447,6 +1471,30 @@ form {
         width: 100%;
         position: relative;
 
+        @include w-1400 {
+            background-size: 150%;
+        }
+
+        @include w-1000 {
+            background-size: 200%;
+        }
+
+        @include w-800 {
+            background-size: 250%;
+        }
+
+        @include w-600 {
+            background-size: 350%;
+        }
+
+        @include w-400 {
+            background-size: 500%;
+        }
+
+        @include w-330 {
+            background-size: 600%;
+        }
+
         .container {
             margin-bottom: $s-s;
 
@@ -1877,13 +1925,37 @@ form {
         background-repeat: no-repeat;
         background-position: top;
         height: 120px;
+
+        @include w-1400 {
+            background-size: 150%;
+        }
+
+        @include w-1000 {
+            background-size: 200%;
+        }
+
+        @include w-800 {
+            background-size: 250%;
+        }
+
+        @include w-600 {
+            background-size: 350%;
+        }
+
+        @include w-400 {
+            background-size: 500%;
+        }
+
+        @include w-330 {
+            background-size: 600%;
+        }
     }
 
     .box {
         overflow: hidden;
         width: 100%;
         background-image: url(/images/tree_lowOpacity.png);
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
 
