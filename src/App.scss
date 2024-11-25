@@ -568,36 +568,37 @@ form {
 
     //SEKCE LANDING PAGE
     .landingPage {
-        background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        // background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        background-image: linear-gradient(to left,rgba(112, 95, 69, 0.89),rgba(71, 58, 37, 0.89),rgba(52, 40, 33, 0.89),rgba(35, 26, 21, 0.89),rgba(36, 23, 14, 0.89)), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: top right;
         height: auto;
         width: 100%;
         position: relative;
 
         @include w-1400 {
-            background-size: 150%;
+            background-size: 130%;
         }
 
         @include w-1000 {
-            background-size: 200%;
+            background-size: 170%;
         }
 
         @include w-800 {
-            background-size: 250%;
+            background-size: 200%;
         }
 
         @include w-600 {
-            background-size: 350%;
+            background-size: 250%;
         }
 
         @include w-400 {
-            background-size: 500%;
+            background-size: 310%;
         }
 
         @include w-330 {
-            background-size: 600%;
+            background-size: 350%;
         }
 
         .headingBox {
@@ -1463,36 +1464,37 @@ form {
 .servicesPrices {
 
     .landingPage {
-        background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        // background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        background-image: linear-gradient(to left,rgba(112, 95, 69, 0.89),rgba(71, 58, 37, 0.89),rgba(52, 40, 33, 0.89),rgba(35, 26, 21, 0.89),rgba(36, 23, 14, 0.89)), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: top right;
         height: auto;
         width: 100%;
         position: relative;
 
         @include w-1400 {
-            background-size: 150%;
+            background-size: 130%;
         }
 
         @include w-1000 {
-            background-size: 200%;
+            background-size: 170%;
         }
 
         @include w-800 {
-            background-size: 250%;
+            background-size: 200%;
         }
 
         @include w-600 {
-            background-size: 350%;
+            background-size: 250%;
         }
 
         @include w-400 {
-            background-size: 500%;
+            background-size: 310%;
         }
 
         @include w-330 {
-            background-size: 600%;
+            background-size: 350%;
         }
 
         .container {
@@ -1920,34 +1922,35 @@ form {
 
     .line {
         width: 100%;
-        background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        // background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
+        background-image: linear-gradient(to left,rgba(112, 95, 69, 0.89),rgba(71, 58, 37, 0.89),rgba(52, 40, 33, 0.89),rgba(35, 26, 21, 0.89),rgba(36, 23, 14, 0.89)), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: top right;
         height: 120px;
 
         @include w-1400 {
-            background-size: 150%;
+            background-size: 130%;
         }
 
         @include w-1000 {
-            background-size: 200%;
+            background-size: 170%;
         }
 
         @include w-800 {
-            background-size: 250%;
+            background-size: 200%;
         }
 
         @include w-600 {
-            background-size: 350%;
+            background-size: 250%;
         }
 
         @include w-400 {
-            background-size: 500%;
+            background-size: 310%;
         }
 
         @include w-330 {
-            background-size: 600%;
+            background-size: 350%;
         }
     }
 
