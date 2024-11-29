@@ -224,6 +224,7 @@ b, strong {
                 color: white;
                 transition: all 0.2s ease-in-out;
                 cursor: pointer;
+                background-color: $button-second-color; //změna 29.11.
 
                 // .navLink responsivity
                 @include w-1000 {
@@ -237,8 +238,10 @@ b, strong {
                 }
     
                 &:hover { 
-                    background-color: $button-second-color;
+                    // background-color: $button-second-color; změna 29.11.
                     border-radius: 3px;
+                    color: $font-color; //změna 29.11.
+                    background-color: $base2-color; //změna 29.11.
                 }
     
                 &.active {
@@ -275,6 +278,7 @@ b, strong {
 
                 .navLink {
                     color: $font-color;
+                    background-color: $navbar-scrolled-hover-color; //změna 29.11.
 
                     &.active {
                         color: $base2-color;
@@ -282,7 +286,9 @@ b, strong {
                     }
 
                     &:hover { 
-                        background-color: $navbar-scrolled-hover-color;
+                        // background-color: $navbar-scrolled-hover-color; změna 29.11.
+                        color: $base2-color; //změna 29.11.
+                        background-color: $contrast-color; //změna 29.11.
                     }
                 }
             }
@@ -568,8 +574,7 @@ form {
 
     //SEKCE LANDING PAGE
     .landingPage {
-        // background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
-        background-image: linear-gradient(to left,rgba(112, 95, 69, 0.89),rgba(71, 58, 37, 0.89),rgba(52, 40, 33, 0.89),rgba(35, 26, 21, 0.89),rgba(36, 23, 14, 0.89)), url("/images/tree.jpg");
+        background-image: linear-gradient(to left, #bf7d1854, #6f562f54, #342821ad, #231a15c4, #24170ee3), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top right;
@@ -1464,8 +1469,7 @@ form {
 .servicesPrices {
 
     .landingPage {
-        // background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
-        background-image: linear-gradient(to left,rgba(112, 95, 69, 0.89),rgba(71, 58, 37, 0.89),rgba(52, 40, 33, 0.89),rgba(35, 26, 21, 0.89),rgba(36, 23, 14, 0.89)), url("/images/tree.jpg");
+        background-image: linear-gradient(to left, #bf7d1854, #6f562f54, #342821ad, #231a15c4, #24170ee3), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top right;
@@ -1922,8 +1926,7 @@ form {
 
     .line {
         width: 100%;
-        // background-image: linear-gradient(to left, #705f45e2, #473a25e2, #342821e2, #231a15e2, #24170ee2), url("/images/tree.jpg");
-        background-image: linear-gradient(to left,rgba(112, 95, 69, 0.89),rgba(71, 58, 37, 0.89),rgba(52, 40, 33, 0.89),rgba(35, 26, 21, 0.89),rgba(36, 23, 14, 0.89)), url("/images/tree.jpg");
+        background-image: linear-gradient(to left, #bf7d1854, #6f562f54, #342821ad, #231a15c4, #24170ee3), url("/images/tree.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top right;
