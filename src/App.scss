@@ -224,7 +224,7 @@ b, strong {
                 color: white;
                 transition: all 0.2s ease-in-out;
                 cursor: pointer;
-                background-color: $button-second-color; //změna 29.11.
+                background-color: $button-second-color;
 
                 // .navLink responsivity
                 @include w-1000 {
@@ -238,10 +238,9 @@ b, strong {
                 }
     
                 &:hover { 
-                    // background-color: $button-second-color; změna 29.11.
                     border-radius: 3px;
-                    color: $font-color; //změna 29.11.
-                    background-color: $base2-color; //změna 29.11.
+                    color: $font-color;
+                    background-color: $base2-color;
                 }
     
                 &.active {
@@ -278,7 +277,7 @@ b, strong {
 
                 .navLink {
                     color: $font-color;
-                    background-color: $navbar-scrolled-hover-color; //změna 29.11.
+                    background-color: $navbar-scrolled-hover-color;
 
                     &.active {
                         color: $base2-color;
@@ -286,9 +285,8 @@ b, strong {
                     }
 
                     &:hover { 
-                        // background-color: $navbar-scrolled-hover-color; změna 29.11.
-                        color: $base2-color; //změna 29.11.
-                        background-color: $contrast-color; //změna 29.11.
+                        color: $base2-color;
+                        background-color: $contrast-color;
                     }
                 }
             }
