@@ -117,7 +117,6 @@ export default function Home() {
                     <p>V naší dermatologické ordinaci klademe důraz na&nbsp;<span>individuální přístup</span> a&nbsp;<span>profesionální péči</span> o&nbsp;každého pacienta. Snažíme se vytvořit prostředí, kde se budete cítit v&nbsp;pohodlí a&nbsp;s&nbsp;jistotou, že vaše zdraví a&nbsp;vzhled jsou v&nbsp;těch nejlepších rukou. Naše ordinace je vedena <span>zkušenou dermatoložkou</span>, která se specializuje na&nbsp;<span>diagnostiku a&nbsp;léčbu kožních onemocnění</span> i&nbsp;na&nbsp;<span>estetickou dermatologii</span>. Po jejím boku působí odborná sestra, která se s&nbsp;maximální péčí postará o&nbsp;vaši pohodu při každé návštěvě. Společně se věnujeme nejen léčbě, ale také <span>prevenci a&nbsp;péči</span> o&nbsp;zdravou a&nbsp;krásnou pokožku.</p>
                     <div className="medailonky">
                         <div className="medailonek glassEffect">
-                            <div className="imgCase"><img src='images/doktorka_noBG.png'/></div>
                             <div className="title">
                                 <h4>MUDr. Kateřina Tvrdoňová</h4>
                                 <p>Lékařka</p>
