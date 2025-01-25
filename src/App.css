@@ -266,9 +266,6 @@ b, strong {
     color: #e4decf;
   }
 }
-.navbarBox .nav-links .right .navLink:nth-of-type(1) {
-  margin-right: 1rem;
-}
 @media only screen and (max-width: 1000px) {
   .navbarBox .nav-links .right {
     display: none;
