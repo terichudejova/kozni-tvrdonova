@@ -1012,9 +1012,9 @@ form .button {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
   position: absolute;
-  top: calc(50% - 150px);
+  top: calc(50% - 125px);
   left: -60px;
-  width: 200px;
+  width: auto;
 }
 @media only screen and (max-width: 1000px) {
   .home .tym .container .medailonky .medailonek .imgCase {
@@ -1023,8 +1023,8 @@ form .button {
 }
 .home .tym .container .medailonky .medailonek .imgCase img {
   border-radius: 3px;
-  height: 280px;
-  width: 100%;
+  height: 250px;
+  width: auto;
 }
 .home .tym .container .medailonky .medailonek .title {
   max-width: 400px;
